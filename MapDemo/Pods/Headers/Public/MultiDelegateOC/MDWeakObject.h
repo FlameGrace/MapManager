@@ -1,0 +1,1 @@
+../../../MultiDelegateOC/MultiDelegateOC/MDWeakObject.h

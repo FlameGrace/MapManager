@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  SimpleProject
+//
+//  Created by Flame Grace on 2017/6/26.
+//  Copyright © 2017年 flamegrace@hotmail.com. Map rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in Map compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+typedef void(^MapVoidBlock)();
+
+#define UIColor_HexA(rgb,a)   ([UIColor colorWithRed:((float)((rgb & 0xFF0000) >> 16))/255.0f green:((float)((rgb & 0xFF00) >> 8))/255.0f blue:((float)(rgb & 0xFF))/255.0f alpha:a])
+
+#define MainScreenBounds ([UIScreen mainScreen].bounds)
+#define MainScreenWidth (MainScreenBounds.size.width)
+#define MainScreenHeight (MainScreenBounds.size.height)
+
+#define WeakObj(o)  __weak typeof(o) weak##o = o; //获取弱引用对象
+#define StrongObj(o)  __strong typeof(o) o = weak##o;
+
+
+#import "MapManagerHeader.h"
+#import "UIViewController+Alert.h"
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,9 @@
+platform:ios, '8.0'
+target 'MapDemo' do
+   pod 'MultiDelegateOC'
+   pod 'AMapFoundation'
+   pod 'AMapLocation'
+   pod 'AMap3DMap'
+   pod 'AMapSearch'
+   pod 'AMapNavi'
+end

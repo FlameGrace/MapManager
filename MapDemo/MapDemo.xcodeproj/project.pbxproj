@@ -1,0 +1,1219 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02671DA6FD436813772668A4 /* libPods-MapDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D9105E086DC24E2898C5D5 /* libPods-MapDemo.a */; };
+		8630CB391F25EDDD00243A93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB381F25EDDD00243A93 /* main.m */; };
+		8630CB3C1F25EDDD00243A93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB3B1F25EDDD00243A93 /* AppDelegate.m */; };
+		8630CB3F1F25EDDD00243A93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB3E1F25EDDD00243A93 /* ViewController.m */; };
+		8630CB421F25EDDD00243A93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8630CB401F25EDDD00243A93 /* Main.storyboard */; };
+		8630CB441F25EDDD00243A93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8630CB431F25EDDD00243A93 /* Assets.xcassets */; };
+		8630CB471F25EDDD00243A93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8630CB451F25EDDD00243A93 /* LaunchScreen.storyboard */; };
+		8630CB521F25EDDD00243A93 /* MapDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB511F25EDDD00243A93 /* MapDemoTests.m */; };
+		8630CB5D1F25EDDD00243A93 /* MapDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB5C1F25EDDD00243A93 /* MapDemoUITests.m */; };
+		8630CC061F25EE7500243A93 /* DrawDriveRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB6C1F25EE7500243A93 /* DrawDriveRecordViewController.m */; };
+		8630CC071F25EE7500243A93 /* DrawLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB6E1F25EE7500243A93 /* DrawLineViewController.m */; };
+		8630CC081F25EE7500243A93 /* DrawRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB701F25EE7500243A93 /* DrawRouteViewController.m */; };
+		8630CC091F25EE7500243A93 /* KeyWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB721F25EE7500243A93 /* KeyWordsViewController.m */; };
+		8630CC0A1F25EE7500243A93 /* MapFenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB741F25EE7500243A93 /* MapFenceViewController.m */; };
+		8630CC0B1F25EE7500243A93 /* MapInputTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB761F25EE7500243A93 /* MapInputTipsViewController.m */; };
+		8630CC0C1F25EE7500243A93 /* MapPointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB781F25EE7500243A93 /* MapPointViewController.m */; };
+		8630CC0D1F25EE7500243A93 /* SimulateRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB7A1F25EE7500243A93 /* SimulateRouteViewController.m */; };
+		8630CC0E1F25EE7500243A93 /* AngleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB7D1F25EE7500243A93 /* AngleLabel.m */; };
+		8630CC0F1F25EE7500243A93 /* BrakeMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB801F25EE7500243A93 /* BrakeMapAnnotation.m */; };
+		8630CC101F25EE7500243A93 /* CarMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB821F25EE7500243A93 /* CarMapAnnotation.m */; };
+		8630CC111F25EE7500243A93 /* EndPointMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB841F25EE7500243A93 /* EndPointMapAnnotation.m */; };
+		8630CC131F25EE7500243A93 /* SearchMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB881F25EE7500243A93 /* SearchMapAnnotation.m */; };
+		8630CC141F25EE7500243A93 /* SpeedUpMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB8A1F25EE7500243A93 /* SpeedUpMapAnnotation.m */; };
+		8630CC151F25EE7500243A93 /* StartPointMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB8C1F25EE7500243A93 /* StartPointMapAnnotation.m */; };
+		8630CC161F25EE7500243A93 /* TextMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB8E1F25EE7500243A93 /* TextMapAnnotation.m */; };
+		8630CC171F25EE7500243A93 /* TurnMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB901F25EE7500243A93 /* TurnMapAnnotation.m */; };
+		8630CC181F25EE7500243A93 /* CarMapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB931F25EE7500243A93 /* CarMapAnnotationView.m */; };
+		8630CC1D1F25EE7500243A93 /* TextMapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB9F1F25EE7500243A93 /* TextMapAnnotationView.m */; };
+		8630CC1E1F25EE7500243A93 /* CarSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CBA11F25EE7500243A93 /* CarSimulator.m */; };
+		8630CC1F1F25EE7500243A93 /* MapDrawDriveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CBA41F25EE7500243A93 /* MapDrawDriveRecord.m */; };
+		8630CC221F25EE7500243A93 /* MapDrawRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CBAA1F25EE7500243A93 /* MapDrawRoute.m */; };
+		8630CC261F25EE7500243A93 /* FourAngleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CBB31F25EE7500243A93 /* FourAngleLabel.m */; };
+		8630CC2D1F25EE7500243A93 /* CarMapLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CBC31F25EE7500243A93 /* CarMapLocation.m */; };
+		8630CC3C1F25EE7500243A93 /* MapDriveRecordObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CBE71F25EE7500243A93 /* MapDriveRecordObject.m */; };
+		8630CC3D1F25EE7500243A93 /* MapRouteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CBE91F25EE7500243A93 /* MapRouteObject.m */; };
+		8630CC451F25EE7500243A93 /* AnCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC011F25EE7500243A93 /* AnCar.m */; };
+		8630CC461F25EE7500243A93 /* TableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC031F25EE7500243A93 /* TableViewCellModel.m */; };
+		8630CC471F25EE7500243A93 /* UIViewController+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC051F25EE7500243A93 /* UIViewController+Alert.m */; };
+		8630CCAB1F25F5BD00243A93 /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC501F25F5BD00243A93 /* MapAnnotation.m */; };
+		8630CCAC1F25F5BD00243A93 /* MapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC531F25F5BD00243A93 /* MapAnnotationView.m */; };
+		8630CCAD1F25F5BD00243A93 /* CACoordLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC571F25F5BD00243A93 /* CACoordLayer.m */; };
+		8630CCAE1F25F5BD00243A93 /* MovingAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC591F25F5BD00243A93 /* MovingAnnotationView.m */; };
+		8630CCAF1F25F5BD00243A93 /* TracingPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC5B1F25F5BD00243A93 /* TracingPoint.m */; };
+		8630CCB01F25F5BD00243A93 /* MapDrawLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC5E1F25F5BD00243A93 /* MapDrawLine.m */; };
+		8630CCB11F25F5BD00243A93 /* MapDrawPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC601F25F5BD00243A93 /* MapDrawPoint.m */; };
+		8630CCB21F25F5BD00243A93 /* MapDrawFenceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC631F25F5BD00243A93 /* MapDrawFenceView.m */; };
+		8630CCB31F25F5BD00243A93 /* MapFenceAMapViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC651F25F5BD00243A93 /* MapFenceAMapViewModel.m */; };
+		8630CCB41F25F5BD00243A93 /* MapFenceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC671F25F5BD00243A93 /* MapFenceModel.m */; };
+		8630CCB51F25F5BD00243A93 /* MapLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC691F25F5BD00243A93 /* MapLocationManager.m */; };
+		8630CCB61F25F5BD00243A93 /* MapManager+Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC6B1F25F5BD00243A93 /* MapManager+Location.m */; };
+		8630CCB71F25F5BD00243A93 /* MapManager+MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC6D1F25F5BD00243A93 /* MapManager+MapView.m */; };
+		8630CCB81F25F5BD00243A93 /* MapManager+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC6F1F25F5BD00243A93 /* MapManager+Search.m */; };
+		8630CCB91F25F5BD00243A93 /* MapManager+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC711F25F5BD00243A93 /* MapManager+Tools.m */; };
+		8630CCBA1F25F5BD00243A93 /* MapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC731F25F5BD00243A93 /* MapManager.m */; };
+		8630CCBB1F25F5BD00243A93 /* MapLocationModel+RegeoSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC771F25F5BD00243A93 /* MapLocationModel+RegeoSearch.m */; };
+		8630CCBC1F25F5BD00243A93 /* MapLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC791F25F5BD00243A93 /* MapLocationModel.m */; };
+		8630CCBD1F25F5BD00243A93 /* SearchMapLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC7B1F25F5BD00243A93 /* SearchMapLocation.m */; };
+		8630CCBE1F25F5BD00243A93 /* MyLatLng.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC7D1F25F5BD00243A93 /* MyLatLng.m */; };
+		8630CCBF1F25F5BD00243A93 /* DriveNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC801F25F5BD00243A93 /* DriveNaviViewController.m */; };
+		8630CCC01F25F5BD00243A93 /* WalkNaviView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC821F25F5BD00243A93 /* WalkNaviView.m */; };
+		8630CCC11F25F5BD00243A93 /* WalkNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC841F25F5BD00243A93 /* WalkNaviViewController.m */; };
+		8630CCC21F25F5BD00243A93 /* MapDrivePlanningRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC871F25F5BD00243A93 /* MapDrivePlanningRoute.m */; };
+		8630CCC31F25F5BD00243A93 /* MapPlanningRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC891F25F5BD00243A93 /* MapPlanningRoute.m */; };
+		8630CCC41F25F5BD00243A93 /* MapWalkPlanningRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC8D1F25F5BD00243A93 /* MapWalkPlanningRoute.m */; };
+		8630CCC51F25F5BD00243A93 /* MapDeselectPolylineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC901F25F5BD00243A93 /* MapDeselectPolylineView.m */; };
+		8630CCC61F25F5BD00243A93 /* MapPolyLineObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC921F25F5BD00243A93 /* MapPolyLineObject.m */; };
+		8630CCC71F25F5BD00243A93 /* MapPolylineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC941F25F5BD00243A93 /* MapPolylineView.m */; };
+		8630CCC81F25F5BD00243A93 /* MapRedPolylineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC961F25F5BD00243A93 /* MapRedPolylineView.m */; };
+		8630CCC91F25F5BD00243A93 /* MapSearchInputTips.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC9A1F25F5BD00243A93 /* MapSearchInputTips.m */; };
+		8630CCCA1F25F5BD00243A93 /* MapSearchKeywords.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC9D1F25F5BD00243A93 /* MapSearchKeywords.m */; };
+		8630CCCB1F25F5BD00243A93 /* MapSearchKeywords_MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC9F1F25F5BD00243A93 /* MapSearchKeywords_MapView.m */; };
+		8630CCCC1F25F5BD00243A93 /* MapSearch+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CCA21F25F5BD00243A93 /* MapSearch+Search.m */; };
+		8630CCCD1F25F5BD00243A93 /* MapSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CCA41F25F5BD00243A93 /* MapSearch.m */; };
+		8630CCCE1F25F5BD00243A93 /* MapSearchObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CCA61F25F5BD00243A93 /* MapSearchObject.m */; };
+		8630CCCF1F25F5BD00243A93 /* MapSearchInputTipModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CCAA1F25F5BD00243A93 /* MapSearchInputTipModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8630CB4E1F25EDDD00243A93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8630CB2C1F25EDDD00243A93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8630CB331F25EDDD00243A93;
+			remoteInfo = MapDemo;
+		};
+		8630CB591F25EDDD00243A93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8630CB2C1F25EDDD00243A93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8630CB331F25EDDD00243A93;
+			remoteInfo = MapDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		67D9105E086DC24E2898C5D5 /* libPods-MapDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8630CB341F25EDDD00243A93 /* MapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8630CB381F25EDDD00243A93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8630CB3A1F25EDDD00243A93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8630CB3B1F25EDDD00243A93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8630CB3D1F25EDDD00243A93 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8630CB3E1F25EDDD00243A93 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8630CB411F25EDDD00243A93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8630CB431F25EDDD00243A93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8630CB461F25EDDD00243A93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8630CB481F25EDDD00243A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8630CB4D1F25EDDD00243A93 /* MapDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8630CB511F25EDDD00243A93 /* MapDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapDemoTests.m; sourceTree = "<group>"; };
+		8630CB531F25EDDD00243A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8630CB581F25EDDD00243A93 /* MapDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8630CB5C1F25EDDD00243A93 /* MapDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapDemoUITests.m; sourceTree = "<group>"; };
+		8630CB5E1F25EDDD00243A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8630CB6B1F25EE7500243A93 /* DrawDriveRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawDriveRecordViewController.h; sourceTree = "<group>"; };
+		8630CB6C1F25EE7500243A93 /* DrawDriveRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawDriveRecordViewController.m; sourceTree = "<group>"; };
+		8630CB6D1F25EE7500243A93 /* DrawLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLineViewController.h; sourceTree = "<group>"; };
+		8630CB6E1F25EE7500243A93 /* DrawLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLineViewController.m; sourceTree = "<group>"; };
+		8630CB6F1F25EE7500243A93 /* DrawRouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRouteViewController.h; sourceTree = "<group>"; };
+		8630CB701F25EE7500243A93 /* DrawRouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRouteViewController.m; sourceTree = "<group>"; };
+		8630CB711F25EE7500243A93 /* KeyWordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyWordsViewController.h; sourceTree = "<group>"; };
+		8630CB721F25EE7500243A93 /* KeyWordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyWordsViewController.m; sourceTree = "<group>"; };
+		8630CB731F25EE7500243A93 /* MapFenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapFenceViewController.h; sourceTree = "<group>"; };
+		8630CB741F25EE7500243A93 /* MapFenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapFenceViewController.m; sourceTree = "<group>"; };
+		8630CB751F25EE7500243A93 /* MapInputTipsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapInputTipsViewController.h; sourceTree = "<group>"; };
+		8630CB761F25EE7500243A93 /* MapInputTipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapInputTipsViewController.m; sourceTree = "<group>"; };
+		8630CB771F25EE7500243A93 /* MapPointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPointViewController.h; sourceTree = "<group>"; };
+		8630CB781F25EE7500243A93 /* MapPointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPointViewController.m; sourceTree = "<group>"; };
+		8630CB791F25EE7500243A93 /* SimulateRouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateRouteViewController.h; sourceTree = "<group>"; };
+		8630CB7A1F25EE7500243A93 /* SimulateRouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateRouteViewController.m; sourceTree = "<group>"; };
+		8630CB7C1F25EE7500243A93 /* AngleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AngleLabel.h; sourceTree = "<group>"; };
+		8630CB7D1F25EE7500243A93 /* AngleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AngleLabel.m; sourceTree = "<group>"; };
+		8630CB7F1F25EE7500243A93 /* BrakeMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrakeMapAnnotation.h; sourceTree = "<group>"; };
+		8630CB801F25EE7500243A93 /* BrakeMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrakeMapAnnotation.m; sourceTree = "<group>"; };
+		8630CB811F25EE7500243A93 /* CarMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarMapAnnotation.h; sourceTree = "<group>"; };
+		8630CB821F25EE7500243A93 /* CarMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarMapAnnotation.m; sourceTree = "<group>"; };
+		8630CB831F25EE7500243A93 /* EndPointMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndPointMapAnnotation.h; sourceTree = "<group>"; };
+		8630CB841F25EE7500243A93 /* EndPointMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndPointMapAnnotation.m; sourceTree = "<group>"; };
+		8630CB871F25EE7500243A93 /* SearchMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchMapAnnotation.h; sourceTree = "<group>"; };
+		8630CB881F25EE7500243A93 /* SearchMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchMapAnnotation.m; sourceTree = "<group>"; };
+		8630CB891F25EE7500243A93 /* SpeedUpMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeedUpMapAnnotation.h; sourceTree = "<group>"; };
+		8630CB8A1F25EE7500243A93 /* SpeedUpMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeedUpMapAnnotation.m; sourceTree = "<group>"; };
+		8630CB8B1F25EE7500243A93 /* StartPointMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartPointMapAnnotation.h; sourceTree = "<group>"; };
+		8630CB8C1F25EE7500243A93 /* StartPointMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartPointMapAnnotation.m; sourceTree = "<group>"; };
+		8630CB8D1F25EE7500243A93 /* TextMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextMapAnnotation.h; sourceTree = "<group>"; };
+		8630CB8E1F25EE7500243A93 /* TextMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextMapAnnotation.m; sourceTree = "<group>"; };
+		8630CB8F1F25EE7500243A93 /* TurnMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurnMapAnnotation.h; sourceTree = "<group>"; };
+		8630CB901F25EE7500243A93 /* TurnMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurnMapAnnotation.m; sourceTree = "<group>"; };
+		8630CB921F25EE7500243A93 /* CarMapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarMapAnnotationView.h; sourceTree = "<group>"; };
+		8630CB931F25EE7500243A93 /* CarMapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarMapAnnotationView.m; sourceTree = "<group>"; };
+		8630CB9E1F25EE7500243A93 /* TextMapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextMapAnnotationView.h; sourceTree = "<group>"; };
+		8630CB9F1F25EE7500243A93 /* TextMapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextMapAnnotationView.m; sourceTree = "<group>"; };
+		8630CBA01F25EE7500243A93 /* CarSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarSimulator.h; sourceTree = "<group>"; };
+		8630CBA11F25EE7500243A93 /* CarSimulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarSimulator.m; sourceTree = "<group>"; };
+		8630CBA31F25EE7500243A93 /* MapDrawDriveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDrawDriveRecord.h; sourceTree = "<group>"; };
+		8630CBA41F25EE7500243A93 /* MapDrawDriveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDrawDriveRecord.m; sourceTree = "<group>"; };
+		8630CBA91F25EE7500243A93 /* MapDrawRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDrawRoute.h; sourceTree = "<group>"; };
+		8630CBAA1F25EE7500243A93 /* MapDrawRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDrawRoute.m; sourceTree = "<group>"; };
+		8630CBB21F25EE7500243A93 /* FourAngleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourAngleLabel.h; sourceTree = "<group>"; };
+		8630CBB31F25EE7500243A93 /* FourAngleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourAngleLabel.m; sourceTree = "<group>"; };
+		8630CBC21F25EE7500243A93 /* CarMapLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarMapLocation.h; sourceTree = "<group>"; };
+		8630CBC31F25EE7500243A93 /* CarMapLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarMapLocation.m; sourceTree = "<group>"; };
+		8630CBE61F25EE7500243A93 /* MapDriveRecordObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDriveRecordObject.h; sourceTree = "<group>"; };
+		8630CBE71F25EE7500243A93 /* MapDriveRecordObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDriveRecordObject.m; sourceTree = "<group>"; };
+		8630CBE81F25EE7500243A93 /* MapRouteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapRouteObject.h; sourceTree = "<group>"; };
+		8630CBE91F25EE7500243A93 /* MapRouteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapRouteObject.m; sourceTree = "<group>"; };
+		8630CBFE1F25EE7500243A93 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8630CC001F25EE7500243A93 /* AnCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnCar.h; sourceTree = "<group>"; };
+		8630CC011F25EE7500243A93 /* AnCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnCar.m; sourceTree = "<group>"; };
+		8630CC021F25EE7500243A93 /* TableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCellModel.h; sourceTree = "<group>"; };
+		8630CC031F25EE7500243A93 /* TableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCellModel.m; sourceTree = "<group>"; };
+		8630CC041F25EE7500243A93 /* UIViewController+Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Alert.h"; sourceTree = "<group>"; };
+		8630CC051F25EE7500243A93 /* UIViewController+Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Alert.m"; sourceTree = "<group>"; };
+		8630CC4F1F25F5BD00243A93 /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
+		8630CC501F25F5BD00243A93 /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
+		8630CC521F25F5BD00243A93 /* MapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotationView.h; sourceTree = "<group>"; };
+		8630CC531F25F5BD00243A93 /* MapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotationView.m; sourceTree = "<group>"; };
+		8630CC541F25F5BD00243A93 /* MapAnnotationViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotationViewProtocol.h; sourceTree = "<group>"; };
+		8630CC561F25F5BD00243A93 /* CACoordLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACoordLayer.h; sourceTree = "<group>"; };
+		8630CC571F25F5BD00243A93 /* CACoordLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACoordLayer.m; sourceTree = "<group>"; };
+		8630CC581F25F5BD00243A93 /* MovingAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingAnnotationView.h; sourceTree = "<group>"; };
+		8630CC591F25F5BD00243A93 /* MovingAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingAnnotationView.m; sourceTree = "<group>"; };
+		8630CC5A1F25F5BD00243A93 /* TracingPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracingPoint.h; sourceTree = "<group>"; };
+		8630CC5B1F25F5BD00243A93 /* TracingPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TracingPoint.m; sourceTree = "<group>"; };
+		8630CC5D1F25F5BD00243A93 /* MapDrawLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDrawLine.h; sourceTree = "<group>"; };
+		8630CC5E1F25F5BD00243A93 /* MapDrawLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDrawLine.m; sourceTree = "<group>"; };
+		8630CC5F1F25F5BD00243A93 /* MapDrawPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDrawPoint.h; sourceTree = "<group>"; };
+		8630CC601F25F5BD00243A93 /* MapDrawPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDrawPoint.m; sourceTree = "<group>"; };
+		8630CC621F25F5BD00243A93 /* MapDrawFenceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDrawFenceView.h; sourceTree = "<group>"; };
+		8630CC631F25F5BD00243A93 /* MapDrawFenceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDrawFenceView.m; sourceTree = "<group>"; };
+		8630CC641F25F5BD00243A93 /* MapFenceAMapViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapFenceAMapViewModel.h; sourceTree = "<group>"; };
+		8630CC651F25F5BD00243A93 /* MapFenceAMapViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapFenceAMapViewModel.m; sourceTree = "<group>"; };
+		8630CC661F25F5BD00243A93 /* MapFenceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapFenceModel.h; sourceTree = "<group>"; };
+		8630CC671F25F5BD00243A93 /* MapFenceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapFenceModel.m; sourceTree = "<group>"; };
+		8630CC681F25F5BD00243A93 /* MapLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLocationManager.h; sourceTree = "<group>"; };
+		8630CC691F25F5BD00243A93 /* MapLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLocationManager.m; sourceTree = "<group>"; };
+		8630CC6A1F25F5BD00243A93 /* MapManager+Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapManager+Location.h"; sourceTree = "<group>"; };
+		8630CC6B1F25F5BD00243A93 /* MapManager+Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapManager+Location.m"; sourceTree = "<group>"; };
+		8630CC6C1F25F5BD00243A93 /* MapManager+MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapManager+MapView.h"; sourceTree = "<group>"; };
+		8630CC6D1F25F5BD00243A93 /* MapManager+MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapManager+MapView.m"; sourceTree = "<group>"; };
+		8630CC6E1F25F5BD00243A93 /* MapManager+Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapManager+Search.h"; sourceTree = "<group>"; };
+		8630CC6F1F25F5BD00243A93 /* MapManager+Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapManager+Search.m"; sourceTree = "<group>"; };
+		8630CC701F25F5BD00243A93 /* MapManager+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapManager+Tools.h"; sourceTree = "<group>"; };
+		8630CC711F25F5BD00243A93 /* MapManager+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapManager+Tools.m"; sourceTree = "<group>"; };
+		8630CC721F25F5BD00243A93 /* MapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapManager.h; sourceTree = "<group>"; };
+		8630CC731F25F5BD00243A93 /* MapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapManager.m; sourceTree = "<group>"; };
+		8630CC741F25F5BD00243A93 /* MapManagerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapManagerHeader.h; sourceTree = "<group>"; };
+		8630CC761F25F5BD00243A93 /* MapLocationModel+RegeoSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapLocationModel+RegeoSearch.h"; sourceTree = "<group>"; };
+		8630CC771F25F5BD00243A93 /* MapLocationModel+RegeoSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapLocationModel+RegeoSearch.m"; sourceTree = "<group>"; };
+		8630CC781F25F5BD00243A93 /* MapLocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLocationModel.h; sourceTree = "<group>"; };
+		8630CC791F25F5BD00243A93 /* MapLocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLocationModel.m; sourceTree = "<group>"; };
+		8630CC7A1F25F5BD00243A93 /* SearchMapLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchMapLocation.h; sourceTree = "<group>"; };
+		8630CC7B1F25F5BD00243A93 /* SearchMapLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchMapLocation.m; sourceTree = "<group>"; };
+		8630CC7C1F25F5BD00243A93 /* MyLatLng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyLatLng.h; path = ../MyLatLng.h; sourceTree = "<group>"; };
+		8630CC7D1F25F5BD00243A93 /* MyLatLng.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyLatLng.m; path = ../MyLatLng.m; sourceTree = "<group>"; };
+		8630CC7F1F25F5BD00243A93 /* DriveNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriveNaviViewController.h; sourceTree = "<group>"; };
+		8630CC801F25F5BD00243A93 /* DriveNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriveNaviViewController.m; sourceTree = "<group>"; };
+		8630CC811F25F5BD00243A93 /* WalkNaviView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkNaviView.h; sourceTree = "<group>"; };
+		8630CC821F25F5BD00243A93 /* WalkNaviView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkNaviView.m; sourceTree = "<group>"; };
+		8630CC831F25F5BD00243A93 /* WalkNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkNaviViewController.h; sourceTree = "<group>"; };
+		8630CC841F25F5BD00243A93 /* WalkNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkNaviViewController.m; sourceTree = "<group>"; };
+		8630CC861F25F5BD00243A93 /* MapDrivePlanningRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDrivePlanningRoute.h; sourceTree = "<group>"; };
+		8630CC871F25F5BD00243A93 /* MapDrivePlanningRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDrivePlanningRoute.m; sourceTree = "<group>"; };
+		8630CC881F25F5BD00243A93 /* MapPlanningRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPlanningRoute.h; sourceTree = "<group>"; };
+		8630CC891F25F5BD00243A93 /* MapPlanningRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPlanningRoute.m; sourceTree = "<group>"; };
+		8630CC8A1F25F5BD00243A93 /* MapPlanningRouteDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPlanningRouteDelegate.h; sourceTree = "<group>"; };
+		8630CC8B1F25F5BD00243A93 /* MapPlanningRouteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPlanningRouteProtocol.h; sourceTree = "<group>"; };
+		8630CC8C1F25F5BD00243A93 /* MapWalkPlanningRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapWalkPlanningRoute.h; sourceTree = "<group>"; };
+		8630CC8D1F25F5BD00243A93 /* MapWalkPlanningRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapWalkPlanningRoute.m; sourceTree = "<group>"; };
+		8630CC8F1F25F5BD00243A93 /* MapDeselectPolylineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDeselectPolylineView.h; sourceTree = "<group>"; };
+		8630CC901F25F5BD00243A93 /* MapDeselectPolylineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDeselectPolylineView.m; sourceTree = "<group>"; };
+		8630CC911F25F5BD00243A93 /* MapPolyLineObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPolyLineObject.h; sourceTree = "<group>"; };
+		8630CC921F25F5BD00243A93 /* MapPolyLineObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPolyLineObject.m; sourceTree = "<group>"; };
+		8630CC931F25F5BD00243A93 /* MapPolylineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPolylineView.h; sourceTree = "<group>"; };
+		8630CC941F25F5BD00243A93 /* MapPolylineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPolylineView.m; sourceTree = "<group>"; };
+		8630CC951F25F5BD00243A93 /* MapRedPolylineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapRedPolylineView.h; sourceTree = "<group>"; };
+		8630CC961F25F5BD00243A93 /* MapRedPolylineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapRedPolylineView.m; sourceTree = "<group>"; };
+		8630CC991F25F5BD00243A93 /* MapSearchInputTips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchInputTips.h; sourceTree = "<group>"; };
+		8630CC9A1F25F5BD00243A93 /* MapSearchInputTips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearchInputTips.m; sourceTree = "<group>"; };
+		8630CC9C1F25F5BD00243A93 /* MapSearchKeywords.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchKeywords.h; sourceTree = "<group>"; };
+		8630CC9D1F25F5BD00243A93 /* MapSearchKeywords.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearchKeywords.m; sourceTree = "<group>"; };
+		8630CC9E1F25F5BD00243A93 /* MapSearchKeywords_MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchKeywords_MapView.h; sourceTree = "<group>"; };
+		8630CC9F1F25F5BD00243A93 /* MapSearchKeywords_MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearchKeywords_MapView.m; sourceTree = "<group>"; };
+		8630CCA11F25F5BD00243A93 /* MapSearch+Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapSearch+Search.h"; sourceTree = "<group>"; };
+		8630CCA21F25F5BD00243A93 /* MapSearch+Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapSearch+Search.m"; sourceTree = "<group>"; };
+		8630CCA31F25F5BD00243A93 /* MapSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearch.h; sourceTree = "<group>"; };
+		8630CCA41F25F5BD00243A93 /* MapSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearch.m; sourceTree = "<group>"; };
+		8630CCA51F25F5BD00243A93 /* MapSearchObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchObject.h; sourceTree = "<group>"; };
+		8630CCA61F25F5BD00243A93 /* MapSearchObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearchObject.m; sourceTree = "<group>"; };
+		8630CCA81F25F5BD00243A93 /* MapSearchInputProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchInputProtocol.h; sourceTree = "<group>"; };
+		8630CCA91F25F5BD00243A93 /* MapSearchInputTipModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchInputTipModel.h; sourceTree = "<group>"; };
+		8630CCAA1F25F5BD00243A93 /* MapSearchInputTipModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearchInputTipModel.m; sourceTree = "<group>"; };
+		9A50D6CFF12A25AA33FDF08B /* Pods-MapDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapDemo/Pods-MapDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B47ADE36CE3324CE23C89D9C /* Pods-MapDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapDemo/Pods-MapDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8630CB311F25EDDD00243A93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02671DA6FD436813772668A4 /* libPods-MapDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8630CB4A1F25EDDD00243A93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8630CB551F25EDDD00243A93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08ACC4188A46F0E25DA42A24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B47ADE36CE3324CE23C89D9C /* Pods-MapDemo.debug.xcconfig */,
+				9A50D6CFF12A25AA33FDF08B /* Pods-MapDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8630CB2B1F25EDDD00243A93 = {
+			isa = PBXGroup;
+			children = (
+				94E92798F41DE30D1FAD4849 /* Frameworks */,
+				8630CB361F25EDDD00243A93 /* MapDemo */,
+				8630CB501F25EDDD00243A93 /* MapDemoTests */,
+				8630CB5B1F25EDDD00243A93 /* MapDemoUITests */,
+				08ACC4188A46F0E25DA42A24 /* Pods */,
+				8630CB351F25EDDD00243A93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8630CB351F25EDDD00243A93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8630CB341F25EDDD00243A93 /* MapDemo.app */,
+				8630CB4D1F25EDDD00243A93 /* MapDemoTests.xctest */,
+				8630CB581F25EDDD00243A93 /* MapDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8630CB361F25EDDD00243A93 /* MapDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8630CC4D1F25F5BD00243A93 /* MapManager */,
+				8630CB6A1F25EE7500243A93 /* Controllers */,
+				8630CC481F25F2CA00243A93 /* Map */,
+				8630CBFF1F25EE7500243A93 /* Tools */,
+				8630CB371F25EDDD00243A93 /* Supporting Files */,
+				8630CB3A1F25EDDD00243A93 /* AppDelegate.h */,
+				8630CB3B1F25EDDD00243A93 /* AppDelegate.m */,
+				8630CB431F25EDDD00243A93 /* Assets.xcassets */,
+				8630CB481F25EDDD00243A93 /* Info.plist */,
+				8630CB451F25EDDD00243A93 /* LaunchScreen.storyboard */,
+				8630CB401F25EDDD00243A93 /* Main.storyboard */,
+				8630CBFE1F25EE7500243A93 /* PrefixHeader.pch */,
+				8630CB3D1F25EDDD00243A93 /* ViewController.h */,
+				8630CB3E1F25EDDD00243A93 /* ViewController.m */,
+			);
+			path = MapDemo;
+			sourceTree = "<group>";
+		};
+		8630CB371F25EDDD00243A93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8630CB381F25EDDD00243A93 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8630CB501F25EDDD00243A93 /* MapDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8630CB531F25EDDD00243A93 /* Info.plist */,
+				8630CB511F25EDDD00243A93 /* MapDemoTests.m */,
+			);
+			path = MapDemoTests;
+			sourceTree = "<group>";
+		};
+		8630CB5B1F25EDDD00243A93 /* MapDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8630CB5E1F25EDDD00243A93 /* Info.plist */,
+				8630CB5C1F25EDDD00243A93 /* MapDemoUITests.m */,
+			);
+			path = MapDemoUITests;
+			sourceTree = "<group>";
+		};
+		8630CB6A1F25EE7500243A93 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8630CB6B1F25EE7500243A93 /* DrawDriveRecordViewController.h */,
+				8630CB6C1F25EE7500243A93 /* DrawDriveRecordViewController.m */,
+				8630CB6D1F25EE7500243A93 /* DrawLineViewController.h */,
+				8630CB6E1F25EE7500243A93 /* DrawLineViewController.m */,
+				8630CB6F1F25EE7500243A93 /* DrawRouteViewController.h */,
+				8630CB701F25EE7500243A93 /* DrawRouteViewController.m */,
+				8630CB711F25EE7500243A93 /* KeyWordsViewController.h */,
+				8630CB721F25EE7500243A93 /* KeyWordsViewController.m */,
+				8630CB731F25EE7500243A93 /* MapFenceViewController.h */,
+				8630CB741F25EE7500243A93 /* MapFenceViewController.m */,
+				8630CB751F25EE7500243A93 /* MapInputTipsViewController.h */,
+				8630CB761F25EE7500243A93 /* MapInputTipsViewController.m */,
+				8630CB771F25EE7500243A93 /* MapPointViewController.h */,
+				8630CB781F25EE7500243A93 /* MapPointViewController.m */,
+				8630CB791F25EE7500243A93 /* SimulateRouteViewController.h */,
+				8630CB7A1F25EE7500243A93 /* SimulateRouteViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8630CBE51F25EE7500243A93 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				8630CBE61F25EE7500243A93 /* MapDriveRecordObject.h */,
+				8630CBE71F25EE7500243A93 /* MapDriveRecordObject.m */,
+				8630CBE81F25EE7500243A93 /* MapRouteObject.h */,
+				8630CBE91F25EE7500243A93 /* MapRouteObject.m */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		8630CBFF1F25EE7500243A93 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8630CB7C1F25EE7500243A93 /* AngleLabel.h */,
+				8630CB7D1F25EE7500243A93 /* AngleLabel.m */,
+				8630CBB21F25EE7500243A93 /* FourAngleLabel.h */,
+				8630CBB31F25EE7500243A93 /* FourAngleLabel.m */,
+				8630CC021F25EE7500243A93 /* TableViewCellModel.h */,
+				8630CC031F25EE7500243A93 /* TableViewCellModel.m */,
+				8630CC041F25EE7500243A93 /* UIViewController+Alert.h */,
+				8630CC051F25EE7500243A93 /* UIViewController+Alert.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		8630CC481F25F2CA00243A93 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				8630CC491F25F2FE00243A93 /* Annotation */,
+				8630CC4B1F25F37200243A93 /* Draw */,
+				8630CC4C1F25F39800243A93 /* Model */,
+				8630CC001F25EE7500243A93 /* AnCar.h */,
+				8630CC011F25EE7500243A93 /* AnCar.m */,
+				8630CBA01F25EE7500243A93 /* CarSimulator.h */,
+				8630CBA11F25EE7500243A93 /* CarSimulator.m */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		8630CC491F25F2FE00243A93 /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				8630CC4A1F25F30700243A93 /* View */,
+				8630CB7F1F25EE7500243A93 /* BrakeMapAnnotation.h */,
+				8630CB801F25EE7500243A93 /* BrakeMapAnnotation.m */,
+				8630CB811F25EE7500243A93 /* CarMapAnnotation.h */,
+				8630CB821F25EE7500243A93 /* CarMapAnnotation.m */,
+				8630CB831F25EE7500243A93 /* EndPointMapAnnotation.h */,
+				8630CB841F25EE7500243A93 /* EndPointMapAnnotation.m */,
+				8630CB871F25EE7500243A93 /* SearchMapAnnotation.h */,
+				8630CB881F25EE7500243A93 /* SearchMapAnnotation.m */,
+				8630CB891F25EE7500243A93 /* SpeedUpMapAnnotation.h */,
+				8630CB8A1F25EE7500243A93 /* SpeedUpMapAnnotation.m */,
+				8630CB8B1F25EE7500243A93 /* StartPointMapAnnotation.h */,
+				8630CB8C1F25EE7500243A93 /* StartPointMapAnnotation.m */,
+				8630CB8D1F25EE7500243A93 /* TextMapAnnotation.h */,
+				8630CB8E1F25EE7500243A93 /* TextMapAnnotation.m */,
+				8630CB8F1F25EE7500243A93 /* TurnMapAnnotation.h */,
+				8630CB901F25EE7500243A93 /* TurnMapAnnotation.m */,
+			);
+			path = Annotation;
+			sourceTree = "<group>";
+		};
+		8630CC4A1F25F30700243A93 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8630CB921F25EE7500243A93 /* CarMapAnnotationView.h */,
+				8630CB931F25EE7500243A93 /* CarMapAnnotationView.m */,
+				8630CB9E1F25EE7500243A93 /* TextMapAnnotationView.h */,
+				8630CB9F1F25EE7500243A93 /* TextMapAnnotationView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8630CC4B1F25F37200243A93 /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				8630CBE51F25EE7500243A93 /* Route */,
+				8630CBA31F25EE7500243A93 /* MapDrawDriveRecord.h */,
+				8630CBA41F25EE7500243A93 /* MapDrawDriveRecord.m */,
+				8630CBA91F25EE7500243A93 /* MapDrawRoute.h */,
+				8630CBAA1F25EE7500243A93 /* MapDrawRoute.m */,
+			);
+			path = Draw;
+			sourceTree = "<group>";
+		};
+		8630CC4C1F25F39800243A93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8630CBC21F25EE7500243A93 /* CarMapLocation.h */,
+				8630CBC31F25EE7500243A93 /* CarMapLocation.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8630CC4D1F25F5BD00243A93 /* MapManager */ = {
+			isa = PBXGroup;
+			children = (
+				8630CC751F25F5BD00243A93 /* Model */,
+				8630CC4E1F25F5BD00243A93 /* Annotation */,
+				8630CC5C1F25F5BD00243A93 /* Draw */,
+				8630CC611F25F5BD00243A93 /* Fence */,
+				8630CC7E1F25F5BD00243A93 /* NaviVC */,
+				8630CC851F25F5BD00243A93 /* PlanningRoute */,
+				8630CC8E1F25F5BD00243A93 /* Polyline */,
+				8630CC971F25F5BD00243A93 /* Search */,
+				8630CC681F25F5BD00243A93 /* MapLocationManager.h */,
+				8630CC691F25F5BD00243A93 /* MapLocationManager.m */,
+				8630CC6A1F25F5BD00243A93 /* MapManager+Location.h */,
+				8630CC6B1F25F5BD00243A93 /* MapManager+Location.m */,
+				8630CC6C1F25F5BD00243A93 /* MapManager+MapView.h */,
+				8630CC6D1F25F5BD00243A93 /* MapManager+MapView.m */,
+				8630CC6E1F25F5BD00243A93 /* MapManager+Search.h */,
+				8630CC6F1F25F5BD00243A93 /* MapManager+Search.m */,
+				8630CC701F25F5BD00243A93 /* MapManager+Tools.h */,
+				8630CC711F25F5BD00243A93 /* MapManager+Tools.m */,
+				8630CC721F25F5BD00243A93 /* MapManager.h */,
+				8630CC731F25F5BD00243A93 /* MapManager.m */,
+				8630CC741F25F5BD00243A93 /* MapManagerHeader.h */,
+			);
+			path = MapManager;
+			sourceTree = "<group>";
+		};
+		8630CC4E1F25F5BD00243A93 /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				8630CC4F1F25F5BD00243A93 /* MapAnnotation.h */,
+				8630CC501F25F5BD00243A93 /* MapAnnotation.m */,
+				8630CC511F25F5BD00243A93 /* View */,
+			);
+			path = Annotation;
+			sourceTree = "<group>";
+		};
+		8630CC511F25F5BD00243A93 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8630CC521F25F5BD00243A93 /* MapAnnotationView.h */,
+				8630CC531F25F5BD00243A93 /* MapAnnotationView.m */,
+				8630CC541F25F5BD00243A93 /* MapAnnotationViewProtocol.h */,
+				8630CC551F25F5BD00243A93 /* MovingAnnotationView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8630CC551F25F5BD00243A93 /* MovingAnnotationView */ = {
+			isa = PBXGroup;
+			children = (
+				8630CC561F25F5BD00243A93 /* CACoordLayer.h */,
+				8630CC571F25F5BD00243A93 /* CACoordLayer.m */,
+				8630CC581F25F5BD00243A93 /* MovingAnnotationView.h */,
+				8630CC591F25F5BD00243A93 /* MovingAnnotationView.m */,
+				8630CC5A1F25F5BD00243A93 /* TracingPoint.h */,
+				8630CC5B1F25F5BD00243A93 /* TracingPoint.m */,
+			);
+			path = MovingAnnotationView;
+			sourceTree = "<group>";
+		};
+		8630CC5C1F25F5BD00243A93 /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				8630CC5D1F25F5BD00243A93 /* MapDrawLine.h */,
+				8630CC5E1F25F5BD00243A93 /* MapDrawLine.m */,
+				8630CC5F1F25F5BD00243A93 /* MapDrawPoint.h */,
+				8630CC601F25F5BD00243A93 /* MapDrawPoint.m */,
+			);
+			path = Draw;
+			sourceTree = "<group>";
+		};
+		8630CC611F25F5BD00243A93 /* Fence */ = {
+			isa = PBXGroup;
+			children = (
+				8630CC621F25F5BD00243A93 /* MapDrawFenceView.h */,
+				8630CC631F25F5BD00243A93 /* MapDrawFenceView.m */,
+				8630CC641F25F5BD00243A93 /* MapFenceAMapViewModel.h */,
+				8630CC651F25F5BD00243A93 /* MapFenceAMapViewModel.m */,
+				8630CC661F25F5BD00243A93 /* MapFenceModel.h */,
+				8630CC671F25F5BD00243A93 /* MapFenceModel.m */,
+			);
+			path = Fence;
+			sourceTree = "<group>";
+		};
+		8630CC751F25F5BD00243A93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8630CC7C1F25F5BD00243A93 /* MyLatLng.h */,
+				8630CC7D1F25F5BD00243A93 /* MyLatLng.m */,
+				8630CC761F25F5BD00243A93 /* MapLocationModel+RegeoSearch.h */,
+				8630CC771F25F5BD00243A93 /* MapLocationModel+RegeoSearch.m */,
+				8630CC781F25F5BD00243A93 /* MapLocationModel.h */,
+				8630CC791F25F5BD00243A93 /* MapLocationModel.m */,
+				8630CC7A1F25F5BD00243A93 /* SearchMapLocation.h */,
+				8630CC7B1F25F5BD00243A93 /* SearchMapLocation.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8630CC7E1F25F5BD00243A93 /* NaviVC */ = {
+			isa = PBXGroup;
+			children = (
+				8630CC7F1F25F5BD00243A93 /* DriveNaviViewController.h */,
+				8630CC801F25F5BD00243A93 /* DriveNaviViewController.m */,
+				8630CC811F25F5BD00243A93 /* WalkNaviView.h */,
+				8630CC821F25F5BD00243A93 /* WalkNaviView.m */,
+				8630CC831F25F5BD00243A93 /* WalkNaviViewController.h */,
+				8630CC841F25F5BD00243A93 /* WalkNaviViewController.m */,
+			);
+			path = NaviVC;
+			sourceTree = "<group>";
+		};
+		8630CC851F25F5BD00243A93 /* PlanningRoute */ = {
+			isa = PBXGroup;
+			children = (
+				8630CC861F25F5BD00243A93 /* MapDrivePlanningRoute.h */,
+				8630CC871F25F5BD00243A93 /* MapDrivePlanningRoute.m */,
+				8630CC881F25F5BD00243A93 /* MapPlanningRoute.h */,
+				8630CC891F25F5BD00243A93 /* MapPlanningRoute.m */,
+				8630CC8A1F25F5BD00243A93 /* MapPlanningRouteDelegate.h */,
+				8630CC8B1F25F5BD00243A93 /* MapPlanningRouteProtocol.h */,
+				8630CC8C1F25F5BD00243A93 /* MapWalkPlanningRoute.h */,
+				8630CC8D1F25F5BD00243A93 /* MapWalkPlanningRoute.m */,
+			);
+			path = PlanningRoute;
+			sourceTree = "<group>";
+		};
+		8630CC8E1F25F5BD00243A93 /* Polyline */ = {
+			isa = PBXGroup;
+			children = (
+				8630CC8F1F25F5BD00243A93 /* MapDeselectPolylineView.h */,
+				8630CC901F25F5BD00243A93 /* MapDeselectPolylineView.m */,
+				8630CC911F25F5BD00243A93 /* MapPolyLineObject.h */,
+				8630CC921F25F5BD00243A93 /* MapPolyLineObject.m */,
+				8630CC931F25F5BD00243A93 /* MapPolylineView.h */,
+				8630CC941F25F5BD00243A93 /* MapPolylineView.m */,
+				8630CC951F25F5BD00243A93 /* MapRedPolylineView.h */,
+				8630CC961F25F5BD00243A93 /* MapRedPolylineView.m */,
+			);
+			path = Polyline;
+			sourceTree = "<group>";
+		};
+		8630CC971F25F5BD00243A93 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				8630CC981F25F5BD00243A93 /* InputTip */,
+				8630CC9B1F25F5BD00243A93 /* Keywords */,
+				8630CCA01F25F5BD00243A93 /* MapSearch */,
+				8630CCA71F25F5BD00243A93 /* Model */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		8630CC981F25F5BD00243A93 /* InputTip */ = {
+			isa = PBXGroup;
+			children = (
+				8630CC991F25F5BD00243A93 /* MapSearchInputTips.h */,
+				8630CC9A1F25F5BD00243A93 /* MapSearchInputTips.m */,
+			);
+			path = InputTip;
+			sourceTree = "<group>";
+		};
+		8630CC9B1F25F5BD00243A93 /* Keywords */ = {
+			isa = PBXGroup;
+			children = (
+				8630CC9C1F25F5BD00243A93 /* MapSearchKeywords.h */,
+				8630CC9D1F25F5BD00243A93 /* MapSearchKeywords.m */,
+				8630CC9E1F25F5BD00243A93 /* MapSearchKeywords_MapView.h */,
+				8630CC9F1F25F5BD00243A93 /* MapSearchKeywords_MapView.m */,
+			);
+			path = Keywords;
+			sourceTree = "<group>";
+		};
+		8630CCA01F25F5BD00243A93 /* MapSearch */ = {
+			isa = PBXGroup;
+			children = (
+				8630CCA11F25F5BD00243A93 /* MapSearch+Search.h */,
+				8630CCA21F25F5BD00243A93 /* MapSearch+Search.m */,
+				8630CCA31F25F5BD00243A93 /* MapSearch.h */,
+				8630CCA41F25F5BD00243A93 /* MapSearch.m */,
+				8630CCA51F25F5BD00243A93 /* MapSearchObject.h */,
+				8630CCA61F25F5BD00243A93 /* MapSearchObject.m */,
+			);
+			path = MapSearch;
+			sourceTree = "<group>";
+		};
+		8630CCA71F25F5BD00243A93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8630CCA81F25F5BD00243A93 /* MapSearchInputProtocol.h */,
+				8630CCA91F25F5BD00243A93 /* MapSearchInputTipModel.h */,
+				8630CCAA1F25F5BD00243A93 /* MapSearchInputTipModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94E92798F41DE30D1FAD4849 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67D9105E086DC24E2898C5D5 /* libPods-MapDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8630CB331F25EDDD00243A93 /* MapDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8630CB611F25EDDD00243A93 /* Build configuration list for PBXNativeTarget "MapDemo" */;
+			buildPhases = (
+				65F05882A6C7B647651A0A52 /* [CP] Check Pods Manifest.lock */,
+				8630CB301F25EDDD00243A93 /* Sources */,
+				8630CB311F25EDDD00243A93 /* Frameworks */,
+				8630CB321F25EDDD00243A93 /* Resources */,
+				CF383A69CE36F44F4B937A7B /* [CP] Embed Pods Frameworks */,
+				58830A41FC77105F8C58E78E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapDemo;
+			productName = MapDemo;
+			productReference = 8630CB341F25EDDD00243A93 /* MapDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8630CB4C1F25EDDD00243A93 /* MapDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8630CB641F25EDDD00243A93 /* Build configuration list for PBXNativeTarget "MapDemoTests" */;
+			buildPhases = (
+				8630CB491F25EDDD00243A93 /* Sources */,
+				8630CB4A1F25EDDD00243A93 /* Frameworks */,
+				8630CB4B1F25EDDD00243A93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8630CB4F1F25EDDD00243A93 /* PBXTargetDependency */,
+			);
+			name = MapDemoTests;
+			productName = MapDemoTests;
+			productReference = 8630CB4D1F25EDDD00243A93 /* MapDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8630CB571F25EDDD00243A93 /* MapDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8630CB671F25EDDD00243A93 /* Build configuration list for PBXNativeTarget "MapDemoUITests" */;
+			buildPhases = (
+				8630CB541F25EDDD00243A93 /* Sources */,
+				8630CB551F25EDDD00243A93 /* Frameworks */,
+				8630CB561F25EDDD00243A93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8630CB5A1F25EDDD00243A93 /* PBXTargetDependency */,
+			);
+			name = MapDemoUITests;
+			productName = MapDemoUITests;
+			productReference = 8630CB581F25EDDD00243A93 /* MapDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8630CB2C1F25EDDD00243A93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "flamegrace@hotmail.com";
+				TargetAttributes = {
+					8630CB331F25EDDD00243A93 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PK25G5QCH4;
+						ProvisioningStyle = Automatic;
+					};
+					8630CB4C1F25EDDD00243A93 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PK25G5QCH4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8630CB331F25EDDD00243A93;
+					};
+					8630CB571F25EDDD00243A93 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PK25G5QCH4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8630CB331F25EDDD00243A93;
+					};
+				};
+			};
+			buildConfigurationList = 8630CB2F1F25EDDD00243A93 /* Build configuration list for PBXProject "MapDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8630CB2B1F25EDDD00243A93;
+			productRefGroup = 8630CB351F25EDDD00243A93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8630CB331F25EDDD00243A93 /* MapDemo */,
+				8630CB4C1F25EDDD00243A93 /* MapDemoTests */,
+				8630CB571F25EDDD00243A93 /* MapDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8630CB321F25EDDD00243A93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8630CB471F25EDDD00243A93 /* LaunchScreen.storyboard in Resources */,
+				8630CB441F25EDDD00243A93 /* Assets.xcassets in Resources */,
+				8630CB421F25EDDD00243A93 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8630CB4B1F25EDDD00243A93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8630CB561F25EDDD00243A93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58830A41FC77105F8C58E78E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapDemo/Pods-MapDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65F05882A6C7B647651A0A52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF383A69CE36F44F4B937A7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapDemo/Pods-MapDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8630CB301F25EDDD00243A93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8630CCCF1F25F5BD00243A93 /* MapSearchInputTipModel.m in Sources */,
+				8630CC061F25EE7500243A93 /* DrawDriveRecordViewController.m in Sources */,
+				8630CC0A1F25EE7500243A93 /* MapFenceViewController.m in Sources */,
+				8630CC101F25EE7500243A93 /* CarMapAnnotation.m in Sources */,
+				8630CC221F25EE7500243A93 /* MapDrawRoute.m in Sources */,
+				8630CC3C1F25EE7500243A93 /* MapDriveRecordObject.m in Sources */,
+				8630CCB71F25F5BD00243A93 /* MapManager+MapView.m in Sources */,
+				8630CC0E1F25EE7500243A93 /* AngleLabel.m in Sources */,
+				8630CC451F25EE7500243A93 /* AnCar.m in Sources */,
+				8630CCBD1F25F5BD00243A93 /* SearchMapLocation.m in Sources */,
+				8630CC181F25EE7500243A93 /* CarMapAnnotationView.m in Sources */,
+				8630CCBF1F25F5BD00243A93 /* DriveNaviViewController.m in Sources */,
+				8630CCCB1F25F5BD00243A93 /* MapSearchKeywords_MapView.m in Sources */,
+				8630CCCC1F25F5BD00243A93 /* MapSearch+Search.m in Sources */,
+				8630CCAF1F25F5BD00243A93 /* TracingPoint.m in Sources */,
+				8630CCB61F25F5BD00243A93 /* MapManager+Location.m in Sources */,
+				8630CC091F25EE7500243A93 /* KeyWordsViewController.m in Sources */,
+				8630CCB91F25F5BD00243A93 /* MapManager+Tools.m in Sources */,
+				8630CCB51F25F5BD00243A93 /* MapLocationManager.m in Sources */,
+				8630CCC21F25F5BD00243A93 /* MapDrivePlanningRoute.m in Sources */,
+				8630CC471F25EE7500243A93 /* UIViewController+Alert.m in Sources */,
+				8630CCC51F25F5BD00243A93 /* MapDeselectPolylineView.m in Sources */,
+				8630CC111F25EE7500243A93 /* EndPointMapAnnotation.m in Sources */,
+				8630CCBA1F25F5BD00243A93 /* MapManager.m in Sources */,
+				8630CB3F1F25EDDD00243A93 /* ViewController.m in Sources */,
+				8630CCC91F25F5BD00243A93 /* MapSearchInputTips.m in Sources */,
+				8630CCB21F25F5BD00243A93 /* MapDrawFenceView.m in Sources */,
+				8630CC0C1F25EE7500243A93 /* MapPointViewController.m in Sources */,
+				8630CCBB1F25F5BD00243A93 /* MapLocationModel+RegeoSearch.m in Sources */,
+				8630CB3C1F25EDDD00243A93 /* AppDelegate.m in Sources */,
+				8630CC141F25EE7500243A93 /* SpeedUpMapAnnotation.m in Sources */,
+				8630CCC61F25F5BD00243A93 /* MapPolyLineObject.m in Sources */,
+				8630CC151F25EE7500243A93 /* StartPointMapAnnotation.m in Sources */,
+				8630CCC11F25F5BD00243A93 /* WalkNaviViewController.m in Sources */,
+				8630CC1E1F25EE7500243A93 /* CarSimulator.m in Sources */,
+				8630CCC71F25F5BD00243A93 /* MapPolylineView.m in Sources */,
+				8630CC0B1F25EE7500243A93 /* MapInputTipsViewController.m in Sources */,
+				8630CC0F1F25EE7500243A93 /* BrakeMapAnnotation.m in Sources */,
+				8630CCBC1F25F5BD00243A93 /* MapLocationModel.m in Sources */,
+				8630CCB01F25F5BD00243A93 /* MapDrawLine.m in Sources */,
+				8630CCCD1F25F5BD00243A93 /* MapSearch.m in Sources */,
+				8630CC1F1F25EE7500243A93 /* MapDrawDriveRecord.m in Sources */,
+				8630CCC41F25F5BD00243A93 /* MapWalkPlanningRoute.m in Sources */,
+				8630CCC31F25F5BD00243A93 /* MapPlanningRoute.m in Sources */,
+				8630CB391F25EDDD00243A93 /* main.m in Sources */,
+				8630CCB41F25F5BD00243A93 /* MapFenceModel.m in Sources */,
+				8630CC461F25EE7500243A93 /* TableViewCellModel.m in Sources */,
+				8630CC171F25EE7500243A93 /* TurnMapAnnotation.m in Sources */,
+				8630CCC81F25F5BD00243A93 /* MapRedPolylineView.m in Sources */,
+				8630CC2D1F25EE7500243A93 /* CarMapLocation.m in Sources */,
+				8630CC3D1F25EE7500243A93 /* MapRouteObject.m in Sources */,
+				8630CCBE1F25F5BD00243A93 /* MyLatLng.m in Sources */,
+				8630CC1D1F25EE7500243A93 /* TextMapAnnotationView.m in Sources */,
+				8630CC131F25EE7500243A93 /* SearchMapAnnotation.m in Sources */,
+				8630CCB11F25F5BD00243A93 /* MapDrawPoint.m in Sources */,
+				8630CC161F25EE7500243A93 /* TextMapAnnotation.m in Sources */,
+				8630CCC01F25F5BD00243A93 /* WalkNaviView.m in Sources */,
+				8630CCAC1F25F5BD00243A93 /* MapAnnotationView.m in Sources */,
+				8630CC081F25EE7500243A93 /* DrawRouteViewController.m in Sources */,
+				8630CCAB1F25F5BD00243A93 /* MapAnnotation.m in Sources */,
+				8630CCAE1F25F5BD00243A93 /* MovingAnnotationView.m in Sources */,
+				8630CC0D1F25EE7500243A93 /* SimulateRouteViewController.m in Sources */,
+				8630CCCA1F25F5BD00243A93 /* MapSearchKeywords.m in Sources */,
+				8630CC261F25EE7500243A93 /* FourAngleLabel.m in Sources */,
+				8630CCB81F25F5BD00243A93 /* MapManager+Search.m in Sources */,
+				8630CC071F25EE7500243A93 /* DrawLineViewController.m in Sources */,
+				8630CCB31F25F5BD00243A93 /* MapFenceAMapViewModel.m in Sources */,
+				8630CCAD1F25F5BD00243A93 /* CACoordLayer.m in Sources */,
+				8630CCCE1F25F5BD00243A93 /* MapSearchObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8630CB491F25EDDD00243A93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8630CB521F25EDDD00243A93 /* MapDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8630CB541F25EDDD00243A93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8630CB5D1F25EDDD00243A93 /* MapDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8630CB4F1F25EDDD00243A93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8630CB331F25EDDD00243A93 /* MapDemo */;
+			targetProxy = 8630CB4E1F25EDDD00243A93 /* PBXContainerItemProxy */;
+		};
+		8630CB5A1F25EDDD00243A93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8630CB331F25EDDD00243A93 /* MapDemo */;
+			targetProxy = 8630CB591F25EDDD00243A93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8630CB401F25EDDD00243A93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8630CB411F25EDDD00243A93 /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		8630CB451F25EDDD00243A93 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8630CB461F25EDDD00243A93 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8630CB5F1F25EDDD00243A93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8630CB601F25EDDD00243A93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8630CB621F25EDDD00243A93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B47ADE36CE3324CE23C89D9C /* Pods-MapDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PK25G5QCH4;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MapDemo/PrefixHeader.pch";
+				INFOPLIST_FILE = MapDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flamegrace.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "-Wno-documentation";
+			};
+			name = Debug;
+		};
+		8630CB631F25EDDD00243A93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A50D6CFF12A25AA33FDF08B /* Pods-MapDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PK25G5QCH4;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MapDemo/PrefixHeader.pch";
+				INFOPLIST_FILE = MapDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flamegrace.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "-Wno-documentation";
+			};
+			name = Release;
+		};
+		8630CB651F25EDDD00243A93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PK25G5QCH4;
+				INFOPLIST_FILE = MapDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flamegrace.demo.MapDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapDemo.app/MapDemo";
+			};
+			name = Debug;
+		};
+		8630CB661F25EDDD00243A93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PK25G5QCH4;
+				INFOPLIST_FILE = MapDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flamegrace.demo.MapDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapDemo.app/MapDemo";
+			};
+			name = Release;
+		};
+		8630CB681F25EDDD00243A93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = PK25G5QCH4;
+				INFOPLIST_FILE = MapDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flamegrace.demo.MapDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MapDemo;
+			};
+			name = Debug;
+		};
+		8630CB691F25EDDD00243A93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = PK25G5QCH4;
+				INFOPLIST_FILE = MapDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flamegrace.demo.MapDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MapDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8630CB2F1F25EDDD00243A93 /* Build configuration list for PBXProject "MapDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8630CB5F1F25EDDD00243A93 /* Debug */,
+				8630CB601F25EDDD00243A93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8630CB611F25EDDD00243A93 /* Build configuration list for PBXNativeTarget "MapDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8630CB621F25EDDD00243A93 /* Debug */,
+				8630CB631F25EDDD00243A93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8630CB641F25EDDD00243A93 /* Build configuration list for PBXNativeTarget "MapDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8630CB651F25EDDD00243A93 /* Debug */,
+				8630CB661F25EDDD00243A93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8630CB671F25EDDD00243A93 /* Build configuration list for PBXNativeTarget "MapDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8630CB681F25EDDD00243A93 /* Debug */,
+				8630CB691F25EDDD00243A93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8630CB2C1F25EDDD00243A93 /* Project object */;
+}
