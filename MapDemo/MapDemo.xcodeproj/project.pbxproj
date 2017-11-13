@@ -56,9 +56,6 @@
 		8630CCB31F25F5BD00243A93 /* MapFenceAMapViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC651F25F5BD00243A93 /* MapFenceAMapViewModel.m */; };
 		8630CCB41F25F5BD00243A93 /* MapFenceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC671F25F5BD00243A93 /* MapFenceModel.m */; };
 		8630CCB51F25F5BD00243A93 /* MapLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC691F25F5BD00243A93 /* MapLocationManager.m */; };
-		8630CCB61F25F5BD00243A93 /* MapManager+Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC6B1F25F5BD00243A93 /* MapManager+Location.m */; };
-		8630CCB71F25F5BD00243A93 /* MapManager+MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC6D1F25F5BD00243A93 /* MapManager+MapView.m */; };
-		8630CCB81F25F5BD00243A93 /* MapManager+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC6F1F25F5BD00243A93 /* MapManager+Search.m */; };
 		8630CCB91F25F5BD00243A93 /* MapManager+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC711F25F5BD00243A93 /* MapManager+Tools.m */; };
 		8630CCBA1F25F5BD00243A93 /* MapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC731F25F5BD00243A93 /* MapManager.m */; };
 		8630CCBB1F25F5BD00243A93 /* MapLocationModel+RegeoSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC771F25F5BD00243A93 /* MapLocationModel+RegeoSearch.m */; };
@@ -201,12 +198,6 @@
 		8630CC671F25F5BD00243A93 /* MapFenceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapFenceModel.m; sourceTree = "<group>"; };
 		8630CC681F25F5BD00243A93 /* MapLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLocationManager.h; sourceTree = "<group>"; };
 		8630CC691F25F5BD00243A93 /* MapLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLocationManager.m; sourceTree = "<group>"; };
-		8630CC6A1F25F5BD00243A93 /* MapManager+Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapManager+Location.h"; sourceTree = "<group>"; };
-		8630CC6B1F25F5BD00243A93 /* MapManager+Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapManager+Location.m"; sourceTree = "<group>"; };
-		8630CC6C1F25F5BD00243A93 /* MapManager+MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapManager+MapView.h"; sourceTree = "<group>"; };
-		8630CC6D1F25F5BD00243A93 /* MapManager+MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapManager+MapView.m"; sourceTree = "<group>"; };
-		8630CC6E1F25F5BD00243A93 /* MapManager+Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapManager+Search.h"; sourceTree = "<group>"; };
-		8630CC6F1F25F5BD00243A93 /* MapManager+Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapManager+Search.m"; sourceTree = "<group>"; };
 		8630CC701F25F5BD00243A93 /* MapManager+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapManager+Tools.h"; sourceTree = "<group>"; };
 		8630CC711F25F5BD00243A93 /* MapManager+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapManager+Tools.m"; sourceTree = "<group>"; };
 		8630CC721F25F5BD00243A93 /* MapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapManager.h; sourceTree = "<group>"; };
@@ -257,6 +248,7 @@
 		8630CCA81F25F5BD00243A93 /* MapSearchInputProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchInputProtocol.h; sourceTree = "<group>"; };
 		8630CCA91F25F5BD00243A93 /* MapSearchInputTipModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchInputTipModel.h; sourceTree = "<group>"; };
 		8630CCAA1F25F5BD00243A93 /* MapSearchInputTipModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearchInputTipModel.m; sourceTree = "<group>"; };
+		8648BFD11FB592DA009703EB /* MapDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MapDemo.entitlements; sourceTree = "<group>"; };
 		9A50D6CFF12A25AA33FDF08B /* Pods-MapDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapDemo/Pods-MapDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B47ADE36CE3324CE23C89D9C /* Pods-MapDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapDemo/Pods-MapDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -321,6 +313,7 @@
 		8630CB361F25EDDD00243A93 /* MapDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8648BFD11FB592DA009703EB /* MapDemo.entitlements */,
 				8630CC4D1F25F5BD00243A93 /* MapManager */,
 				8630CB6A1F25EE7500243A93 /* Controllers */,
 				8630CC481F25F2CA00243A93 /* Map */,
@@ -497,12 +490,6 @@
 				8630CC971F25F5BD00243A93 /* Search */,
 				8630CC681F25F5BD00243A93 /* MapLocationManager.h */,
 				8630CC691F25F5BD00243A93 /* MapLocationManager.m */,
-				8630CC6A1F25F5BD00243A93 /* MapManager+Location.h */,
-				8630CC6B1F25F5BD00243A93 /* MapManager+Location.m */,
-				8630CC6C1F25F5BD00243A93 /* MapManager+MapView.h */,
-				8630CC6D1F25F5BD00243A93 /* MapManager+MapView.m */,
-				8630CC6E1F25F5BD00243A93 /* MapManager+Search.h */,
-				8630CC6F1F25F5BD00243A93 /* MapManager+Search.m */,
 				8630CC701F25F5BD00243A93 /* MapManager+Tools.h */,
 				8630CC711F25F5BD00243A93 /* MapManager+Tools.m */,
 				8630CC721F25F5BD00243A93 /* MapManager.h */,
@@ -762,6 +749,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = PK25G5QCH4;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 					8630CB4C1F25EDDD00243A93 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -883,7 +875,6 @@
 				8630CC101F25EE7500243A93 /* CarMapAnnotation.m in Sources */,
 				8630CC221F25EE7500243A93 /* MapDrawRoute.m in Sources */,
 				8630CC3C1F25EE7500243A93 /* MapDriveRecordObject.m in Sources */,
-				8630CCB71F25F5BD00243A93 /* MapManager+MapView.m in Sources */,
 				8630CC0E1F25EE7500243A93 /* AngleLabel.m in Sources */,
 				8630CC451F25EE7500243A93 /* AnCar.m in Sources */,
 				8630CCBD1F25F5BD00243A93 /* SearchMapLocation.m in Sources */,
@@ -892,7 +883,6 @@
 				8630CCCB1F25F5BD00243A93 /* MapSearchKeywords_MapView.m in Sources */,
 				8630CCCC1F25F5BD00243A93 /* MapSearch+Search.m in Sources */,
 				8630CCAF1F25F5BD00243A93 /* TracingPoint.m in Sources */,
-				8630CCB61F25F5BD00243A93 /* MapManager+Location.m in Sources */,
 				8630CC091F25EE7500243A93 /* KeyWordsViewController.m in Sources */,
 				8630CCB91F25F5BD00243A93 /* MapManager+Tools.m in Sources */,
 				8630CCB51F25F5BD00243A93 /* MapLocationManager.m in Sources */,
@@ -941,7 +931,6 @@
 				8630CC0D1F25EE7500243A93 /* SimulateRouteViewController.m in Sources */,
 				8630CCCA1F25F5BD00243A93 /* MapSearchKeywords.m in Sources */,
 				8630CC261F25EE7500243A93 /* FourAngleLabel.m in Sources */,
-				8630CCB81F25F5BD00243A93 /* MapManager+Search.m in Sources */,
 				8630CC071F25EE7500243A93 /* DrawLineViewController.m in Sources */,
 				8630CCB31F25F5BD00243A93 /* MapFenceAMapViewModel.m in Sources */,
 				8630CCAD1F25F5BD00243A93 /* CACoordLayer.m in Sources */,
@@ -1043,7 +1032,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1085,7 +1074,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1102,7 +1091,7 @@
 				INFOPLIST_FILE = MapDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.flamegrace.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flamegrace.mapdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WARNING_CFLAGS = "-Wno-documentation";
 			};
@@ -1118,7 +1107,7 @@
 				INFOPLIST_FILE = MapDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.flamegrace.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flamegrace.mapdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WARNING_CFLAGS = "-Wno-documentation";
 			};

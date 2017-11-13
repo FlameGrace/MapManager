@@ -77,6 +77,7 @@
             });
         }
     }
+    
 }
 
 - (void)addMapAnnotation:(MapAnnotation *)annotation
@@ -178,20 +179,16 @@
 
 - (void)clear
 {
-    if(self.annotations.count>0)
-    {
-        //从地图上清理
-        NSArray *annotations = [NSArray arrayWithArray:self.annotations];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [[MapManager sharedManager].mapView removeAnnotations:annotations];
-        });
-        self.annotations = [[NSMutableArray alloc]init];
-    }
+    NSArray *annotations = [NSArray arrayWithArray:self.annotations];
+    [self removeMapAnnotations:annotations];
+    self.annotations = nil;
+    
 }
 
 - (void)dealloc
 {
     [self clear];
+    [[MapManager sharedManager]removeMultiDelegate:self];
 }
 
 @end

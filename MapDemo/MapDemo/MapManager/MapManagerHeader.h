@@ -10,9 +10,6 @@
 #define MapapManagerHeader_h
 
 #import "MapManager.h"
-#import "MapManager+MapView.h"
-#import "MapManager+Location.h"
-#import "MapManager+Search.h"
 #import "MapManager+Tools.h"
 #import "MapLocationManager.h"
 

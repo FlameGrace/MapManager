@@ -94,7 +94,7 @@
 }
 - (void)mapSearchInputTips:(MapSearchInputTips *)search didFailToError:(NSError *)error
 {
-    [self alertText:@"didFailToError"];
+    [self alertText:[NSString stringWithFormat:@"error :%@",error]];
 }
 
 

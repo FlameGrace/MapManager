@@ -137,6 +137,7 @@
 - (void)dealloc
 {
     [self clear];
+    [[MapManager sharedManager]removeMultiDelegate:self];
 }
 
 

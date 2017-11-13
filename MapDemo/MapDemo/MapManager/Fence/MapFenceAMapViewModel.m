@@ -100,11 +100,11 @@
     _showPolyline = showPolyline;
     if(showPolyline)
     {
-        [self.drawLine removeLine:self.line];
+        [self.drawLine addLine:self.line];
     }
     else
     {
-        [self.drawLine addLine:self.line];
+        [self.drawLine removeLine:self.line];
     }
 }
 

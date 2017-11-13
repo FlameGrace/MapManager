@@ -15,7 +15,7 @@
 
 @property (readonly, nonatomic) NSMutableDictionary <NSString *, MapSearchObject *> *searchs;
 //最新一次的请求
-@property (readonly ,strong, nonatomic) MapSearchObject *newestSearch;
+@property (weak, nonatomic) MapSearchObject *newestSearch;
 
 - (void)searchForSearchObject:(MapSearchObject *)searchObject;
 

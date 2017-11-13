@@ -126,6 +126,10 @@ static MapLocationManager *shareManager = nil;
 - (NSString *)currentCity
 {
     NSString *city = self.user.city;
+    if(!city)
+    {
+        city = @"杭州";
+    }
     return city;
 }
 

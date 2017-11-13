@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "MapManager.h"
-#import "MapManager+Search.h"
 #import "MapManager+Tools.h"
 
 

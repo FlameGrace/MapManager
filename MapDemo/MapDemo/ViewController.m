@@ -16,6 +16,7 @@
 #import "DrawRouteViewController.h"
 #import "DrawDriveRecordViewController.h"
 #import "MapFenceViewController.h"
+#import <NetworkExtension/NEHotspotConfigurationManager.h>
 
 @interface ViewController () <UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -32,7 +33,6 @@
     self.tableView.dataSource = self;
     [self loadDataSource];
 }
-
 
 - (void)loadDataSource
 {

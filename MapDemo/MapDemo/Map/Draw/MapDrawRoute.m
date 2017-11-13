@@ -198,9 +198,15 @@
 
 - (void)clear
 {
+    [self.drawPoint removeMapAnnotations:self.endpoints];
     [self.drawPoint clear];
     [self.drawLine clear];
     self.endpoints = [[NSMutableArray alloc]init];
+}
+
+-(void)dealloc
+{
+    [self clear];
 }
 
 @end
