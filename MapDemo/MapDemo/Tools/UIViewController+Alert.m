@@ -24,7 +24,7 @@
     // 右侧“完成”按钮
     UIButton *nextStep = [UIButton buttonWithType:UIButtonTypeCustom];
     [nextStep setTitle:title forState:UIControlStateNormal];
-    [nextStep setTitleColor:(UIColor_HexA(0x409CF9,1)) forState:UIControlStateNormal];
+    [nextStep setTitleColor:(Map_UIColor_HexA(0x409CF9,1)) forState:UIControlStateNormal];
     nextStep.titleLabel.font = [UIFont systemFontOfSize:16.0];
     nextStep.titleEdgeInsets = UIEdgeInsetsMake(0, 15, 0, 0);
     [nextStep sizeToFit];

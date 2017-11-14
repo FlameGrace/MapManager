@@ -3,7 +3,7 @@
 //  test
 //
 //  Created by yi chen on 14-9-3.
-//  Copyright (c) 2014年 yi chen. Map rights reserved.
+//  Copyright (c) 2014年 yi chen. All rights reserved.
 //
 
 #import "CACoordLayer.h"
@@ -44,9 +44,9 @@
 - (void)display
 {
     CACoordLayer * layer = [self presentationLayer];
-    MAMapPoint amapPoint = MAMapPointMake(layer.mapx, layer.mapy);
+    MAMapPoint mappoint = MAMapPointMake(layer.mapx, layer.mapy);
     
-    CGPoint center = [self.mapView pointForMapPoint:amapPoint];
+    CGPoint center = [self.mapView pointForMapPoint:mappoint];
     center.x += self.centerOffset.x;
     center.y += self.centerOffset.y;
     

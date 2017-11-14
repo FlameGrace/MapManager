@@ -36,7 +36,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self performSelector:@selector(showCar) withObject:nil afterDelay:2];
+    [self showCar];
 }
 
 - (void)showCar

@@ -76,13 +76,13 @@
 
             SearchMapAnnotation *annotation = [[SearchMapAnnotation alloc]init];
             annotation.coordinate = [MapManager transformAMapGeoPoint:poi.location];
-            WeakObj(self)
+            Map_WeakObj(self)
             annotation.didSelectBlock = ^(BOOL byUser) {
-                StrongObj(self)
+                Map_StrongObj(self)
                 [self mapSearchKeywords:self didSelectMapLocation:mapLocation byUser:byUser];
             };
             annotation.deSelectBlock = ^{
-                StrongObj(self)
+                Map_StrongObj(self)
                 [self mapSearchKeywords:self deselectMapLocation:mapLocation];
             };
             mapLocation.annotation = annotation;

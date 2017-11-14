@@ -4,7 +4,7 @@
 //  test
 //
 //  Created by yi chen on 14-9-3.
-//  Copyright (c) 2014年 yi chen. Map rights reserved.
+//  Copyright (c) 2014年 yi chen. All rights reserved.
 //
 
 #import "MovingAnnotationView.h"
@@ -341,9 +341,9 @@
         self.coordinate2D = annotation.coordinate;
         self.supportRolation = YES;
         CACoordLayer * mylayer = ((CACoordLayer *)self.layer);
-        MAMapPoint AMapPoint = MAMapPointForCoordinate(annotation.coordinate);
-        mylayer.mapx = AMapPoint.x;
-        mylayer.mapy = AMapPoint.y;
+        MAMapPoint mapPoint = MAMapPointForCoordinate(annotation.coordinate);
+        mylayer.mapx = mapPoint.x;
+        mylayer.mapy = mapPoint.y;
         mylayer.centerOffset = self.centerOffset;
         isAnimatingX = NO;
         isAnimatingY = NO;

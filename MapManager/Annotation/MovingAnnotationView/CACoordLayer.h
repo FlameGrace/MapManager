@@ -3,7 +3,7 @@
 //  test
 //
 //  Created by yi chen on 14-9-3.
-//  Copyright (c) 2014年 yi chen. Map rights reserved.
+//  Copyright (c) 2014年 yi chen. All rights reserved.
 //
 
 #import <MAMapKit/MAMapKit.h>

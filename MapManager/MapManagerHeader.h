@@ -11,10 +11,12 @@
 
 typedef void(^MapVoidBlock)(void);
 
-#define WeakObj(o)  __weak typeof(o) weak##o = o; //获取弱引用对象
-#define StrongObj(o)  __strong typeof(o) o = weak##o;
+#define Map_WeakObj(o)  __weak typeof(o) weak##o = o; //获取弱引用对象
+#define Map_StrongObj(o)  __strong typeof(o) o = weak##o;
+#define Map_UIColor_HexA(rgb,a)   ([UIColor colorWithRed:((float)((rgb & 0xFF0000) >> 16))/255.0f green:((float)((rgb & 0xFF00) >> 8))/255.0f blue:((float)(rgb & 0xFF))/255.0f alpha:a])
 
 #import "MapManager.h"
 #import "MapManager+Tools.h"
-#import "MapManager+Location.h"
+#import "UserLocationManager.h"
+#import "CarLocationManager.h"
 #endif /* MapapManagerHeader_h */

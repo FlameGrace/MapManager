@@ -135,9 +135,9 @@
 - (void)startCurrentPageSearch
 {
     self.returnType = MapSearchKeywordsReturnAround;
-    WeakObj(self)
+    Map_WeakObj(self)
     [self.search searchAroundByLocation:self.center keyWords:self.keywords radius:30000 sortrule:1 types:nil offset:self.offset currentPage:self.page callback:^(MapSearchObject *search, BOOL isNewest) {
-        StrongObj(self)
+        Map_StrongObj(self)
         
         if(search.error)
         {
@@ -154,9 +154,9 @@
 - (void)startSearchInLocalCity
 {
     self.returnType = MapSearchKeywordsReturnLocalCity;
-    WeakObj(self)
+    Map_WeakObj(self)
     [self.search searchKeywords:self.keywords city:self.city cityLimit:NO offset:self.offset currentPage:self.page types:nil callback:^(MapSearchObject *search, BOOL isNewest) {
-        StrongObj(self)
+        Map_StrongObj(self)
         if(search.error)
         {
             [self mapSearchKeywords:self didFailToError:search.error];
@@ -170,9 +170,9 @@
 
 - (void)startSearchInCountry
 {
-    WeakObj(self)
+    Map_WeakObj(self)
     [self.search searchKeywords:self.keywords city:nil cityLimit:NO offset:self.offset currentPage:0 types:nil callback:^(MapSearchObject *search, BOOL isNewest) {
-        StrongObj(self)
+        Map_StrongObj(self)
         if(search.error)
         {
             [self mapSearchKeywords:self didFailToError:search.error];

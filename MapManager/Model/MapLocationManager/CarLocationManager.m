@@ -30,6 +30,8 @@ static CarLocationManager *shareCar = nil;
     return shareCar;
 }
 
+
+
 - (Class)locationClass
 {
     return [CarMapLocation class];
@@ -44,5 +46,6 @@ static CarLocationManager *shareCar = nil;
 {
     return CarLocationReGeocodeSearchDoneNotification;
 }
+
 
 @end

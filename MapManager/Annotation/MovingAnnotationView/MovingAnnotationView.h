@@ -3,10 +3,9 @@
 //  test
 //
 //  Created by yi chen on 14-9-3.
-//  Copyright (c) 2014年 yi chen. Map rights reserved.
+//  Copyright (c) 2014年 yi chen. All rights reserved.
 //
 
-#import "MapManager+Tools.h"
 #import "MapAnnotationView.h"
 //平滑移动动画的大头针
 

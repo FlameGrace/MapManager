@@ -10,12 +10,12 @@
 #import "MapManager.h"
 #import "MapManager+Tools.h"
 #import "CarMapLocation.h"
-#import "MapLocationManager.h"
+#import "CacheMapLocationManager.h"
 
 #define CarLocationReGeocodeSearchDoneNotification @"CarLocationReGeocodeSearchDoneNotification"
 #define CarLocationChangedNotification @"CarLocationChangedNotification"
 
-@interface CarLocationManager : MapLocationManager
+@interface CarLocationManager : CacheMapLocationManager
 
 @property (strong, nonatomic) CarMapLocation *location;
 

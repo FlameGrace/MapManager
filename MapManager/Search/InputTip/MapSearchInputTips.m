@@ -83,14 +83,14 @@
 
 - (void)startSearch
 {
-    WeakObj(self)
+    Map_WeakObj(self)
     [self.search searchInputTips:self.keyword city:self.city cityLimit:self.cityLimit types:self.types location:self.location callback:^(MapSearchObject *search, BOOL isNewest)
     {
         if(!isNewest)
         {
             return ;
         }
-        StrongObj(self)
+        Map_StrongObj(self)
         if(search.error)
         {
             [self mapSearchInputTips:self didFailToError:search.error];

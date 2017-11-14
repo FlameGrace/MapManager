@@ -15,7 +15,7 @@
     if(self = [super initWithPolyline:polyline])
     {
         self.lineWidth = 6.f;
-        self.strokeColor = [UIColor blueColor];
+        self.strokeColor = Map_UIColor_HexA(0x55ACEE,1.0);
     }
     return self;
 }

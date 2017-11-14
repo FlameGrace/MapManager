@@ -11,7 +11,7 @@
 
 @interface CarMapLocation : MapLocationModel
 
-@property (strong, nonatomic) CarMapAnnotation *annotaion;
+@property (strong, nonatomic) CarMapAnnotation *annotation;
 
 
 @end

@@ -89,7 +89,10 @@
         self.location.annotation.coordinate = self.location.coordinate2D;
         if(view)
         {
-            [view updateLocation:self.location.coordinate2D];
+            if([view isKindOfClass:[MapAnnotationView class]])
+            {
+                [view updateLocation:self.location.coordinate2D];
+            }
         }
         else
         {
@@ -136,11 +139,11 @@
 
 - (void)reGeocode
 {
-    WeakObj(self)
+    Map_WeakObj(self)
     [self.location searchRegeoWithCallback:^(NSError *error) {
         if(!error)
         {
-            StrongObj(self)
+            Map_StrongObj(self)
             [self postNotificationByName:[self reGeocodeNotificationName]];
         }
     }];

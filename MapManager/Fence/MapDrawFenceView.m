@@ -167,14 +167,14 @@
 {
     [self clean];
     self.district = district;
-    WeakObj(self)
+    Map_WeakObj(self)
     [self.search searchDistrictForKeywords:district regionPoints:YES callback:^(MapSearchObject *search, BOOL isNewest) {
         //不是最新一次的请求则不响应
         if(!isNewest)
         {
             return ;
         }
-        StrongObj(self)
+        Map_StrongObj(self)
         if(search.error)
         {
             [self mapFenceViewDrawDistrict:self failToError:search.error];

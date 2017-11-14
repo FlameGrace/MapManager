@@ -2,7 +2,7 @@
 //  MapManager+Location.h
 //  MapDemo
 //
-//  Created by Flame Grace on 2017/11/14.
+//  Created by 李嘉军 on 2017/11/14.
 //  Copyright © 2017年 flamegrace@hotmail.com. All rights reserved.
 //
 
@@ -12,8 +12,8 @@
 
 @interface MapManager (Location)
 
-@property (weak, nonatomic) UserLocationManager *user;
+@property (weak,nonatomic) UserLocationManager *user;
 
-@property (weak, nonatomic) CarLocationManager *car;
+@property (weak,nonatomic) CarLocationManager *car;
 
 @end

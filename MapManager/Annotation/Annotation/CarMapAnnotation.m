@@ -42,11 +42,9 @@
         self.image = [UIImage imageNamed:@"map_ic_carLocation80"];
         self.selectedImage = [UIImage imageNamed:@"map_ic_carLocation80_sel"];
         self.size = CGSizeMake(30, 60);
-        self.selectedSize = CGSizeMake(80, 80);
         self.viewClass = [CarMapAnnotationView class];
         self.supportRolation = YES;
         self.centerOffset = CGPointMake(0, 0);
-        self.selectedCenterOffset = CGPointMake(0, -35);
     }
     return self;
 }

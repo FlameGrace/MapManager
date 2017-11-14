@@ -68,14 +68,14 @@
 
 - (void)startPlanningRoute
 {
-    WeakObj(self)
+    Map_WeakObj(self)
     [self.search searchDrivingRouteBetweenOrigin:CLLocationCoordinate2DMake(30.1, 112.0) andDestination:CLLocationCoordinate2DMake(31.1, 120.01) strategy:10 requireExtension:NO callback:^(MapSearchObject *search, BOOL isNewest) {
         if(!isNewest)
         {
             return ;
         }
         
-        StrongObj(self)
+        Map_StrongObj(self)
         if(!search.error)
         {
             [self onRouteSearchDoneResponse:(AMapRouteSearchResponse *)search.response];
