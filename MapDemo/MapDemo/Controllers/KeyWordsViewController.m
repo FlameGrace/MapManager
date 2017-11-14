@@ -35,14 +35,14 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [[MapManager sharedManager]addMapViewToView:self.view withFrame:MainScreenBounds];
+    [[MapManager sharedManager]addMapViewToView:self.view withFrame:self.view.frame];
     [self.view sendSubviewToBack:[MapManager sharedManager].mapView];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [[MapLocationManager sharedManager]switchUserInMapCenter];
+    [[MapManager sharedManager].user switchLocationInMapCenter];
     
 }
 
@@ -59,8 +59,8 @@
 
 - (void)startSeachrBar:(UISearchBar *)searchBar
 {
-    self.keyWordsSearch.center = [MapLocationManager sharedManager].user.coordinate2D;
-    [self.keyWordsSearch restartSearch:searchBar.text city:[[MapLocationManager sharedManager]currentCity]];
+    self.keyWordsSearch.center = [MapManager sharedManager].user.location.coordinate2D;
+    [self.keyWordsSearch restartSearch:searchBar.text city:[[MapManager sharedManager].user currentCity]];
     [searchBar resignFirstResponder];
 }
 

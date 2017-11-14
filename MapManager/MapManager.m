@@ -8,8 +8,10 @@
 
 
 #import "MapManager.h"
+#import "NSObject+MultiDelegateOC.h"
 
 @interface MapManager()
+
 
 @end
 
@@ -21,7 +23,7 @@ static MapManager *sharedManager = nil;
 
 + (instancetype)sharedManager
 {
-
+    
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedManager = [[self alloc]init];
@@ -38,41 +40,17 @@ static MapManager *sharedManager = nil;
     return sharedManager;
 }
 
+- (NSString *)getTheMapAPIKey
+{
+    return @"042a57a173c812f8e8a7e0bf9d4b1589";
+}
+
 - (instancetype)init
 {
     self = [super init];
     if(self)
     {
-        _mapView = [[MAMapView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-        _mapView.tag = MAPVIEW_TAG;
-        _mapView.delegate = self;
-        
-        _mapView.showsScale = NO;
-        _mapView.showsCompass = NO;
-        //不支持旋转
-        _mapView.rotateEnabled = NO;
-        
-        _mapView.showsUserLocation = YES;
-        _mapView.userTrackingMode = MAUserTrackingModeFollow;
-        [_mapView setZoomLevel:MAPVIEW_DEFAULT_ZOOMLEVEL];
-        
-        _mapView.pausesLocationUpdatesAutomatically = NO;
-//        _mapView.MapowsBackgroundLocationUpdates = YES;
-        
-        _mapSearch = [[AMapSearchAPI alloc]init];
-        _mapSearch.delegate = self;
-        
-        
-        _mapNaviDrive = [[AMapNaviDriveManager alloc]init];
-        
-        _mapNaviWalk = [[AMapNaviWalkManager alloc]init];
-        
-        //启动定位服务
-        self.mapLocationManager = [[AMapLocationManager alloc] init];
-        self.mapLocationManager.delegate = self;
-        
-        [self.mapLocationManager setPausesLocationUpdatesAutomatically:YES];
-        [self.mapLocationManager setAllowsBackgroundLocationUpdates:NO];
+        [AMapServices sharedServices].apiKey = [self getTheMapAPIKey];
     }
     return self;
 }
@@ -101,6 +79,109 @@ static MapManager *sharedManager = nil;
 {
     [self.mapView setZoomLevel:self.mapView.zoomLevel+0.01 animated:YES];
     [self.mapView setZoomLevel:self.mapView.zoomLevel-0.01 animated:YES];
+}
+
+
+- (BOOL)isResourceReleased
+{
+    if(_mapView)
+    {
+        return NO;
+    }
+    return YES;
+}
+
+
+
+- (void)releaseMapResourse
+{
+    _mapView.delegate = nil;
+    _mapView = nil;
+    _mapSearch.delegate = nil;
+    _mapSearch = nil;
+    _mapLocationManager.delegate = nil;
+    _mapLocationManager = nil;
+    _mapNaviWalk.delegate = nil;
+    _mapNaviWalk = nil;
+    _mapNaviDrive.delegate = nil;
+    _mapNaviDrive = nil;
+    
+}
+
+//添加一个代理
+- (void)addMultiDelegate:(id)delegate
+{
+    [self.multiDelegate addDelegate:delegate];
+}
+//移除一个代理
+- (void)removeMultiDelegate:(id)delegate
+{
+    [self.multiDelegate removeDelegate:delegate];
+}
+
+- (MAMapView *)mapView
+{
+    if(!_mapView)
+    {
+        _mapView = [[MAMapView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        _mapView.tag = MAPVIEW_TAG;
+        _mapView.delegate = (id)self.multiDelegate;
+        
+        _mapView.showsScale = NO;
+        _mapView.showsCompass = NO;
+        //不支持旋转
+        _mapView.rotateEnabled = NO;
+        _mapView.showsUserLocation = YES;
+        _mapView.userTrackingMode = MAUserTrackingModeFollow;
+        [_mapView setZoomLevel:MAPVIEW_DEFAULT_ZOOMLEVEL];
+        
+        _mapView.pausesLocationUpdatesAutomatically = NO;
+        _mapView.allowsBackgroundLocationUpdates = NO;
+    }
+    return _mapView;
+}
+
+- (AMapSearchAPI *)mapSearch
+{
+    if(!_mapSearch)
+    {
+        _mapSearch = [[AMapSearchAPI alloc]init];
+        _mapSearch.delegate = (id)self.multiDelegate;
+        _mapSearch.timeout = 5;
+    }
+    return _mapSearch;
+}
+
+- (AMapNaviDriveManager *)mapNaviDrive
+{
+    if(!_mapNaviDrive)
+    {
+        _mapNaviDrive = [[AMapNaviDriveManager alloc]init];
+    }
+    return _mapNaviDrive;
+}
+
+- (AMapNaviWalkManager *)mapNaviWalk
+{
+    if(!_mapNaviWalk)
+    {
+        _mapNaviWalk = [[AMapNaviWalkManager alloc]init];
+    }
+    return _mapNaviWalk;
+}
+
+- (AMapLocationManager *)mapLocationManager
+{
+    if(!_mapLocationManager)
+    {
+        //启动定位服务
+        _mapLocationManager = [[AMapLocationManager alloc] init];
+        _mapLocationManager.delegate = (id)self.multiDelegate;
+        
+        [_mapLocationManager setPausesLocationUpdatesAutomatically:YES];
+        [_mapLocationManager setAllowsBackgroundLocationUpdates:NO];
+    }
+    return _mapLocationManager;
 }
 
 

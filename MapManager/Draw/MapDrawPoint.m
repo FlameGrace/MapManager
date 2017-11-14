@@ -22,13 +22,16 @@
     {
         [[MapManager sharedManager]addMultiDelegate:self];
         self.showAnnotations = YES;
-        self.annotations = [[NSMutableArray alloc]init];
     }
     return self;
 }
 
 - (void)setShowAnnotations:(BOOL)showAnnotations
 {
+    if(_showAnnotations == showAnnotations)
+    {
+        return;
+    }
     _showAnnotations = showAnnotations;
     if(self.annotations.count < 1)
     {
@@ -55,6 +58,7 @@
     {
         return;
     }
+    
     @synchronized (self) {
         NSMutableArray *copy = [NSMutableArray arrayWithArray:self.annotations];
         NSMutableArray *newArray = [NSMutableArray array];
@@ -77,6 +81,7 @@
             });
         }
     }
+    
 }
 
 - (void)addMapAnnotation:(MapAnnotation *)annotation
@@ -95,7 +100,6 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         [[MapManager sharedManager].mapView removeAnnotations:annotations];
     });
-    
 }
 
 - (void)removeMapAnnotation:(MapAnnotation *)annotation
@@ -121,6 +125,7 @@
     {
         return nil;
     }
+    
     MapAnnotation *an = annotation;
     MapAnnotationView *annotationView = [an dequeueReusableAnnotationView];
     
@@ -178,20 +183,25 @@
 
 - (void)clear
 {
-    if(self.annotations.count>0)
-    {
-        //从地图上清理
-        NSArray *annotations = [NSArray arrayWithArray:self.annotations];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [[MapManager sharedManager].mapView removeAnnotations:annotations];
-        });
-        self.annotations = [[NSMutableArray alloc]init];
-    }
+    NSArray *annotations = [NSArray arrayWithArray:self.annotations];
+    [self removeMapAnnotations:annotations];
+    [self.annotations removeAllObjects];
+    
 }
 
 - (void)dealloc
 {
     [self clear];
+    [[MapManager sharedManager]removeMultiDelegate:self];
+}
+
+- (NSMutableArray<MapAnnotation *> *)annotations
+{
+    if(!_annotations)
+    {
+        _annotations = [[NSMutableArray alloc]init];
+    }
+    return _annotations;
 }
 
 @end

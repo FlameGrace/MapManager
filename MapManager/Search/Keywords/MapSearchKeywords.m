@@ -3,7 +3,7 @@
 //  flamegrace@hotmail.com
 //
 //  Created by Flame Grace on 2017/4/20.
-//  Copyright © 2017年 flamegrace@hotmail.com. Map rights reserved.
+//  Copyright © 2017年 flamegrace@hotmail.com. All rights reserved.
 //
 
 #import "MapSearchKeywords.h"
@@ -28,6 +28,7 @@
     }
     return self;
 }
+
 
 - (void)setPage:(NSInteger)page
 {
@@ -67,6 +68,35 @@
 - (void)onPOISearchResponse:(AMapPOISearchResponse *)response
 {
     self.count = response.count;
+    if(self.returnType == MapSearchKeywordsReturnAround)
+    {
+        /*策略：当使用关键字搜索的总数大于使用周边的总数的3倍，即采用关键字搜索的结果
+         测试示例1：天安门，只用周边有结果但是是杭州的地点
+         测试示例2：北京火车站，只用周边有结果但是是杭州的地点
+        */
+        if(response.count > 0 || (response.count ==0 && self.city.length<1))
+        {
+            [self.search searchKeywords:self.keywords city:self.city cityLimit:NO offset:self.offset currentPage:self.page types:nil callback:^(MapSearchObject *search, BOOL isNewest) {
+                
+                if(!search.error)
+                {
+                    AMapPOISearchResponse *res = (AMapPOISearchResponse *)(search.response);
+                    if(res.count>0&&response.count>0&&res.count>=response.count*3)
+                    {
+                        self.returnType = MapSearchKeywordsReturnLocalCity;
+                        [self onPOISearchResponse:(AMapPOISearchResponse *)search.response];
+                        return ;
+                    }
+                }
+                [self mapSearchKeywords:self result:response.pois returnType:self.returnType];
+                return;
+            }];
+            return;
+        }
+        self.returnType = MapSearchKeywordsReturnLocalCity;
+        [self startSearchInLocalCity];
+        return;
+    }
     if(self.returnType == MapSearchKeywordsReturnLocalCity)
     {
         if(response.count > 0 || (response.count ==0 && self.city.length<1))
@@ -75,7 +105,7 @@
             return;
         }
         self.returnType = MapSearchKeywordsReturnLocalCountry;
-        [self startSearchInContry];
+        [self startSearchInCountry];
         return;
     }
     if(self.returnType == MapSearchKeywordsReturnLocalCountry)
@@ -93,16 +123,22 @@
     }
 }
 
-
-- (void)startSearchInContry
+- (void)restartSearch:(NSString *)keyword city:(NSString *)city
 {
-    __weak typeof(self) weakSelf = self;
-    [self.search searchKeywords:self.keywords city:nil cityLimit:NO offset:self.offset currentPage:1 types:nil callback:^(MapSearchObject *search, BOOL isNewest) {
-        if(!isNewest)
-        {
-            return ;
-        }
-        __strong typeof(weakSelf) self = weakSelf;
+    self.keywords = keyword;
+    self.page = 1;
+    self.city = city;
+    [self startCurrentPageSearch];
+}
+
+
+- (void)startCurrentPageSearch
+{
+    self.returnType = MapSearchKeywordsReturnAround;
+    WeakObj(self)
+    [self.search searchAroundByLocation:self.center keyWords:self.keywords radius:30000 sortrule:1 types:nil offset:self.offset currentPage:self.page callback:^(MapSearchObject *search, BOOL isNewest) {
+        StrongObj(self)
+        
         if(search.error)
         {
             [self mapSearchKeywords:self didFailToError:search.error];
@@ -115,16 +151,12 @@
 }
 
 
-- (void)startSearch
+- (void)startSearchInLocalCity
 {
     self.returnType = MapSearchKeywordsReturnLocalCity;
-    __weak typeof(self) weakSelf = self;
+    WeakObj(self)
     [self.search searchKeywords:self.keywords city:self.city cityLimit:NO offset:self.offset currentPage:self.page types:nil callback:^(MapSearchObject *search, BOOL isNewest) {
-        if(!isNewest)
-        {
-            return ;
-        }
-        __strong typeof(weakSelf) self = weakSelf;
+        StrongObj(self)
         if(search.error)
         {
             [self mapSearchKeywords:self didFailToError:search.error];
@@ -136,6 +168,21 @@
     }];
 }
 
+- (void)startSearchInCountry
+{
+    WeakObj(self)
+    [self.search searchKeywords:self.keywords city:nil cityLimit:NO offset:self.offset currentPage:0 types:nil callback:^(MapSearchObject *search, BOOL isNewest) {
+        StrongObj(self)
+        if(search.error)
+        {
+            [self mapSearchKeywords:self didFailToError:search.error];
+        }
+        else
+        {
+            [self onPOISearchResponse:(AMapPOISearchResponse *)search.response];
+        }
+    }];
+}
 
 
 

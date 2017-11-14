@@ -24,7 +24,7 @@
     [super viewDidLoad];
     self.inputTipsSearch = [[MapSearchInputTips alloc]init];
     self.inputTipsSearch.delegate = self;
-    self.tableView = [[UITableView alloc]initWithFrame:MainScreenBounds style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStylePlain];
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -63,7 +63,7 @@
     {
         return;
     }
-    self.inputTipsSearch.city = [[MapLocationManager sharedManager]currentCity];
+    self.inputTipsSearch.city = [[MapManager sharedManager].user currentCity];
     self.inputTipsSearch.keyword = searchBar.text;
     [self.inputTipsSearch startSearch];
 }

@@ -9,11 +9,12 @@
 #ifndef MapapManagerHeader_h
 #define MapapManagerHeader_h
 
-#import "MapManager.h"
-#import "MapManager+MapView.h"
-#import "MapManager+Location.h"
-#import "MapManager+Search.h"
-#import "MapManager+Tools.h"
-#import "MapLocationManager.h"
+typedef void(^MapVoidBlock)(void);
 
+#define WeakObj(o)  __weak typeof(o) weak##o = o; //获取弱引用对象
+#define StrongObj(o)  __strong typeof(o) o = weak##o;
+
+#import "MapManager.h"
+#import "MapManager+Tools.h"
+#import "MapManager+Location.h"
 #endif /* MapapManagerHeader_h */

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MapLocationManager.h"
+#import "UserLocationManager.h"
 
 @interface AppDelegate ()
 
@@ -17,8 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [AMapServices sharedServices].apiKey = @"042a57a173c812f8e8a7e0bf9d4b1589";
-    [MapLocationManager sharedManager];
+    [MapManager sharedManager];
     return YES;
 }
 

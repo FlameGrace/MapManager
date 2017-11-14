@@ -11,6 +11,6 @@ typedef void(^MapLocationSearchRegeocallback)(NSError *error);
 
 @interface MapLocationModel (RegeoSearch)
 
-- (void)searchRegeoWithcallback:(MapLocationSearchRegeocallback)callback;
+- (void)searchRegeoWithCallback:(MapLocationSearchRegeocallback)callback;
 
 @end

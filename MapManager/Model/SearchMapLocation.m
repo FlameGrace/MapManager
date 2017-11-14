@@ -9,5 +9,11 @@
 #import "SearchMapLocation.h"
 
 @implementation SearchMapLocation
+@synthesize annotation = _annotation;
+
+- (Class)annotationClass
+{
+    return [SearchMapAnnotation class];
+}
 
 @end

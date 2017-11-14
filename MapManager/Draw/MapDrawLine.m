@@ -22,7 +22,6 @@
 {
     if(self = [super init])
     {
-        self.lines = [[NSMutableArray alloc]init];
         [[MapManager sharedManager]addMultiDelegate:self];
     }
     return self;
@@ -137,8 +136,16 @@
 - (void)dealloc
 {
     [self clear];
+    [[MapManager sharedManager]removeMultiDelegate:self];
 }
 
+- (NSMutableArray<MapPolyLineObject *> *)lines
+{
+    if (!_lines) {
+        _lines = [[NSMutableArray alloc]init];
+    }
+    return _lines;
+}
 
 
 @end

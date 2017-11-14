@@ -1,53 +1,32 @@
 //
 //  MapManager+Location.m
-//  SimpleProject
+//  MapDemo
 //
-//  Created by Flame Grace on 2017/6/27.
-//  Copyright © 2017年 flamegrace@hotmail.com. Map rights reserved.
+//  Created by Flame Grace on 2017/11/14.
+//  Copyright © 2017年 flamegrace@hotmail.com. All rights reserved.
 //
 
 #import "MapManager+Location.h"
 
 @implementation MapManager (Location)
 
-#pragma MapLocationManagerDelegate
-//定位框架获取到定位权限变动时回调
-- (void)amapLocationManager:(AMapLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
+- (UserLocationManager *)user
 {
-    self.locationAuthorizationStatus = status;
-    
-    [self operateMultiDelegates:^(id delegate) {
-        if([delegate respondsToSelector:@selector(amapLocationManager:didChangeAuthorizationStatus:)])
-        {
-            [delegate amapLocationManager:manager didChangeAuthorizationStatus:status];
-        }
-    }];
+    return [UserLocationManager sharedUser];
 }
 
-//定位框架获取到定位失败回调
-- (void)amapLocationManager:(AMapLocationManager *)manager didFailWithError:(NSError *)error
+- (CarLocationManager *)car
 {
-    if(error.code == 1)
-    {
-        self.locationAuthorizationStatus = kCLAuthorizationStatusDenied;
-    }
-    
-    [self operateMultiDelegates:^(id delegate) {
-        if([delegate respondsToSelector:@selector(amapLocationManager:didFailWithError:)])
-        {
-            [delegate amapLocationManager:manager didFailWithError:error];
-        }
-    }];
+    return [CarLocationManager sharedCar];
 }
-//定位框架获取到位置更新回调
-- (void)amapLocationManager:(AMapLocationManager *)manager didUpdateLocation:(CLLocation *)location
+
+- (void)setCar:(CarLocationManager *)car
 {
-    [self operateMultiDelegates:^(id delegate) {
-        if([delegate respondsToSelector:@selector(amapLocationManager:didUpdateLocation:)])
-        {
-            [delegate amapLocationManager:manager didUpdateLocation:location];
-        }
-    }];
+    
+}
+
+- (void)setUser:(UserLocationManager *)user
+{
     
 }
 

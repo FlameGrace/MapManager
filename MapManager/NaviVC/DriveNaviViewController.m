@@ -56,7 +56,7 @@
 {
     if (!_driveView)
     {
-        _driveView = [[AMapNaviDriveView alloc] initWithFrame:MainScreenBounds];
+        _driveView = [[AMapNaviDriveView alloc] initWithFrame:[UIScreen mainScreen].bounds];
         _driveView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
         [_driveView setDelegate:self];
         _driveView.showMoreButton = NO;

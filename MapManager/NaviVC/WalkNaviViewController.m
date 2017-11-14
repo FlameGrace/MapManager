@@ -60,7 +60,7 @@
 {
     if (!_walkView)
     {
-        _walkView = [[AMapNaviWalkView alloc] initWithFrame:CGRectMake(0, 20, MainScreenWidth, MainScreenHeight-20)];
+        _walkView = [[AMapNaviWalkView alloc] initWithFrame:CGRectMake(0, 20, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-20)];
         _walkView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
         [_walkView setDelegate:self];
         _walkView.showMoreButton = NO;

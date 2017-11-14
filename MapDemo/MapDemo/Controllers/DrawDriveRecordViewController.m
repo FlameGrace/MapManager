@@ -49,7 +49,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [[MapManager sharedManager]addMapViewToView:self.view withFrame:MainScreenBounds];
+    [[MapManager sharedManager]addMapViewToView:self.view withFrame:self.view.frame];
     [self.view sendSubviewToBack:[MapManager sharedManager].mapView];
     
 }

@@ -14,7 +14,7 @@
 
 static MapSearch *regeoSearch = nil;
 
-- (void)searchRegeoWithcallback:(MapLocationSearchRegeocallback)callback
+- (void)searchRegeoWithCallback:(MapLocationSearchRegeocallback)callback
 {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

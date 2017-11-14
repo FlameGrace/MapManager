@@ -66,7 +66,6 @@ typedef void(^MapByUserBlock)(BOOL byUser);
 //获取当前对应的大头针视图
 - (MapAnnotationView *)annotationView;
 
-
 + (MapAnnotation *)annotationByPoint:(NSValue *)value annotationClass:(Class)annotationClass;
 
 @end;

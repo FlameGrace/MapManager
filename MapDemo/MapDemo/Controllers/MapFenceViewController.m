@@ -9,7 +9,7 @@
 #import "MapFenceViewController.h"
 #import "MapManagerHeader.h"
 #import "MapDrawFenceView.h"
-#import "AnCar.h"
+#import "CarLocationManager.h"
 #import "CarSimulator.h"
 
 typedef NS_ENUM(NSInteger, MapFenceDrawType) {
@@ -42,14 +42,14 @@ static MapFenceAMapViewModel *fenced = nil;
     [super viewDidLoad];
 //    [self observeNotification];
     [CarSimulator sharedSimulator].simulating = YES;
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(updateCarLocations) name:MapCarLocationChangdeNotification object:nil];
-    [AnCar sharedCar].showCar = YES;
-    self.fenceView = [[MapDrawFenceView alloc]initWithFrame:MainScreenBounds];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(updateCarLocations) name:CarLocationChangedNotification object:nil];
+    [MapManager sharedManager].car.show = YES;
+    self.fenceView = [[MapDrawFenceView alloc]initWithFrame:self.view.frame];
     self.fenceView.delegate = self;
     [self.view addSubview:self.fenceView];
     [self switchSegment];
     [self switchDrawType];
-    self.splitView = [[UIView alloc]initWithFrame:CGRectMake(MainScreenBounds.size.width/2, 0, 0.5, 60)];
+    self.splitView = [[UIView alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2, 0, 0.5, 60)];
     self.splitView.backgroundColor = [UIColor colorWithWhite:0.5 alpha:0.1];
     [self.buttomView addSubview:self.splitView];
     
@@ -60,9 +60,9 @@ static MapFenceAMapViewModel *fenced = nil;
 
 - (void)updateCarLocations
 {
-    if(fenced && [AnCar sharedCar].car)
+    if(fenced && [MapManager sharedManager].car.location)
     {
-        NSValue *value = [NSValue valueWithCGPoint:CGPointMake([AnCar sharedCar].car.coordinate2D.longitude, [AnCar sharedCar].car.coordinate2D.latitude)];
+        NSValue *value = [NSValue valueWithCGPoint:CGPointMake([MapManager sharedManager].car.location.coordinate2D.longitude, [MapManager sharedManager].car.location.coordinate2D.latitude)];
         [fenced updateMonitorLocation:value];
     }
 }
@@ -86,12 +86,12 @@ static MapFenceAMapViewModel *fenced = nil;
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
-    [AnCar sharedCar].showCar = NO;
+    [MapManager sharedManager].car.show = NO;
 }
 
 - (void)showCar
 {
-    [[AnCar sharedCar]switchCarInMapCenter];
+    [[MapManager sharedManager].car switchLocationInMapCenter];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -174,14 +174,14 @@ static MapFenceAMapViewModel *fenced = nil;
 
 - (void)switchDrawType
 {
-    self.startButton.frame = CGRectMake(0, 0, MainScreenBounds.size.width/2, 60);
-    self.reDrawButton.frame = CGRectMake(0, 0, MainScreenBounds.size.width/2, 60);
+    self.startButton.frame = CGRectMake(0, 0, self.view.frame.size.width/2, 60);
+    self.reDrawButton.frame = CGRectMake(0, 0, self.view.frame.size.width/2, 60);
     if(self.drawType == MapFenceDrawTypeDistrict)
     {
         self.splitView.hidden = YES;
         self.startButton.hidden = YES;
         self.reDrawButton.hidden = YES;
-        self.saveButton.frame = CGRectMake(0, 0, MainScreenBounds.size.width, 60);
+        self.saveButton.frame = CGRectMake(0, 0, self.view.frame.size.width, 60);
         [self layoutRightItemWithTitle:@"编辑区域" target:self action:@selector(district)];
     }
     if(self.drawType == MapFenceDrawTypeNormal)
@@ -191,7 +191,7 @@ static MapFenceAMapViewModel *fenced = nil;
         self.startButton.hidden = NO;
         self.reDrawButton.hidden = YES;
         [self reDraw];
-        self.saveButton.frame = CGRectMake(MainScreenBounds.size.width/2, 0, MainScreenBounds.size.width/2, 60);
+        self.saveButton.frame = CGRectMake(self.view.frame.size.width/2, 0, self.view.frame.size.width/2, 60);
     }
 }
 
@@ -284,7 +284,7 @@ static MapFenceAMapViewModel *fenced = nil;
 {
     if(!_buttomView)
     {
-        _buttomView = [[UIView alloc]initWithFrame:CGRectMake(0, MainScreenBounds.size.height-60, MainScreenBounds.size.width, 60)];
+        _buttomView = [[UIView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height-60, self.view.frame.size.width, 60)];
         [self.view addSubview:_buttomView];
         _buttomView.layer.shadowColor = [UIColor blackColor].CGColor;
         _buttomView.layer.shadowOffset = CGSizeZero;

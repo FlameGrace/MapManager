@@ -7,7 +7,7 @@
 //
 
 #import "SimulateRouteViewController.h"
-#import "AnCar.h"
+#import "CarLocationManager.h"
 #import "CarSimulator.h"
 
 @interface SimulateRouteViewController ()
@@ -22,13 +22,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [CarSimulator sharedSimulator].simulating = YES;
-    [AnCar sharedCar].showCar = YES;
+    [MapManager sharedManager].car.show = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [[MapManager sharedManager]addMapViewToView:self.view withFrame:MainScreenBounds];
+    [[MapManager sharedManager]addMapViewToView:self.view withFrame:self.view.frame];
     [self.view sendSubviewToBack:[MapManager sharedManager].mapView];
     [[MapManager sharedManager].mapView setZoomLevel:16];
 }
@@ -41,13 +41,15 @@
 
 - (void)showCar
 {
-    [[AnCar sharedCar]switchCarInMapCenter];
+    [[MapManager sharedManager].car switchLocationInMapCenter];
+    [MapManager sharedManager].car.showLocationInMapCenter = YES;
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [CarSimulator sharedSimulator].simulating = NO;
-    [AnCar sharedCar].showCar = NO;
+    [MapManager sharedManager].car.show = NO;
+     [MapManager sharedManager].car.showLocationInMapCenter = NO;
 }
 
 

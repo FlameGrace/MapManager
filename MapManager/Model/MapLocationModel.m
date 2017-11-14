@@ -21,13 +21,14 @@
 {
     MapLocationModel *model = [[[self class] alloc]init];
     model.coordinate2D = coordinate;
+    
     return model;
 }
 
-
-
-
-
+- (Class)annotationClass
+{
+    return [MapAnnotation class];
+}
 
 
 @end

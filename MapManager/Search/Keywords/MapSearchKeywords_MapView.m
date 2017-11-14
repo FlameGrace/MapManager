@@ -3,7 +3,7 @@
 //  flamegrace@hotmail.com
 //
 //  Created by Flame Grace on 2017/4/20.
-//  Copyright © 2017年 flamegrace@hotmail.com. Map rights reserved.
+//  Copyright © 2017年 flamegrace@hotmail.com. All rights reserved.
 //
 
 #import "MapSearchKeywords_MapView.h"
@@ -14,7 +14,6 @@
 
 @property (strong,nonatomic)  MapDrawPoint *draw;
 @property (readwrite,strong,nonatomic)  NSMutableArray *results;
-@property (strong, nonatomic) NSString *annotationViewIdentifier;
 
 @end
 
@@ -27,8 +26,6 @@
     if(self = [super init])
     {
         self.draw = [[MapDrawPoint alloc]init];
-        self.annotationViewIdentifier = [[NSUUID UUID] UUIDString];
-        [[MapManager sharedManager]addMultiDelegate:self];
     }
     return self;
 }
@@ -79,7 +76,6 @@
 
             SearchMapAnnotation *annotation = [[SearchMapAnnotation alloc]init];
             annotation.coordinate = [MapManager transformAMapGeoPoint:poi.location];
-            annotation.identifier = self.annotationViewIdentifier;
             WeakObj(self)
             annotation.didSelectBlock = ^(BOOL byUser) {
                 StrongObj(self)
@@ -104,21 +100,38 @@
     
 }
 
+- (void)restartSearch:(NSString *)keyword city:(NSString *)city
+{
+    [self clear];
+    [super restartSearch:keyword city:city];
+}
+
+
+
 - (void)clear
 {
     self.results = nil;
-    [self.draw clear];
-}
-
-- (void)dealloc
-{
-    [self clear];
+    _draw = nil;
 }
 
 
 - (NSMutableArray *)annotations
 {
     return self.draw.annotations;
+}
+
+- (MapDrawPoint *)draw
+{
+    if(!_draw)
+    {
+        _draw = [[MapDrawPoint alloc]init];
+    }
+    return _draw;
+}
+
+- (void)dealloc
+{
+    [self clear];
 }
 
 @end

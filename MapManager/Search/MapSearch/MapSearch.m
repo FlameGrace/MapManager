@@ -12,7 +12,6 @@
 @interface MapSearch()
 
 @property (readwrite ,strong, nonatomic) NSMutableDictionary <NSString *, MapSearchObject *> *searchs;
-@property (readwrite ,strong, nonatomic) MapSearchObject *newestSearch;
 
 @end
 
@@ -24,7 +23,6 @@
     if(self =[super init])
     {
         [[MapManager sharedManager]addMultiDelegate:self];
-        self.searchs = [[NSMutableDictionary alloc]init];
     }
     return self;
 }
@@ -92,5 +90,20 @@
     
 }
 
+
+
+- (NSMutableDictionary<NSString *,MapSearchObject *> *)searchs
+{
+    if(!_searchs)
+    {
+        _searchs = [[NSMutableDictionary alloc]init];
+    }
+    return _searchs;
+}
+
+- (void)dealloc
+{
+    [[MapManager sharedManager]removeMultiDelegate:self];
+}
 
 @end

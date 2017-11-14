@@ -78,7 +78,7 @@
     mapLocation.district = poi.district;
     mapLocation.street = poi.address;
     NSArray *types = [poi.type componentsSeparatedByString:@";"];
-    mapLocation.Maptype = [types lastObject];
+    mapLocation.mapType = [types lastObject];
     mapLocation.coordinate2D = [MapManager transformAMapGeoPoint:poi.location];
 }
 

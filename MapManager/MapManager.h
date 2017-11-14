@@ -13,7 +13,6 @@
 #import <AMapLocationKit/AMapLocationKit.h>
 #import <AMapSearchKit/AMapSearchKit.h>
 #import <AMapNaviKit/AMapNaviKit.h>
-#import "NSObject+MultiDelegate.h"
 #import "MapLocationModel.h"
 
 #define MAPVIEW_TAG (NSInteger)(201609021132)
@@ -40,16 +39,30 @@
 //单例模式,默认初始化mapView屏幕大小，不显示罗盘比例尺，显示用户位置，模式为跟踪用户位置，后台持续定位
 + (instancetype)sharedManager;
 
+- (BOOL)isResourceReleased;
+
 /*!
  @brief 添加地图到指定的视图上，并指定地图的大小.
+ @param view:父视图.
+ @return 是否添加成功
  */
 - (BOOL)addMapViewToView:(UIView *)view;
 /*!
  @brief 添加地图到指定的视图上，并指定地图的大小.
+ @param view:父视图.
+ @param frame:地图视图的大小.
+ @return 是否添加成功
  */
 - (BOOL)addMapViewToView:(UIView *)view withFrame:(CGRect)frame;
 
 //刷新地图显示，防止有些大头针未及时显示
 - (void)refreshMapView;
+//不用时释放不需要用的资源
+- (void)releaseMapResourse;
+
+//添加一个代理
+- (void)addMultiDelegate:(id)delegate;
+//移除一个代理
+- (void)removeMultiDelegate:(id)delegate;
 
 @end

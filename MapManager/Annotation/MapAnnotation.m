@@ -44,14 +44,11 @@
 
 - (void)setViewClass:(Class)viewClass
 {
-    if([viewClass isSubclassOfClass:[MapAnnotationView class]])
+    if(![viewClass isSubclassOfClass:[MapAnnotationView class]])
     {
-        _viewClass = viewClass;
+        viewClass = [MapAnnotationView class];
     }
-    else
-    {
-        _viewClass = [MapAnnotationView class];
-    }
+    _viewClass = viewClass;
 }
 
 - (void)setSetSelect:(BOOL)setSelect
@@ -78,6 +75,7 @@
     {
         annotationView = [[self.viewClass alloc]initWithAnnotation:self reuseIdentifier:self.identifier];
     }
+    
     annotationView.canShowCallout = self.canShowCallout;
     [annotationView updateUIByIsSelected];
 //    //主要为了防止由于地图复用导致的大头针被移除后重新添加,因此在被添加后再更新一下视图，一般情况下被选择的大头针好像不会出现被复用的情况
