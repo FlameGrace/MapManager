@@ -104,7 +104,8 @@
         }
     }
 }
-- (void)mapViewDidFinishLoadingMap:(MAMapView *)mapView
+
+- (void)mapViewWillStartLoadingMap:(MAMapView *)mapView
 {
     [self drawLocationInMap];
 }

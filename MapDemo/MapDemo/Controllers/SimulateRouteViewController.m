@@ -23,6 +23,8 @@
     // Do any additional setup after loading the view.
     [CarSimulator sharedSimulator].simulating = YES;
     [MapManager sharedManager].car.show = YES;
+    [[MapManager sharedManager].car switchLocationInMapCenter];
+    [MapManager sharedManager].car.showLocationInMapCenter = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -33,17 +35,7 @@
     [[MapManager sharedManager].mapView setZoomLevel:16];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    [self showCar];
-}
 
-- (void)showCar
-{
-    [[MapManager sharedManager].car switchLocationInMapCenter];
-    [MapManager sharedManager].car.showLocationInMapCenter = YES;
-}
 
 - (void)viewWillDisappear:(BOOL)animated
 {

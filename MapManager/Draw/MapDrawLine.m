@@ -46,7 +46,8 @@
 - (void)showLineInMapCenter:(MapPolyLineObject *)line
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        [[MapManager sharedManager].mapView showOverlays:line.polylines animated:YES];
+        [[MapManager sharedManager].mapView showOverlays:line.polylines animated:NO];
+        [[MapManager sharedManager].mapView setZoomLevel:[MapManager sharedManager].mapView.zoomLevel-1 animated:YES];
     });
 }
 

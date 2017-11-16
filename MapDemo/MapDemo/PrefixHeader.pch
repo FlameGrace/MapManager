@@ -8,12 +8,12 @@
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
-#import "MapManager+Location.h"
 
 // Include any system framework and library headers here that should be included in Map compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 #import "MapManagerHeader.h"
 #import "UIViewController+Alert.h"
+#import "MapManager+MapLocation.h"
 
 #endif /* PrefixHeader_pch */

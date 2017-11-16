@@ -193,6 +193,7 @@
 {
     dispatch_async(dispatch_get_main_queue(), ^{
         [[MapManager sharedManager].mapView showAnnotations:self.endpoints animated:NO];
+        [[MapManager sharedManager].mapView setZoomLevel:[MapManager sharedManager].mapView.zoomLevel-1 animated:YES];
     });
 }
 

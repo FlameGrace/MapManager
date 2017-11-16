@@ -8,60 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		02671DA6FD436813772668A4 /* libPods-MapDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D9105E086DC24E2898C5D5 /* libPods-MapDemo.a */; };
-		860037EB1FBAD35400E28F62 /* BrakeMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037711FBAD35400E28F62 /* BrakeMapAnnotation.m */; };
-		860037EC1FBAD35400E28F62 /* CarMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037731FBAD35400E28F62 /* CarMapAnnotation.m */; };
-		860037ED1FBAD35400E28F62 /* EndPointMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037751FBAD35400E28F62 /* EndPointMapAnnotation.m */; };
-		860037EE1FBAD35400E28F62 /* SearchMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037771FBAD35400E28F62 /* SearchMapAnnotation.m */; };
-		860037EF1FBAD35400E28F62 /* SpeedUpMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037791FBAD35400E28F62 /* SpeedUpMapAnnotation.m */; };
-		860037F01FBAD35400E28F62 /* StartPointMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8600377B1FBAD35400E28F62 /* StartPointMapAnnotation.m */; };
-		860037F11FBAD35400E28F62 /* TextMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8600377D1FBAD35400E28F62 /* TextMapAnnotation.m */; };
-		860037F21FBAD35400E28F62 /* TurnMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8600377F1FBAD35400E28F62 /* TurnMapAnnotation.m */; };
-		860037F31FBAD35400E28F62 /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037811FBAD35400E28F62 /* MapAnnotation.m */; };
-		860037F41FBAD35400E28F62 /* MapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037831FBAD35400E28F62 /* MapAnnotationView.m */; };
-		860037F51FBAD35400E28F62 /* CACoordLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037871FBAD35400E28F62 /* CACoordLayer.m */; };
-		860037F61FBAD35400E28F62 /* MovingAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037891FBAD35400E28F62 /* MovingAnnotationView.m */; };
-		860037F71FBAD35400E28F62 /* TracingPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8600378B1FBAD35400E28F62 /* TracingPoint.m */; };
-		860037F81FBAD35400E28F62 /* AngleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8600378E1FBAD35400E28F62 /* AngleLabel.m */; };
-		860037F91FBAD35400E28F62 /* CarMapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037901FBAD35400E28F62 /* CarMapAnnotationView.m */; };
-		860037FA1FBAD35400E28F62 /* TextMapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037921FBAD35400E28F62 /* TextMapAnnotationView.m */; };
-		860037FB1FBAD35400E28F62 /* MapDrawDriveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037951FBAD35400E28F62 /* MapDrawDriveRecord.m */; };
-		860037FC1FBAD35400E28F62 /* MapDrawLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037971FBAD35400E28F62 /* MapDrawLine.m */; };
-		860037FD1FBAD35400E28F62 /* MapDrawPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037991FBAD35400E28F62 /* MapDrawPoint.m */; };
-		860037FE1FBAD35400E28F62 /* MapDrawRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 8600379B1FBAD35400E28F62 /* MapDrawRoute.m */; };
-		860037FF1FBAD35400E28F62 /* MapDriveRecordObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8600379E1FBAD35400E28F62 /* MapDriveRecordObject.m */; };
-		860038001FBAD35400E28F62 /* MapRouteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037A01FBAD35400E28F62 /* MapRouteObject.m */; };
-		860038011FBAD35400E28F62 /* MapDrawFenceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037A31FBAD35400E28F62 /* MapDrawFenceView.m */; };
-		860038021FBAD35400E28F62 /* MapFenceAMapViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037A51FBAD35400E28F62 /* MapFenceAMapViewModel.m */; };
-		860038031FBAD35400E28F62 /* MapFenceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037A71FBAD35400E28F62 /* MapFenceModel.m */; };
-		860038041FBAD35400E28F62 /* MapManager+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037A91FBAD35400E28F62 /* MapManager+Tools.m */; };
-		860038051FBAD35400E28F62 /* MapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037AB1FBAD35400E28F62 /* MapManager.m */; };
-		860038061FBAD35400E28F62 /* CarLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037AF1FBAD35400E28F62 /* CarLocationManager.m */; };
-		860038071FBAD35400E28F62 /* CarMapLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037B11FBAD35400E28F62 /* CarMapLocation.m */; };
-		860038081FBAD35400E28F62 /* MapLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037B31FBAD35400E28F62 /* MapLocationManager.m */; };
-		860038091FBAD35400E28F62 /* MapLocationModel+RegeoSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037B51FBAD35400E28F62 /* MapLocationModel+RegeoSearch.m */; };
-		8600380A1FBAD35400E28F62 /* MapLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037B71FBAD35400E28F62 /* MapLocationModel.m */; };
-		8600380B1FBAD35400E28F62 /* MyLatLng.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037B91FBAD35400E28F62 /* MyLatLng.m */; };
-		8600380C1FBAD35400E28F62 /* SearchMapLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037BB1FBAD35400E28F62 /* SearchMapLocation.m */; };
-		8600380D1FBAD35400E28F62 /* UserLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037BD1FBAD35400E28F62 /* UserLocationManager.m */; };
-		8600380E1FBAD35400E28F62 /* DriveNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037C01FBAD35400E28F62 /* DriveNaviViewController.m */; };
-		8600380F1FBAD35400E28F62 /* WalkNaviView.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037C21FBAD35400E28F62 /* WalkNaviView.m */; };
-		860038101FBAD35400E28F62 /* WalkNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037C41FBAD35400E28F62 /* WalkNaviViewController.m */; };
-		860038111FBAD35400E28F62 /* MapDrivePlanningRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037C71FBAD35400E28F62 /* MapDrivePlanningRoute.m */; };
-		860038121FBAD35400E28F62 /* MapPlanningRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037C91FBAD35400E28F62 /* MapPlanningRoute.m */; };
-		860038131FBAD35400E28F62 /* MapWalkPlanningRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037CD1FBAD35400E28F62 /* MapWalkPlanningRoute.m */; };
-		860038141FBAD35400E28F62 /* MapDeselectPolylineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037D01FBAD35400E28F62 /* MapDeselectPolylineView.m */; };
-		860038151FBAD35400E28F62 /* MapPolyLineObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037D21FBAD35400E28F62 /* MapPolyLineObject.m */; };
-		860038161FBAD35400E28F62 /* MapPolylineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037D41FBAD35400E28F62 /* MapPolylineView.m */; };
-		860038171FBAD35400E28F62 /* MapRedPolylineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037D61FBAD35400E28F62 /* MapRedPolylineView.m */; };
-		860038181FBAD35400E28F62 /* MapSearchInputTips.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037DA1FBAD35400E28F62 /* MapSearchInputTips.m */; };
-		860038191FBAD35400E28F62 /* MapSearchKeywords.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037DD1FBAD35400E28F62 /* MapSearchKeywords.m */; };
-		8600381A1FBAD35400E28F62 /* MapSearchKeywords_MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037DF1FBAD35400E28F62 /* MapSearchKeywords_MapView.m */; };
-		8600381B1FBAD35400E28F62 /* MapSearch+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037E21FBAD35400E28F62 /* MapSearch+Search.m */; };
-		8600381C1FBAD35400E28F62 /* MapSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037E41FBAD35400E28F62 /* MapSearch.m */; };
-		8600381D1FBAD35400E28F62 /* MapSearchObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037E61FBAD35400E28F62 /* MapSearchObject.m */; };
-		8600381E1FBAD35400E28F62 /* MapSearchInputTipModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 860037EA1FBAD35400E28F62 /* MapSearchInputTipModel.m */; };
-		860038241FBAD39400E28F62 /* MapManager+Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 860038231FBAD39400E28F62 /* MapManager+Location.m */; };
-		860038271FBADB4600E28F62 /* CacheMapLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 860038261FBADB4600E28F62 /* CacheMapLocationManager.m */; };
 		8630CB391F25EDDD00243A93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB381F25EDDD00243A93 /* main.m */; };
 		8630CB3C1F25EDDD00243A93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB3B1F25EDDD00243A93 /* AppDelegate.m */; };
 		8630CB3F1F25EDDD00243A93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB3E1F25EDDD00243A93 /* ViewController.m */; };
@@ -82,6 +28,63 @@
 		8630CC261F25EE7500243A93 /* FourAngleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CBB31F25EE7500243A93 /* FourAngleLabel.m */; };
 		8630CC461F25EE7500243A93 /* TableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC031F25EE7500243A93 /* TableViewCellModel.m */; };
 		8630CC471F25EE7500243A93 /* UIViewController+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC051F25EE7500243A93 /* UIViewController+Alert.m */; };
+		86973D191FBD328C00E55838 /* MapManager+MapLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D171FBD328B00E55838 /* MapManager+MapLocation.m */; };
+		86973DA11FBD329F00E55838 /* BrakeMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D1E1FBD329E00E55838 /* BrakeMapAnnotation.m */; };
+		86973DA21FBD329F00E55838 /* CarMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D201FBD329E00E55838 /* CarMapAnnotation.m */; };
+		86973DA31FBD329F00E55838 /* EndPointMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D221FBD329E00E55838 /* EndPointMapAnnotation.m */; };
+		86973DA41FBD329F00E55838 /* SearchMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D241FBD329E00E55838 /* SearchMapAnnotation.m */; };
+		86973DA51FBD329F00E55838 /* SpeedUpMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D261FBD329E00E55838 /* SpeedUpMapAnnotation.m */; };
+		86973DA61FBD329F00E55838 /* StartPointMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D281FBD329E00E55838 /* StartPointMapAnnotation.m */; };
+		86973DA71FBD329F00E55838 /* TextMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D2A1FBD329E00E55838 /* TextMapAnnotation.m */; };
+		86973DA81FBD329F00E55838 /* TurnMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D2C1FBD329E00E55838 /* TurnMapAnnotation.m */; };
+		86973DA91FBD329F00E55838 /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D2E1FBD329E00E55838 /* MapAnnotation.m */; };
+		86973DAA1FBD329F00E55838 /* MapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D301FBD329E00E55838 /* MapAnnotationView.m */; };
+		86973DAB1FBD329F00E55838 /* CACoordLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D341FBD329E00E55838 /* CACoordLayer.m */; };
+		86973DAC1FBD329F00E55838 /* MovingAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D361FBD329E00E55838 /* MovingAnnotationView.m */; };
+		86973DAD1FBD329F00E55838 /* TracingPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D381FBD329E00E55838 /* TracingPoint.m */; };
+		86973DAE1FBD329F00E55838 /* AngleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D3B1FBD329E00E55838 /* AngleLabel.m */; };
+		86973DAF1FBD329F00E55838 /* CarMapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D3D1FBD329E00E55838 /* CarMapAnnotationView.m */; };
+		86973DB01FBD329F00E55838 /* TextMapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D3F1FBD329E00E55838 /* TextMapAnnotationView.m */; };
+		86973DB11FBD329F00E55838 /* MapDrawDriveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D421FBD329E00E55838 /* MapDrawDriveRecord.m */; };
+		86973DB21FBD329F00E55838 /* MapDrawLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D441FBD329E00E55838 /* MapDrawLine.m */; };
+		86973DB31FBD329F00E55838 /* MapDrawPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D461FBD329E00E55838 /* MapDrawPoint.m */; };
+		86973DB41FBD329F00E55838 /* MapDrawRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D481FBD329E00E55838 /* MapDrawRoute.m */; };
+		86973DB51FBD329F00E55838 /* MapDriveRecordObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D4B1FBD329E00E55838 /* MapDriveRecordObject.m */; };
+		86973DB61FBD329F00E55838 /* MapRouteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D4D1FBD329E00E55838 /* MapRouteObject.m */; };
+		86973DB71FBD329F00E55838 /* MapDrawFenceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D501FBD329E00E55838 /* MapDrawFenceView.m */; };
+		86973DB81FBD329F00E55838 /* MapFenceAMapViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D521FBD329E00E55838 /* MapFenceAMapViewModel.m */; };
+		86973DB91FBD329F00E55838 /* MapFenceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D541FBD329E00E55838 /* MapFenceModel.m */; };
+		86973DBA1FBD329F00E55838 /* MapManager+Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D561FBD329E00E55838 /* MapManager+Location.m */; };
+		86973DBB1FBD329F00E55838 /* MapManager+MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D581FBD329E00E55838 /* MapManager+MapView.m */; };
+		86973DBC1FBD329F00E55838 /* MapManager+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D5A1FBD329E00E55838 /* MapManager+Search.m */; };
+		86973DBD1FBD329F00E55838 /* MapManager+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D5C1FBD329E00E55838 /* MapManager+Tools.m */; };
+		86973DBE1FBD329F00E55838 /* MapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D5E1FBD329E00E55838 /* MapManager.m */; };
+		86973DBF1FBD329F00E55838 /* CarMapLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D621FBD329E00E55838 /* CarMapLocation.m */; };
+		86973DC01FBD329F00E55838 /* CacheMapLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D651FBD329E00E55838 /* CacheMapLocationManager.m */; };
+		86973DC11FBD329F00E55838 /* CarLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D671FBD329E00E55838 /* CarLocationManager.m */; };
+		86973DC21FBD329F00E55838 /* MapLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D691FBD329E00E55838 /* MapLocationManager.m */; };
+		86973DC31FBD329F00E55838 /* UserLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D6B1FBD329E00E55838 /* UserLocationManager.m */; };
+		86973DC41FBD329F00E55838 /* MapLocationModel+RegeoSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D6D1FBD329E00E55838 /* MapLocationModel+RegeoSearch.m */; };
+		86973DC51FBD329F00E55838 /* MapLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D6F1FBD329E00E55838 /* MapLocationModel.m */; };
+		86973DC61FBD329F00E55838 /* MyLatLng.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D711FBD329E00E55838 /* MyLatLng.m */; };
+		86973DC71FBD329F00E55838 /* SearchMapLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D731FBD329E00E55838 /* SearchMapLocation.m */; };
+		86973DC81FBD329F00E55838 /* DriveNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D761FBD329E00E55838 /* DriveNaviViewController.m */; };
+		86973DC91FBD329F00E55838 /* WalkNaviView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D781FBD329E00E55838 /* WalkNaviView.m */; };
+		86973DCA1FBD329F00E55838 /* WalkNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D7A1FBD329E00E55838 /* WalkNaviViewController.m */; };
+		86973DCB1FBD329F00E55838 /* MapDrivePlanningRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D7D1FBD329E00E55838 /* MapDrivePlanningRoute.m */; };
+		86973DCC1FBD329F00E55838 /* MapPlanningRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D7F1FBD329E00E55838 /* MapPlanningRoute.m */; };
+		86973DCD1FBD329F00E55838 /* MapWalkPlanningRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D831FBD329E00E55838 /* MapWalkPlanningRoute.m */; };
+		86973DCE1FBD329F00E55838 /* MapDeselectPolylineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D861FBD329E00E55838 /* MapDeselectPolylineView.m */; };
+		86973DCF1FBD329F00E55838 /* MapPolyLineObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D881FBD329E00E55838 /* MapPolyLineObject.m */; };
+		86973DD01FBD329F00E55838 /* MapPolylineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D8A1FBD329E00E55838 /* MapPolylineView.m */; };
+		86973DD11FBD329F00E55838 /* MapRedPolylineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D8C1FBD329E00E55838 /* MapRedPolylineView.m */; };
+		86973DD21FBD329F00E55838 /* MapSearchInputTips.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D901FBD329E00E55838 /* MapSearchInputTips.m */; };
+		86973DD31FBD329F00E55838 /* MapSearchKeywords.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D931FBD329E00E55838 /* MapSearchKeywords.m */; };
+		86973DD41FBD329F00E55838 /* MapSearchKeywords_MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D951FBD329E00E55838 /* MapSearchKeywords_MapView.m */; };
+		86973DD51FBD329F00E55838 /* MapSearch+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D981FBD329E00E55838 /* MapSearch+Search.m */; };
+		86973DD61FBD329F00E55838 /* MapSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D9A1FBD329E00E55838 /* MapSearch.m */; };
+		86973DD71FBD329F00E55838 /* MapSearchObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973D9C1FBD329E00E55838 /* MapSearchObject.m */; };
+		86973DD81FBD329F00E55838 /* MapSearchInputTipModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86973DA01FBD329E00E55838 /* MapSearchInputTipModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,119 +106,6 @@
 
 /* Begin PBXFileReference section */
 		67D9105E086DC24E2898C5D5 /* libPods-MapDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		860037701FBAD35400E28F62 /* BrakeMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrakeMapAnnotation.h; sourceTree = "<group>"; };
-		860037711FBAD35400E28F62 /* BrakeMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrakeMapAnnotation.m; sourceTree = "<group>"; };
-		860037721FBAD35400E28F62 /* CarMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarMapAnnotation.h; sourceTree = "<group>"; };
-		860037731FBAD35400E28F62 /* CarMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarMapAnnotation.m; sourceTree = "<group>"; };
-		860037741FBAD35400E28F62 /* EndPointMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndPointMapAnnotation.h; sourceTree = "<group>"; };
-		860037751FBAD35400E28F62 /* EndPointMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndPointMapAnnotation.m; sourceTree = "<group>"; };
-		860037761FBAD35400E28F62 /* SearchMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchMapAnnotation.h; sourceTree = "<group>"; };
-		860037771FBAD35400E28F62 /* SearchMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchMapAnnotation.m; sourceTree = "<group>"; };
-		860037781FBAD35400E28F62 /* SpeedUpMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeedUpMapAnnotation.h; sourceTree = "<group>"; };
-		860037791FBAD35400E28F62 /* SpeedUpMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeedUpMapAnnotation.m; sourceTree = "<group>"; };
-		8600377A1FBAD35400E28F62 /* StartPointMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartPointMapAnnotation.h; sourceTree = "<group>"; };
-		8600377B1FBAD35400E28F62 /* StartPointMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartPointMapAnnotation.m; sourceTree = "<group>"; };
-		8600377C1FBAD35400E28F62 /* TextMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextMapAnnotation.h; sourceTree = "<group>"; };
-		8600377D1FBAD35400E28F62 /* TextMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextMapAnnotation.m; sourceTree = "<group>"; };
-		8600377E1FBAD35400E28F62 /* TurnMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurnMapAnnotation.h; sourceTree = "<group>"; };
-		8600377F1FBAD35400E28F62 /* TurnMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurnMapAnnotation.m; sourceTree = "<group>"; };
-		860037801FBAD35400E28F62 /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
-		860037811FBAD35400E28F62 /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
-		860037821FBAD35400E28F62 /* MapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotationView.h; sourceTree = "<group>"; };
-		860037831FBAD35400E28F62 /* MapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotationView.m; sourceTree = "<group>"; };
-		860037841FBAD35400E28F62 /* MapAnnotationViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotationViewProtocol.h; sourceTree = "<group>"; };
-		860037861FBAD35400E28F62 /* CACoordLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACoordLayer.h; sourceTree = "<group>"; };
-		860037871FBAD35400E28F62 /* CACoordLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACoordLayer.m; sourceTree = "<group>"; };
-		860037881FBAD35400E28F62 /* MovingAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingAnnotationView.h; sourceTree = "<group>"; };
-		860037891FBAD35400E28F62 /* MovingAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingAnnotationView.m; sourceTree = "<group>"; };
-		8600378A1FBAD35400E28F62 /* TracingPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracingPoint.h; sourceTree = "<group>"; };
-		8600378B1FBAD35400E28F62 /* TracingPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TracingPoint.m; sourceTree = "<group>"; };
-		8600378D1FBAD35400E28F62 /* AngleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AngleLabel.h; sourceTree = "<group>"; };
-		8600378E1FBAD35400E28F62 /* AngleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AngleLabel.m; sourceTree = "<group>"; };
-		8600378F1FBAD35400E28F62 /* CarMapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarMapAnnotationView.h; sourceTree = "<group>"; };
-		860037901FBAD35400E28F62 /* CarMapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarMapAnnotationView.m; sourceTree = "<group>"; };
-		860037911FBAD35400E28F62 /* TextMapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextMapAnnotationView.h; sourceTree = "<group>"; };
-		860037921FBAD35400E28F62 /* TextMapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextMapAnnotationView.m; sourceTree = "<group>"; };
-		860037941FBAD35400E28F62 /* MapDrawDriveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDrawDriveRecord.h; sourceTree = "<group>"; };
-		860037951FBAD35400E28F62 /* MapDrawDriveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDrawDriveRecord.m; sourceTree = "<group>"; };
-		860037961FBAD35400E28F62 /* MapDrawLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDrawLine.h; sourceTree = "<group>"; };
-		860037971FBAD35400E28F62 /* MapDrawLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDrawLine.m; sourceTree = "<group>"; };
-		860037981FBAD35400E28F62 /* MapDrawPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDrawPoint.h; sourceTree = "<group>"; };
-		860037991FBAD35400E28F62 /* MapDrawPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDrawPoint.m; sourceTree = "<group>"; };
-		8600379A1FBAD35400E28F62 /* MapDrawRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDrawRoute.h; sourceTree = "<group>"; };
-		8600379B1FBAD35400E28F62 /* MapDrawRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDrawRoute.m; sourceTree = "<group>"; };
-		8600379D1FBAD35400E28F62 /* MapDriveRecordObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDriveRecordObject.h; sourceTree = "<group>"; };
-		8600379E1FBAD35400E28F62 /* MapDriveRecordObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDriveRecordObject.m; sourceTree = "<group>"; };
-		8600379F1FBAD35400E28F62 /* MapRouteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapRouteObject.h; sourceTree = "<group>"; };
-		860037A01FBAD35400E28F62 /* MapRouteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapRouteObject.m; sourceTree = "<group>"; };
-		860037A21FBAD35400E28F62 /* MapDrawFenceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDrawFenceView.h; sourceTree = "<group>"; };
-		860037A31FBAD35400E28F62 /* MapDrawFenceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDrawFenceView.m; sourceTree = "<group>"; };
-		860037A41FBAD35400E28F62 /* MapFenceAMapViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapFenceAMapViewModel.h; sourceTree = "<group>"; };
-		860037A51FBAD35400E28F62 /* MapFenceAMapViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapFenceAMapViewModel.m; sourceTree = "<group>"; };
-		860037A61FBAD35400E28F62 /* MapFenceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapFenceModel.h; sourceTree = "<group>"; };
-		860037A71FBAD35400E28F62 /* MapFenceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapFenceModel.m; sourceTree = "<group>"; };
-		860037A81FBAD35400E28F62 /* MapManager+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapManager+Tools.h"; sourceTree = "<group>"; };
-		860037A91FBAD35400E28F62 /* MapManager+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapManager+Tools.m"; sourceTree = "<group>"; };
-		860037AA1FBAD35400E28F62 /* MapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapManager.h; sourceTree = "<group>"; };
-		860037AB1FBAD35400E28F62 /* MapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapManager.m; sourceTree = "<group>"; };
-		860037AC1FBAD35400E28F62 /* MapManagerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapManagerHeader.h; sourceTree = "<group>"; };
-		860037AE1FBAD35400E28F62 /* CarLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarLocationManager.h; sourceTree = "<group>"; };
-		860037AF1FBAD35400E28F62 /* CarLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarLocationManager.m; sourceTree = "<group>"; };
-		860037B01FBAD35400E28F62 /* CarMapLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarMapLocation.h; sourceTree = "<group>"; };
-		860037B11FBAD35400E28F62 /* CarMapLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarMapLocation.m; sourceTree = "<group>"; };
-		860037B21FBAD35400E28F62 /* MapLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLocationManager.h; sourceTree = "<group>"; };
-		860037B31FBAD35400E28F62 /* MapLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLocationManager.m; sourceTree = "<group>"; };
-		860037B41FBAD35400E28F62 /* MapLocationModel+RegeoSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapLocationModel+RegeoSearch.h"; sourceTree = "<group>"; };
-		860037B51FBAD35400E28F62 /* MapLocationModel+RegeoSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapLocationModel+RegeoSearch.m"; sourceTree = "<group>"; };
-		860037B61FBAD35400E28F62 /* MapLocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLocationModel.h; sourceTree = "<group>"; };
-		860037B71FBAD35400E28F62 /* MapLocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLocationModel.m; sourceTree = "<group>"; };
-		860037B81FBAD35400E28F62 /* MyLatLng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLatLng.h; sourceTree = "<group>"; };
-		860037B91FBAD35400E28F62 /* MyLatLng.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLatLng.m; sourceTree = "<group>"; };
-		860037BA1FBAD35400E28F62 /* SearchMapLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchMapLocation.h; sourceTree = "<group>"; };
-		860037BB1FBAD35400E28F62 /* SearchMapLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchMapLocation.m; sourceTree = "<group>"; };
-		860037BC1FBAD35400E28F62 /* UserLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLocationManager.h; sourceTree = "<group>"; };
-		860037BD1FBAD35400E28F62 /* UserLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLocationManager.m; sourceTree = "<group>"; };
-		860037BF1FBAD35400E28F62 /* DriveNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriveNaviViewController.h; sourceTree = "<group>"; };
-		860037C01FBAD35400E28F62 /* DriveNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriveNaviViewController.m; sourceTree = "<group>"; };
-		860037C11FBAD35400E28F62 /* WalkNaviView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkNaviView.h; sourceTree = "<group>"; };
-		860037C21FBAD35400E28F62 /* WalkNaviView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkNaviView.m; sourceTree = "<group>"; };
-		860037C31FBAD35400E28F62 /* WalkNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkNaviViewController.h; sourceTree = "<group>"; };
-		860037C41FBAD35400E28F62 /* WalkNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkNaviViewController.m; sourceTree = "<group>"; };
-		860037C61FBAD35400E28F62 /* MapDrivePlanningRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDrivePlanningRoute.h; sourceTree = "<group>"; };
-		860037C71FBAD35400E28F62 /* MapDrivePlanningRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDrivePlanningRoute.m; sourceTree = "<group>"; };
-		860037C81FBAD35400E28F62 /* MapPlanningRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPlanningRoute.h; sourceTree = "<group>"; };
-		860037C91FBAD35400E28F62 /* MapPlanningRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPlanningRoute.m; sourceTree = "<group>"; };
-		860037CA1FBAD35400E28F62 /* MapPlanningRouteDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPlanningRouteDelegate.h; sourceTree = "<group>"; };
-		860037CB1FBAD35400E28F62 /* MapPlanningRouteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPlanningRouteProtocol.h; sourceTree = "<group>"; };
-		860037CC1FBAD35400E28F62 /* MapWalkPlanningRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapWalkPlanningRoute.h; sourceTree = "<group>"; };
-		860037CD1FBAD35400E28F62 /* MapWalkPlanningRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapWalkPlanningRoute.m; sourceTree = "<group>"; };
-		860037CF1FBAD35400E28F62 /* MapDeselectPolylineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDeselectPolylineView.h; sourceTree = "<group>"; };
-		860037D01FBAD35400E28F62 /* MapDeselectPolylineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDeselectPolylineView.m; sourceTree = "<group>"; };
-		860037D11FBAD35400E28F62 /* MapPolyLineObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPolyLineObject.h; sourceTree = "<group>"; };
-		860037D21FBAD35400E28F62 /* MapPolyLineObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPolyLineObject.m; sourceTree = "<group>"; };
-		860037D31FBAD35400E28F62 /* MapPolylineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPolylineView.h; sourceTree = "<group>"; };
-		860037D41FBAD35400E28F62 /* MapPolylineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPolylineView.m; sourceTree = "<group>"; };
-		860037D51FBAD35400E28F62 /* MapRedPolylineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapRedPolylineView.h; sourceTree = "<group>"; };
-		860037D61FBAD35400E28F62 /* MapRedPolylineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapRedPolylineView.m; sourceTree = "<group>"; };
-		860037D91FBAD35400E28F62 /* MapSearchInputTips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchInputTips.h; sourceTree = "<group>"; };
-		860037DA1FBAD35400E28F62 /* MapSearchInputTips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearchInputTips.m; sourceTree = "<group>"; };
-		860037DC1FBAD35400E28F62 /* MapSearchKeywords.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchKeywords.h; sourceTree = "<group>"; };
-		860037DD1FBAD35400E28F62 /* MapSearchKeywords.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearchKeywords.m; sourceTree = "<group>"; };
-		860037DE1FBAD35400E28F62 /* MapSearchKeywords_MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchKeywords_MapView.h; sourceTree = "<group>"; };
-		860037DF1FBAD35400E28F62 /* MapSearchKeywords_MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearchKeywords_MapView.m; sourceTree = "<group>"; };
-		860037E11FBAD35400E28F62 /* MapSearch+Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapSearch+Search.h"; sourceTree = "<group>"; };
-		860037E21FBAD35400E28F62 /* MapSearch+Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapSearch+Search.m"; sourceTree = "<group>"; };
-		860037E31FBAD35400E28F62 /* MapSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearch.h; sourceTree = "<group>"; };
-		860037E41FBAD35400E28F62 /* MapSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearch.m; sourceTree = "<group>"; };
-		860037E51FBAD35400E28F62 /* MapSearchObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchObject.h; sourceTree = "<group>"; };
-		860037E61FBAD35400E28F62 /* MapSearchObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearchObject.m; sourceTree = "<group>"; };
-		860037E81FBAD35400E28F62 /* MapSearchInputProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchInputProtocol.h; sourceTree = "<group>"; };
-		860037E91FBAD35400E28F62 /* MapSearchInputTipModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchInputTipModel.h; sourceTree = "<group>"; };
-		860037EA1FBAD35400E28F62 /* MapSearchInputTipModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearchInputTipModel.m; sourceTree = "<group>"; };
-		860038221FBAD39400E28F62 /* MapManager+Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapManager+Location.h"; sourceTree = "<group>"; };
-		860038231FBAD39400E28F62 /* MapManager+Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MapManager+Location.m"; sourceTree = "<group>"; };
-		860038251FBADB4600E28F62 /* CacheMapLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CacheMapLocationManager.h; sourceTree = "<group>"; };
-		860038261FBADB4600E28F62 /* CacheMapLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CacheMapLocationManager.m; sourceTree = "<group>"; };
 		8630CB341F25EDDD00243A93 /* MapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8630CB381F25EDDD00243A93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8630CB3A1F25EDDD00243A93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -258,6 +148,125 @@
 		8630CC041F25EE7500243A93 /* UIViewController+Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Alert.h"; sourceTree = "<group>"; };
 		8630CC051F25EE7500243A93 /* UIViewController+Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Alert.m"; sourceTree = "<group>"; };
 		8648BFD11FB592DA009703EB /* MapDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MapDemo.entitlements; sourceTree = "<group>"; };
+		86973D171FBD328B00E55838 /* MapManager+MapLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapManager+MapLocation.m"; sourceTree = "<group>"; };
+		86973D181FBD328B00E55838 /* MapManager+MapLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapManager+MapLocation.h"; sourceTree = "<group>"; };
+		86973D1D1FBD329E00E55838 /* BrakeMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrakeMapAnnotation.h; sourceTree = "<group>"; };
+		86973D1E1FBD329E00E55838 /* BrakeMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrakeMapAnnotation.m; sourceTree = "<group>"; };
+		86973D1F1FBD329E00E55838 /* CarMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarMapAnnotation.h; sourceTree = "<group>"; };
+		86973D201FBD329E00E55838 /* CarMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarMapAnnotation.m; sourceTree = "<group>"; };
+		86973D211FBD329E00E55838 /* EndPointMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndPointMapAnnotation.h; sourceTree = "<group>"; };
+		86973D221FBD329E00E55838 /* EndPointMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndPointMapAnnotation.m; sourceTree = "<group>"; };
+		86973D231FBD329E00E55838 /* SearchMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchMapAnnotation.h; sourceTree = "<group>"; };
+		86973D241FBD329E00E55838 /* SearchMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchMapAnnotation.m; sourceTree = "<group>"; };
+		86973D251FBD329E00E55838 /* SpeedUpMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeedUpMapAnnotation.h; sourceTree = "<group>"; };
+		86973D261FBD329E00E55838 /* SpeedUpMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeedUpMapAnnotation.m; sourceTree = "<group>"; };
+		86973D271FBD329E00E55838 /* StartPointMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartPointMapAnnotation.h; sourceTree = "<group>"; };
+		86973D281FBD329E00E55838 /* StartPointMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartPointMapAnnotation.m; sourceTree = "<group>"; };
+		86973D291FBD329E00E55838 /* TextMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextMapAnnotation.h; sourceTree = "<group>"; };
+		86973D2A1FBD329E00E55838 /* TextMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextMapAnnotation.m; sourceTree = "<group>"; };
+		86973D2B1FBD329E00E55838 /* TurnMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurnMapAnnotation.h; sourceTree = "<group>"; };
+		86973D2C1FBD329E00E55838 /* TurnMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurnMapAnnotation.m; sourceTree = "<group>"; };
+		86973D2D1FBD329E00E55838 /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
+		86973D2E1FBD329E00E55838 /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
+		86973D2F1FBD329E00E55838 /* MapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotationView.h; sourceTree = "<group>"; };
+		86973D301FBD329E00E55838 /* MapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotationView.m; sourceTree = "<group>"; };
+		86973D311FBD329E00E55838 /* MapAnnotationViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotationViewProtocol.h; sourceTree = "<group>"; };
+		86973D331FBD329E00E55838 /* CACoordLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACoordLayer.h; sourceTree = "<group>"; };
+		86973D341FBD329E00E55838 /* CACoordLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACoordLayer.m; sourceTree = "<group>"; };
+		86973D351FBD329E00E55838 /* MovingAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingAnnotationView.h; sourceTree = "<group>"; };
+		86973D361FBD329E00E55838 /* MovingAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovingAnnotationView.m; sourceTree = "<group>"; };
+		86973D371FBD329E00E55838 /* TracingPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracingPoint.h; sourceTree = "<group>"; };
+		86973D381FBD329E00E55838 /* TracingPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TracingPoint.m; sourceTree = "<group>"; };
+		86973D3A1FBD329E00E55838 /* AngleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AngleLabel.h; sourceTree = "<group>"; };
+		86973D3B1FBD329E00E55838 /* AngleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AngleLabel.m; sourceTree = "<group>"; };
+		86973D3C1FBD329E00E55838 /* CarMapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarMapAnnotationView.h; sourceTree = "<group>"; };
+		86973D3D1FBD329E00E55838 /* CarMapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarMapAnnotationView.m; sourceTree = "<group>"; };
+		86973D3E1FBD329E00E55838 /* TextMapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextMapAnnotationView.h; sourceTree = "<group>"; };
+		86973D3F1FBD329E00E55838 /* TextMapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextMapAnnotationView.m; sourceTree = "<group>"; };
+		86973D411FBD329E00E55838 /* MapDrawDriveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDrawDriveRecord.h; sourceTree = "<group>"; };
+		86973D421FBD329E00E55838 /* MapDrawDriveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDrawDriveRecord.m; sourceTree = "<group>"; };
+		86973D431FBD329E00E55838 /* MapDrawLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDrawLine.h; sourceTree = "<group>"; };
+		86973D441FBD329E00E55838 /* MapDrawLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDrawLine.m; sourceTree = "<group>"; };
+		86973D451FBD329E00E55838 /* MapDrawPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDrawPoint.h; sourceTree = "<group>"; };
+		86973D461FBD329E00E55838 /* MapDrawPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDrawPoint.m; sourceTree = "<group>"; };
+		86973D471FBD329E00E55838 /* MapDrawRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDrawRoute.h; sourceTree = "<group>"; };
+		86973D481FBD329E00E55838 /* MapDrawRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDrawRoute.m; sourceTree = "<group>"; };
+		86973D4A1FBD329E00E55838 /* MapDriveRecordObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDriveRecordObject.h; sourceTree = "<group>"; };
+		86973D4B1FBD329E00E55838 /* MapDriveRecordObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDriveRecordObject.m; sourceTree = "<group>"; };
+		86973D4C1FBD329E00E55838 /* MapRouteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapRouteObject.h; sourceTree = "<group>"; };
+		86973D4D1FBD329E00E55838 /* MapRouteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapRouteObject.m; sourceTree = "<group>"; };
+		86973D4F1FBD329E00E55838 /* MapDrawFenceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDrawFenceView.h; sourceTree = "<group>"; };
+		86973D501FBD329E00E55838 /* MapDrawFenceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDrawFenceView.m; sourceTree = "<group>"; };
+		86973D511FBD329E00E55838 /* MapFenceAMapViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapFenceAMapViewModel.h; sourceTree = "<group>"; };
+		86973D521FBD329E00E55838 /* MapFenceAMapViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapFenceAMapViewModel.m; sourceTree = "<group>"; };
+		86973D531FBD329E00E55838 /* MapFenceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapFenceModel.h; sourceTree = "<group>"; };
+		86973D541FBD329E00E55838 /* MapFenceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapFenceModel.m; sourceTree = "<group>"; };
+		86973D551FBD329E00E55838 /* MapManager+Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapManager+Location.h"; sourceTree = "<group>"; };
+		86973D561FBD329E00E55838 /* MapManager+Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapManager+Location.m"; sourceTree = "<group>"; };
+		86973D571FBD329E00E55838 /* MapManager+MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapManager+MapView.h"; sourceTree = "<group>"; };
+		86973D581FBD329E00E55838 /* MapManager+MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapManager+MapView.m"; sourceTree = "<group>"; };
+		86973D591FBD329E00E55838 /* MapManager+Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapManager+Search.h"; sourceTree = "<group>"; };
+		86973D5A1FBD329E00E55838 /* MapManager+Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapManager+Search.m"; sourceTree = "<group>"; };
+		86973D5B1FBD329E00E55838 /* MapManager+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapManager+Tools.h"; sourceTree = "<group>"; };
+		86973D5C1FBD329E00E55838 /* MapManager+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapManager+Tools.m"; sourceTree = "<group>"; };
+		86973D5D1FBD329E00E55838 /* MapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapManager.h; sourceTree = "<group>"; };
+		86973D5E1FBD329E00E55838 /* MapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapManager.m; sourceTree = "<group>"; };
+		86973D5F1FBD329E00E55838 /* MapManagerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapManagerHeader.h; sourceTree = "<group>"; };
+		86973D611FBD329E00E55838 /* CarMapLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarMapLocation.h; sourceTree = "<group>"; };
+		86973D621FBD329E00E55838 /* CarMapLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarMapLocation.m; sourceTree = "<group>"; };
+		86973D641FBD329E00E55838 /* CacheMapLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheMapLocationManager.h; sourceTree = "<group>"; };
+		86973D651FBD329E00E55838 /* CacheMapLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheMapLocationManager.m; sourceTree = "<group>"; };
+		86973D661FBD329E00E55838 /* CarLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarLocationManager.h; sourceTree = "<group>"; };
+		86973D671FBD329E00E55838 /* CarLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarLocationManager.m; sourceTree = "<group>"; };
+		86973D681FBD329E00E55838 /* MapLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLocationManager.h; sourceTree = "<group>"; };
+		86973D691FBD329E00E55838 /* MapLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLocationManager.m; sourceTree = "<group>"; };
+		86973D6A1FBD329E00E55838 /* UserLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLocationManager.h; sourceTree = "<group>"; };
+		86973D6B1FBD329E00E55838 /* UserLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLocationManager.m; sourceTree = "<group>"; };
+		86973D6C1FBD329E00E55838 /* MapLocationModel+RegeoSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapLocationModel+RegeoSearch.h"; sourceTree = "<group>"; };
+		86973D6D1FBD329E00E55838 /* MapLocationModel+RegeoSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapLocationModel+RegeoSearch.m"; sourceTree = "<group>"; };
+		86973D6E1FBD329E00E55838 /* MapLocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLocationModel.h; sourceTree = "<group>"; };
+		86973D6F1FBD329E00E55838 /* MapLocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLocationModel.m; sourceTree = "<group>"; };
+		86973D701FBD329E00E55838 /* MyLatLng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLatLng.h; sourceTree = "<group>"; };
+		86973D711FBD329E00E55838 /* MyLatLng.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLatLng.m; sourceTree = "<group>"; };
+		86973D721FBD329E00E55838 /* SearchMapLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchMapLocation.h; sourceTree = "<group>"; };
+		86973D731FBD329E00E55838 /* SearchMapLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchMapLocation.m; sourceTree = "<group>"; };
+		86973D751FBD329E00E55838 /* DriveNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriveNaviViewController.h; sourceTree = "<group>"; };
+		86973D761FBD329E00E55838 /* DriveNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriveNaviViewController.m; sourceTree = "<group>"; };
+		86973D771FBD329E00E55838 /* WalkNaviView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkNaviView.h; sourceTree = "<group>"; };
+		86973D781FBD329E00E55838 /* WalkNaviView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkNaviView.m; sourceTree = "<group>"; };
+		86973D791FBD329E00E55838 /* WalkNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkNaviViewController.h; sourceTree = "<group>"; };
+		86973D7A1FBD329E00E55838 /* WalkNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalkNaviViewController.m; sourceTree = "<group>"; };
+		86973D7C1FBD329E00E55838 /* MapDrivePlanningRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDrivePlanningRoute.h; sourceTree = "<group>"; };
+		86973D7D1FBD329E00E55838 /* MapDrivePlanningRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDrivePlanningRoute.m; sourceTree = "<group>"; };
+		86973D7E1FBD329E00E55838 /* MapPlanningRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPlanningRoute.h; sourceTree = "<group>"; };
+		86973D7F1FBD329E00E55838 /* MapPlanningRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPlanningRoute.m; sourceTree = "<group>"; };
+		86973D801FBD329E00E55838 /* MapPlanningRouteDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPlanningRouteDelegate.h; sourceTree = "<group>"; };
+		86973D811FBD329E00E55838 /* MapPlanningRouteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPlanningRouteProtocol.h; sourceTree = "<group>"; };
+		86973D821FBD329E00E55838 /* MapWalkPlanningRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapWalkPlanningRoute.h; sourceTree = "<group>"; };
+		86973D831FBD329E00E55838 /* MapWalkPlanningRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapWalkPlanningRoute.m; sourceTree = "<group>"; };
+		86973D851FBD329E00E55838 /* MapDeselectPolylineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapDeselectPolylineView.h; sourceTree = "<group>"; };
+		86973D861FBD329E00E55838 /* MapDeselectPolylineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapDeselectPolylineView.m; sourceTree = "<group>"; };
+		86973D871FBD329E00E55838 /* MapPolyLineObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPolyLineObject.h; sourceTree = "<group>"; };
+		86973D881FBD329E00E55838 /* MapPolyLineObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPolyLineObject.m; sourceTree = "<group>"; };
+		86973D891FBD329E00E55838 /* MapPolylineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPolylineView.h; sourceTree = "<group>"; };
+		86973D8A1FBD329E00E55838 /* MapPolylineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPolylineView.m; sourceTree = "<group>"; };
+		86973D8B1FBD329E00E55838 /* MapRedPolylineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapRedPolylineView.h; sourceTree = "<group>"; };
+		86973D8C1FBD329E00E55838 /* MapRedPolylineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapRedPolylineView.m; sourceTree = "<group>"; };
+		86973D8F1FBD329E00E55838 /* MapSearchInputTips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchInputTips.h; sourceTree = "<group>"; };
+		86973D901FBD329E00E55838 /* MapSearchInputTips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearchInputTips.m; sourceTree = "<group>"; };
+		86973D921FBD329E00E55838 /* MapSearchKeywords.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchKeywords.h; sourceTree = "<group>"; };
+		86973D931FBD329E00E55838 /* MapSearchKeywords.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearchKeywords.m; sourceTree = "<group>"; };
+		86973D941FBD329E00E55838 /* MapSearchKeywords_MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchKeywords_MapView.h; sourceTree = "<group>"; };
+		86973D951FBD329E00E55838 /* MapSearchKeywords_MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearchKeywords_MapView.m; sourceTree = "<group>"; };
+		86973D971FBD329E00E55838 /* MapSearch+Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapSearch+Search.h"; sourceTree = "<group>"; };
+		86973D981FBD329E00E55838 /* MapSearch+Search.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapSearch+Search.m"; sourceTree = "<group>"; };
+		86973D991FBD329E00E55838 /* MapSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearch.h; sourceTree = "<group>"; };
+		86973D9A1FBD329E00E55838 /* MapSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearch.m; sourceTree = "<group>"; };
+		86973D9B1FBD329E00E55838 /* MapSearchObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchObject.h; sourceTree = "<group>"; };
+		86973D9C1FBD329E00E55838 /* MapSearchObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearchObject.m; sourceTree = "<group>"; };
+		86973D9E1FBD329E00E55838 /* MapSearchInputProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchInputProtocol.h; sourceTree = "<group>"; };
+		86973D9F1FBD329E00E55838 /* MapSearchInputTipModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSearchInputTipModel.h; sourceTree = "<group>"; };
+		86973DA01FBD329E00E55838 /* MapSearchInputTipModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSearchInputTipModel.m; sourceTree = "<group>"; };
 		9A50D6CFF12A25AA33FDF08B /* Pods-MapDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapDemo/Pods-MapDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B47ADE36CE3324CE23C89D9C /* Pods-MapDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapDemo/Pods-MapDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -297,261 +306,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		8600376D1FBAD35400E28F62 /* MapManager */ = {
-			isa = PBXGroup;
-			children = (
-				860037AD1FBAD35400E28F62 /* Model */,
-				860037BE1FBAD35400E28F62 /* NaviVC */,
-				860037C51FBAD35400E28F62 /* PlanningRoute */,
-				860037CE1FBAD35400E28F62 /* Polyline */,
-				860037D71FBAD35400E28F62 /* Search */,
-				8600376E1FBAD35400E28F62 /* Annotation */,
-				860037931FBAD35400E28F62 /* Draw */,
-				860037A11FBAD35400E28F62 /* Fence */,
-				860037A81FBAD35400E28F62 /* MapManager+Tools.h */,
-				860037A91FBAD35400E28F62 /* MapManager+Tools.m */,
-				860037AA1FBAD35400E28F62 /* MapManager.h */,
-				860037AB1FBAD35400E28F62 /* MapManager.m */,
-				860037AC1FBAD35400E28F62 /* MapManagerHeader.h */,
-			);
-			name = MapManager;
-			path = ../../MapManager;
-			sourceTree = "<group>";
-		};
-		8600376E1FBAD35400E28F62 /* Annotation */ = {
-			isa = PBXGroup;
-			children = (
-				8600376F1FBAD35400E28F62 /* Annotation */,
-				860037801FBAD35400E28F62 /* MapAnnotation.h */,
-				860037811FBAD35400E28F62 /* MapAnnotation.m */,
-				860037821FBAD35400E28F62 /* MapAnnotationView.h */,
-				860037831FBAD35400E28F62 /* MapAnnotationView.m */,
-				860037841FBAD35400E28F62 /* MapAnnotationViewProtocol.h */,
-				860037851FBAD35400E28F62 /* MovingAnnotationView */,
-				8600378C1FBAD35400E28F62 /* View */,
-			);
-			path = Annotation;
-			sourceTree = "<group>";
-		};
-		8600376F1FBAD35400E28F62 /* Annotation */ = {
-			isa = PBXGroup;
-			children = (
-				860037701FBAD35400E28F62 /* BrakeMapAnnotation.h */,
-				860037711FBAD35400E28F62 /* BrakeMapAnnotation.m */,
-				860037721FBAD35400E28F62 /* CarMapAnnotation.h */,
-				860037731FBAD35400E28F62 /* CarMapAnnotation.m */,
-				860037741FBAD35400E28F62 /* EndPointMapAnnotation.h */,
-				860037751FBAD35400E28F62 /* EndPointMapAnnotation.m */,
-				860037761FBAD35400E28F62 /* SearchMapAnnotation.h */,
-				860037771FBAD35400E28F62 /* SearchMapAnnotation.m */,
-				860037781FBAD35400E28F62 /* SpeedUpMapAnnotation.h */,
-				860037791FBAD35400E28F62 /* SpeedUpMapAnnotation.m */,
-				8600377A1FBAD35400E28F62 /* StartPointMapAnnotation.h */,
-				8600377B1FBAD35400E28F62 /* StartPointMapAnnotation.m */,
-				8600377C1FBAD35400E28F62 /* TextMapAnnotation.h */,
-				8600377D1FBAD35400E28F62 /* TextMapAnnotation.m */,
-				8600377E1FBAD35400E28F62 /* TurnMapAnnotation.h */,
-				8600377F1FBAD35400E28F62 /* TurnMapAnnotation.m */,
-			);
-			path = Annotation;
-			sourceTree = "<group>";
-		};
-		860037851FBAD35400E28F62 /* MovingAnnotationView */ = {
-			isa = PBXGroup;
-			children = (
-				860037861FBAD35400E28F62 /* CACoordLayer.h */,
-				860037871FBAD35400E28F62 /* CACoordLayer.m */,
-				860037881FBAD35400E28F62 /* MovingAnnotationView.h */,
-				860037891FBAD35400E28F62 /* MovingAnnotationView.m */,
-				8600378A1FBAD35400E28F62 /* TracingPoint.h */,
-				8600378B1FBAD35400E28F62 /* TracingPoint.m */,
-			);
-			path = MovingAnnotationView;
-			sourceTree = "<group>";
-		};
-		8600378C1FBAD35400E28F62 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				8600378D1FBAD35400E28F62 /* AngleLabel.h */,
-				8600378E1FBAD35400E28F62 /* AngleLabel.m */,
-				8600378F1FBAD35400E28F62 /* CarMapAnnotationView.h */,
-				860037901FBAD35400E28F62 /* CarMapAnnotationView.m */,
-				860037911FBAD35400E28F62 /* TextMapAnnotationView.h */,
-				860037921FBAD35400E28F62 /* TextMapAnnotationView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		860037931FBAD35400E28F62 /* Draw */ = {
-			isa = PBXGroup;
-			children = (
-				860037941FBAD35400E28F62 /* MapDrawDriveRecord.h */,
-				860037951FBAD35400E28F62 /* MapDrawDriveRecord.m */,
-				860037961FBAD35400E28F62 /* MapDrawLine.h */,
-				860037971FBAD35400E28F62 /* MapDrawLine.m */,
-				860037981FBAD35400E28F62 /* MapDrawPoint.h */,
-				860037991FBAD35400E28F62 /* MapDrawPoint.m */,
-				8600379A1FBAD35400E28F62 /* MapDrawRoute.h */,
-				8600379B1FBAD35400E28F62 /* MapDrawRoute.m */,
-				8600379C1FBAD35400E28F62 /* Route */,
-			);
-			path = Draw;
-			sourceTree = "<group>";
-		};
-		8600379C1FBAD35400E28F62 /* Route */ = {
-			isa = PBXGroup;
-			children = (
-				8600379D1FBAD35400E28F62 /* MapDriveRecordObject.h */,
-				8600379E1FBAD35400E28F62 /* MapDriveRecordObject.m */,
-				8600379F1FBAD35400E28F62 /* MapRouteObject.h */,
-				860037A01FBAD35400E28F62 /* MapRouteObject.m */,
-			);
-			path = Route;
-			sourceTree = "<group>";
-		};
-		860037A11FBAD35400E28F62 /* Fence */ = {
-			isa = PBXGroup;
-			children = (
-				860037A21FBAD35400E28F62 /* MapDrawFenceView.h */,
-				860037A31FBAD35400E28F62 /* MapDrawFenceView.m */,
-				860037A41FBAD35400E28F62 /* MapFenceAMapViewModel.h */,
-				860037A51FBAD35400E28F62 /* MapFenceAMapViewModel.m */,
-				860037A61FBAD35400E28F62 /* MapFenceModel.h */,
-				860037A71FBAD35400E28F62 /* MapFenceModel.m */,
-			);
-			path = Fence;
-			sourceTree = "<group>";
-		};
-		860037AD1FBAD35400E28F62 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				860038281FBADB6D00E28F62 /* MapLocationManager */,
-				860037B41FBAD35400E28F62 /* MapLocationModel+RegeoSearch.h */,
-				860037B51FBAD35400E28F62 /* MapLocationModel+RegeoSearch.m */,
-				860037B61FBAD35400E28F62 /* MapLocationModel.h */,
-				860037B71FBAD35400E28F62 /* MapLocationModel.m */,
-				860037B81FBAD35400E28F62 /* MyLatLng.h */,
-				860037B91FBAD35400E28F62 /* MyLatLng.m */,
-				860037BA1FBAD35400E28F62 /* SearchMapLocation.h */,
-				860037BB1FBAD35400E28F62 /* SearchMapLocation.m */,
-				860037B01FBAD35400E28F62 /* CarMapLocation.h */,
-				860037B11FBAD35400E28F62 /* CarMapLocation.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		860037BE1FBAD35400E28F62 /* NaviVC */ = {
-			isa = PBXGroup;
-			children = (
-				860037BF1FBAD35400E28F62 /* DriveNaviViewController.h */,
-				860037C01FBAD35400E28F62 /* DriveNaviViewController.m */,
-				860037C11FBAD35400E28F62 /* WalkNaviView.h */,
-				860037C21FBAD35400E28F62 /* WalkNaviView.m */,
-				860037C31FBAD35400E28F62 /* WalkNaviViewController.h */,
-				860037C41FBAD35400E28F62 /* WalkNaviViewController.m */,
-			);
-			path = NaviVC;
-			sourceTree = "<group>";
-		};
-		860037C51FBAD35400E28F62 /* PlanningRoute */ = {
-			isa = PBXGroup;
-			children = (
-				860037C61FBAD35400E28F62 /* MapDrivePlanningRoute.h */,
-				860037C71FBAD35400E28F62 /* MapDrivePlanningRoute.m */,
-				860037C81FBAD35400E28F62 /* MapPlanningRoute.h */,
-				860037C91FBAD35400E28F62 /* MapPlanningRoute.m */,
-				860037CA1FBAD35400E28F62 /* MapPlanningRouteDelegate.h */,
-				860037CB1FBAD35400E28F62 /* MapPlanningRouteProtocol.h */,
-				860037CC1FBAD35400E28F62 /* MapWalkPlanningRoute.h */,
-				860037CD1FBAD35400E28F62 /* MapWalkPlanningRoute.m */,
-			);
-			path = PlanningRoute;
-			sourceTree = "<group>";
-		};
-		860037CE1FBAD35400E28F62 /* Polyline */ = {
-			isa = PBXGroup;
-			children = (
-				860037CF1FBAD35400E28F62 /* MapDeselectPolylineView.h */,
-				860037D01FBAD35400E28F62 /* MapDeselectPolylineView.m */,
-				860037D11FBAD35400E28F62 /* MapPolyLineObject.h */,
-				860037D21FBAD35400E28F62 /* MapPolyLineObject.m */,
-				860037D31FBAD35400E28F62 /* MapPolylineView.h */,
-				860037D41FBAD35400E28F62 /* MapPolylineView.m */,
-				860037D51FBAD35400E28F62 /* MapRedPolylineView.h */,
-				860037D61FBAD35400E28F62 /* MapRedPolylineView.m */,
-			);
-			path = Polyline;
-			sourceTree = "<group>";
-		};
-		860037D71FBAD35400E28F62 /* Search */ = {
-			isa = PBXGroup;
-			children = (
-				860037D81FBAD35400E28F62 /* InputTip */,
-				860037DB1FBAD35400E28F62 /* Keywords */,
-				860037E01FBAD35400E28F62 /* MapSearch */,
-				860037E71FBAD35400E28F62 /* Model */,
-			);
-			path = Search;
-			sourceTree = "<group>";
-		};
-		860037D81FBAD35400E28F62 /* InputTip */ = {
-			isa = PBXGroup;
-			children = (
-				860037D91FBAD35400E28F62 /* MapSearchInputTips.h */,
-				860037DA1FBAD35400E28F62 /* MapSearchInputTips.m */,
-			);
-			path = InputTip;
-			sourceTree = "<group>";
-		};
-		860037DB1FBAD35400E28F62 /* Keywords */ = {
-			isa = PBXGroup;
-			children = (
-				860037DC1FBAD35400E28F62 /* MapSearchKeywords.h */,
-				860037DD1FBAD35400E28F62 /* MapSearchKeywords.m */,
-				860037DE1FBAD35400E28F62 /* MapSearchKeywords_MapView.h */,
-				860037DF1FBAD35400E28F62 /* MapSearchKeywords_MapView.m */,
-			);
-			path = Keywords;
-			sourceTree = "<group>";
-		};
-		860037E01FBAD35400E28F62 /* MapSearch */ = {
-			isa = PBXGroup;
-			children = (
-				860037E11FBAD35400E28F62 /* MapSearch+Search.h */,
-				860037E21FBAD35400E28F62 /* MapSearch+Search.m */,
-				860037E31FBAD35400E28F62 /* MapSearch.h */,
-				860037E41FBAD35400E28F62 /* MapSearch.m */,
-				860037E51FBAD35400E28F62 /* MapSearchObject.h */,
-				860037E61FBAD35400E28F62 /* MapSearchObject.m */,
-			);
-			path = MapSearch;
-			sourceTree = "<group>";
-		};
-		860037E71FBAD35400E28F62 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				860037E81FBAD35400E28F62 /* MapSearchInputProtocol.h */,
-				860037E91FBAD35400E28F62 /* MapSearchInputTipModel.h */,
-				860037EA1FBAD35400E28F62 /* MapSearchInputTipModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		860038281FBADB6D00E28F62 /* MapLocationManager */ = {
-			isa = PBXGroup;
-			children = (
-				860037B21FBAD35400E28F62 /* MapLocationManager.h */,
-				860037B31FBAD35400E28F62 /* MapLocationManager.m */,
-				860038251FBADB4600E28F62 /* CacheMapLocationManager.h */,
-				860038261FBADB4600E28F62 /* CacheMapLocationManager.m */,
-				860037BC1FBAD35400E28F62 /* UserLocationManager.h */,
-				860037BD1FBAD35400E28F62 /* UserLocationManager.m */,
-				860037AE1FBAD35400E28F62 /* CarLocationManager.h */,
-				860037AF1FBAD35400E28F62 /* CarLocationManager.m */,
-			);
-			path = MapLocationManager;
-			sourceTree = "<group>";
-		};
 		8630CB2B1F25EDDD00243A93 = {
 			isa = PBXGroup;
 			children = (
@@ -578,7 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				8648BFD11FB592DA009703EB /* MapDemo.entitlements */,
-				8600376D1FBAD35400E28F62 /* MapManager */,
+				86973D1A1FBD329E00E55838 /* MapManager */,
 				8630CBFF1F25EE7500243A93 /* Tools */,
 				8630CB6A1F25EE7500243A93 /* Controllers */,
 				8630CB3A1F25EDDD00243A93 /* AppDelegate.h */,
@@ -647,10 +401,10 @@
 		8630CBFF1F25EE7500243A93 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				86973D181FBD328B00E55838 /* MapManager+MapLocation.h */,
+				86973D171FBD328B00E55838 /* MapManager+MapLocation.m */,
 				8630CBA01F25EE7500243A93 /* CarSimulator.h */,
 				8630CBA11F25EE7500243A93 /* CarSimulator.m */,
-				860038221FBAD39400E28F62 /* MapManager+Location.h */,
-				860038231FBAD39400E28F62 /* MapManager+Location.m */,
 				8630CBB21F25EE7500243A93 /* FourAngleLabel.h */,
 				8630CBB31F25EE7500243A93 /* FourAngleLabel.m */,
 				8630CC021F25EE7500243A93 /* TableViewCellModel.h */,
@@ -659,6 +413,267 @@
 				8630CC051F25EE7500243A93 /* UIViewController+Alert.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		86973D1A1FBD329E00E55838 /* MapManager */ = {
+			isa = PBXGroup;
+			children = (
+				86973D1B1FBD329E00E55838 /* Annotation */,
+				86973D401FBD329E00E55838 /* Draw */,
+				86973D4E1FBD329E00E55838 /* Fence */,
+				86973D551FBD329E00E55838 /* MapManager+Location.h */,
+				86973D561FBD329E00E55838 /* MapManager+Location.m */,
+				86973D571FBD329E00E55838 /* MapManager+MapView.h */,
+				86973D581FBD329E00E55838 /* MapManager+MapView.m */,
+				86973D591FBD329E00E55838 /* MapManager+Search.h */,
+				86973D5A1FBD329E00E55838 /* MapManager+Search.m */,
+				86973D5B1FBD329E00E55838 /* MapManager+Tools.h */,
+				86973D5C1FBD329E00E55838 /* MapManager+Tools.m */,
+				86973D5D1FBD329E00E55838 /* MapManager.h */,
+				86973D5E1FBD329E00E55838 /* MapManager.m */,
+				86973D5F1FBD329E00E55838 /* MapManagerHeader.h */,
+				86973D601FBD329E00E55838 /* Model */,
+				86973D741FBD329E00E55838 /* NaviVC */,
+				86973D7B1FBD329E00E55838 /* PlanningRoute */,
+				86973D841FBD329E00E55838 /* Polyline */,
+				86973D8D1FBD329E00E55838 /* Search */,
+			);
+			name = MapManager;
+			path = ../../MapManager;
+			sourceTree = "<group>";
+		};
+		86973D1B1FBD329E00E55838 /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				86973D1C1FBD329E00E55838 /* Annotation */,
+				86973D2D1FBD329E00E55838 /* MapAnnotation.h */,
+				86973D2E1FBD329E00E55838 /* MapAnnotation.m */,
+				86973D2F1FBD329E00E55838 /* MapAnnotationView.h */,
+				86973D301FBD329E00E55838 /* MapAnnotationView.m */,
+				86973D311FBD329E00E55838 /* MapAnnotationViewProtocol.h */,
+				86973D321FBD329E00E55838 /* MovingAnnotationView */,
+				86973D391FBD329E00E55838 /* View */,
+			);
+			path = Annotation;
+			sourceTree = "<group>";
+		};
+		86973D1C1FBD329E00E55838 /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				86973D1D1FBD329E00E55838 /* BrakeMapAnnotation.h */,
+				86973D1E1FBD329E00E55838 /* BrakeMapAnnotation.m */,
+				86973D1F1FBD329E00E55838 /* CarMapAnnotation.h */,
+				86973D201FBD329E00E55838 /* CarMapAnnotation.m */,
+				86973D211FBD329E00E55838 /* EndPointMapAnnotation.h */,
+				86973D221FBD329E00E55838 /* EndPointMapAnnotation.m */,
+				86973D231FBD329E00E55838 /* SearchMapAnnotation.h */,
+				86973D241FBD329E00E55838 /* SearchMapAnnotation.m */,
+				86973D251FBD329E00E55838 /* SpeedUpMapAnnotation.h */,
+				86973D261FBD329E00E55838 /* SpeedUpMapAnnotation.m */,
+				86973D271FBD329E00E55838 /* StartPointMapAnnotation.h */,
+				86973D281FBD329E00E55838 /* StartPointMapAnnotation.m */,
+				86973D291FBD329E00E55838 /* TextMapAnnotation.h */,
+				86973D2A1FBD329E00E55838 /* TextMapAnnotation.m */,
+				86973D2B1FBD329E00E55838 /* TurnMapAnnotation.h */,
+				86973D2C1FBD329E00E55838 /* TurnMapAnnotation.m */,
+			);
+			path = Annotation;
+			sourceTree = "<group>";
+		};
+		86973D321FBD329E00E55838 /* MovingAnnotationView */ = {
+			isa = PBXGroup;
+			children = (
+				86973D331FBD329E00E55838 /* CACoordLayer.h */,
+				86973D341FBD329E00E55838 /* CACoordLayer.m */,
+				86973D351FBD329E00E55838 /* MovingAnnotationView.h */,
+				86973D361FBD329E00E55838 /* MovingAnnotationView.m */,
+				86973D371FBD329E00E55838 /* TracingPoint.h */,
+				86973D381FBD329E00E55838 /* TracingPoint.m */,
+			);
+			path = MovingAnnotationView;
+			sourceTree = "<group>";
+		};
+		86973D391FBD329E00E55838 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				86973D3A1FBD329E00E55838 /* AngleLabel.h */,
+				86973D3B1FBD329E00E55838 /* AngleLabel.m */,
+				86973D3C1FBD329E00E55838 /* CarMapAnnotationView.h */,
+				86973D3D1FBD329E00E55838 /* CarMapAnnotationView.m */,
+				86973D3E1FBD329E00E55838 /* TextMapAnnotationView.h */,
+				86973D3F1FBD329E00E55838 /* TextMapAnnotationView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		86973D401FBD329E00E55838 /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				86973D411FBD329E00E55838 /* MapDrawDriveRecord.h */,
+				86973D421FBD329E00E55838 /* MapDrawDriveRecord.m */,
+				86973D431FBD329E00E55838 /* MapDrawLine.h */,
+				86973D441FBD329E00E55838 /* MapDrawLine.m */,
+				86973D451FBD329E00E55838 /* MapDrawPoint.h */,
+				86973D461FBD329E00E55838 /* MapDrawPoint.m */,
+				86973D471FBD329E00E55838 /* MapDrawRoute.h */,
+				86973D481FBD329E00E55838 /* MapDrawRoute.m */,
+				86973D491FBD329E00E55838 /* Route */,
+			);
+			path = Draw;
+			sourceTree = "<group>";
+		};
+		86973D491FBD329E00E55838 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				86973D4A1FBD329E00E55838 /* MapDriveRecordObject.h */,
+				86973D4B1FBD329E00E55838 /* MapDriveRecordObject.m */,
+				86973D4C1FBD329E00E55838 /* MapRouteObject.h */,
+				86973D4D1FBD329E00E55838 /* MapRouteObject.m */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		86973D4E1FBD329E00E55838 /* Fence */ = {
+			isa = PBXGroup;
+			children = (
+				86973D4F1FBD329E00E55838 /* MapDrawFenceView.h */,
+				86973D501FBD329E00E55838 /* MapDrawFenceView.m */,
+				86973D511FBD329E00E55838 /* MapFenceAMapViewModel.h */,
+				86973D521FBD329E00E55838 /* MapFenceAMapViewModel.m */,
+				86973D531FBD329E00E55838 /* MapFenceModel.h */,
+				86973D541FBD329E00E55838 /* MapFenceModel.m */,
+			);
+			path = Fence;
+			sourceTree = "<group>";
+		};
+		86973D601FBD329E00E55838 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86973D611FBD329E00E55838 /* CarMapLocation.h */,
+				86973D621FBD329E00E55838 /* CarMapLocation.m */,
+				86973D631FBD329E00E55838 /* MapLocationManager */,
+				86973D6C1FBD329E00E55838 /* MapLocationModel+RegeoSearch.h */,
+				86973D6D1FBD329E00E55838 /* MapLocationModel+RegeoSearch.m */,
+				86973D6E1FBD329E00E55838 /* MapLocationModel.h */,
+				86973D6F1FBD329E00E55838 /* MapLocationModel.m */,
+				86973D701FBD329E00E55838 /* MyLatLng.h */,
+				86973D711FBD329E00E55838 /* MyLatLng.m */,
+				86973D721FBD329E00E55838 /* SearchMapLocation.h */,
+				86973D731FBD329E00E55838 /* SearchMapLocation.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		86973D631FBD329E00E55838 /* MapLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				86973D641FBD329E00E55838 /* CacheMapLocationManager.h */,
+				86973D651FBD329E00E55838 /* CacheMapLocationManager.m */,
+				86973D661FBD329E00E55838 /* CarLocationManager.h */,
+				86973D671FBD329E00E55838 /* CarLocationManager.m */,
+				86973D681FBD329E00E55838 /* MapLocationManager.h */,
+				86973D691FBD329E00E55838 /* MapLocationManager.m */,
+				86973D6A1FBD329E00E55838 /* UserLocationManager.h */,
+				86973D6B1FBD329E00E55838 /* UserLocationManager.m */,
+			);
+			path = MapLocationManager;
+			sourceTree = "<group>";
+		};
+		86973D741FBD329E00E55838 /* NaviVC */ = {
+			isa = PBXGroup;
+			children = (
+				86973D751FBD329E00E55838 /* DriveNaviViewController.h */,
+				86973D761FBD329E00E55838 /* DriveNaviViewController.m */,
+				86973D771FBD329E00E55838 /* WalkNaviView.h */,
+				86973D781FBD329E00E55838 /* WalkNaviView.m */,
+				86973D791FBD329E00E55838 /* WalkNaviViewController.h */,
+				86973D7A1FBD329E00E55838 /* WalkNaviViewController.m */,
+			);
+			path = NaviVC;
+			sourceTree = "<group>";
+		};
+		86973D7B1FBD329E00E55838 /* PlanningRoute */ = {
+			isa = PBXGroup;
+			children = (
+				86973D7C1FBD329E00E55838 /* MapDrivePlanningRoute.h */,
+				86973D7D1FBD329E00E55838 /* MapDrivePlanningRoute.m */,
+				86973D7E1FBD329E00E55838 /* MapPlanningRoute.h */,
+				86973D7F1FBD329E00E55838 /* MapPlanningRoute.m */,
+				86973D801FBD329E00E55838 /* MapPlanningRouteDelegate.h */,
+				86973D811FBD329E00E55838 /* MapPlanningRouteProtocol.h */,
+				86973D821FBD329E00E55838 /* MapWalkPlanningRoute.h */,
+				86973D831FBD329E00E55838 /* MapWalkPlanningRoute.m */,
+			);
+			path = PlanningRoute;
+			sourceTree = "<group>";
+		};
+		86973D841FBD329E00E55838 /* Polyline */ = {
+			isa = PBXGroup;
+			children = (
+				86973D851FBD329E00E55838 /* MapDeselectPolylineView.h */,
+				86973D861FBD329E00E55838 /* MapDeselectPolylineView.m */,
+				86973D871FBD329E00E55838 /* MapPolyLineObject.h */,
+				86973D881FBD329E00E55838 /* MapPolyLineObject.m */,
+				86973D891FBD329E00E55838 /* MapPolylineView.h */,
+				86973D8A1FBD329E00E55838 /* MapPolylineView.m */,
+				86973D8B1FBD329E00E55838 /* MapRedPolylineView.h */,
+				86973D8C1FBD329E00E55838 /* MapRedPolylineView.m */,
+			);
+			path = Polyline;
+			sourceTree = "<group>";
+		};
+		86973D8D1FBD329E00E55838 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				86973D8E1FBD329E00E55838 /* InputTip */,
+				86973D911FBD329E00E55838 /* Keywords */,
+				86973D961FBD329E00E55838 /* MapSearch */,
+				86973D9D1FBD329E00E55838 /* Model */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		86973D8E1FBD329E00E55838 /* InputTip */ = {
+			isa = PBXGroup;
+			children = (
+				86973D8F1FBD329E00E55838 /* MapSearchInputTips.h */,
+				86973D901FBD329E00E55838 /* MapSearchInputTips.m */,
+			);
+			path = InputTip;
+			sourceTree = "<group>";
+		};
+		86973D911FBD329E00E55838 /* Keywords */ = {
+			isa = PBXGroup;
+			children = (
+				86973D921FBD329E00E55838 /* MapSearchKeywords.h */,
+				86973D931FBD329E00E55838 /* MapSearchKeywords.m */,
+				86973D941FBD329E00E55838 /* MapSearchKeywords_MapView.h */,
+				86973D951FBD329E00E55838 /* MapSearchKeywords_MapView.m */,
+			);
+			path = Keywords;
+			sourceTree = "<group>";
+		};
+		86973D961FBD329E00E55838 /* MapSearch */ = {
+			isa = PBXGroup;
+			children = (
+				86973D971FBD329E00E55838 /* MapSearch+Search.h */,
+				86973D981FBD329E00E55838 /* MapSearch+Search.m */,
+				86973D991FBD329E00E55838 /* MapSearch.h */,
+				86973D9A1FBD329E00E55838 /* MapSearch.m */,
+				86973D9B1FBD329E00E55838 /* MapSearchObject.h */,
+				86973D9C1FBD329E00E55838 /* MapSearchObject.m */,
+			);
+			path = MapSearch;
+			sourceTree = "<group>";
+		};
+		86973D9D1FBD329E00E55838 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86973D9E1FBD329E00E55838 /* MapSearchInputProtocol.h */,
+				86973D9F1FBD329E00E55838 /* MapSearchInputTipModel.h */,
+				86973DA01FBD329E00E55838 /* MapSearchInputTipModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		94E92798F41DE30D1FAD4849 /* Frameworks */ = {
@@ -861,75 +876,78 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86973DA81FBD329F00E55838 /* TurnMapAnnotation.m in Sources */,
+				86973DC61FBD329F00E55838 /* MyLatLng.m in Sources */,
 				8630CC061F25EE7500243A93 /* DrawDriveRecordViewController.m in Sources */,
+				86973DC81FBD329F00E55838 /* DriveNaviViewController.m in Sources */,
+				86973DAE1FBD329F00E55838 /* AngleLabel.m in Sources */,
 				8630CC0A1F25EE7500243A93 /* MapFenceViewController.m in Sources */,
-				860038191FBAD35400E28F62 /* MapSearchKeywords.m in Sources */,
+				86973DAC1FBD329F00E55838 /* MovingAnnotationView.m in Sources */,
+				86973DD21FBD329F00E55838 /* MapSearchInputTips.m in Sources */,
+				86973DA21FBD329F00E55838 /* CarMapAnnotation.m in Sources */,
+				86973DBE1FBD329F00E55838 /* MapManager.m in Sources */,
+				86973DD41FBD329F00E55838 /* MapSearchKeywords_MapView.m in Sources */,
+				86973DA31FBD329F00E55838 /* EndPointMapAnnotation.m in Sources */,
+				86973DB71FBD329F00E55838 /* MapDrawFenceView.m in Sources */,
 				8630CC091F25EE7500243A93 /* KeyWordsViewController.m in Sources */,
-				860038011FBAD35400E28F62 /* MapDrawFenceView.m in Sources */,
-				860038111FBAD35400E28F62 /* MapDrivePlanningRoute.m in Sources */,
+				86973DB51FBD329F00E55838 /* MapDriveRecordObject.m in Sources */,
+				86973DD11FBD329F00E55838 /* MapRedPolylineView.m in Sources */,
 				8630CC471F25EE7500243A93 /* UIViewController+Alert.m in Sources */,
-				8600381D1FBAD35400E28F62 /* MapSearchObject.m in Sources */,
-				860037FE1FBAD35400E28F62 /* MapDrawRoute.m in Sources */,
+				86973DBB1FBD329F00E55838 /* MapManager+MapView.m in Sources */,
 				8630CB3F1F25EDDD00243A93 /* ViewController.m in Sources */,
-				8600380D1FBAD35400E28F62 /* UserLocationManager.m in Sources */,
-				860037F01FBAD35400E28F62 /* StartPointMapAnnotation.m in Sources */,
-				860037FF1FBAD35400E28F62 /* MapDriveRecordObject.m in Sources */,
-				860038081FBAD35400E28F62 /* MapLocationManager.m in Sources */,
+				86973DB11FBD329F00E55838 /* MapDrawDriveRecord.m in Sources */,
 				8630CC0C1F25EE7500243A93 /* MapPointViewController.m in Sources */,
-				860038031FBAD35400E28F62 /* MapFenceModel.m in Sources */,
-				860038001FBAD35400E28F62 /* MapRouteObject.m in Sources */,
-				8600380B1FBAD35400E28F62 /* MyLatLng.m in Sources */,
-				860037F71FBAD35400E28F62 /* TracingPoint.m in Sources */,
-				860038151FBAD35400E28F62 /* MapPolyLineObject.m in Sources */,
-				860037F51FBAD35400E28F62 /* CACoordLayer.m in Sources */,
-				860037F81FBAD35400E28F62 /* AngleLabel.m in Sources */,
+				86973DC41FBD329F00E55838 /* MapLocationModel+RegeoSearch.m in Sources */,
+				86973DB01FBD329F00E55838 /* TextMapAnnotationView.m in Sources */,
+				86973DB91FBD329F00E55838 /* MapFenceModel.m in Sources */,
 				8630CB3C1F25EDDD00243A93 /* AppDelegate.m in Sources */,
-				860038051FBAD35400E28F62 /* MapManager.m in Sources */,
+				86973DB31FBD329F00E55838 /* MapDrawPoint.m in Sources */,
+				86973DC71FBD329F00E55838 /* SearchMapLocation.m in Sources */,
+				86973DBF1FBD329F00E55838 /* CarMapLocation.m in Sources */,
 				8630CC1E1F25EE7500243A93 /* CarSimulator.m in Sources */,
-				860038171FBAD35400E28F62 /* MapRedPolylineView.m in Sources */,
-				860037EF1FBAD35400E28F62 /* SpeedUpMapAnnotation.m in Sources */,
-				860037FA1FBAD35400E28F62 /* TextMapAnnotationView.m in Sources */,
-				860037F91FBAD35400E28F62 /* CarMapAnnotationView.m in Sources */,
-				860038141FBAD35400E28F62 /* MapDeselectPolylineView.m in Sources */,
-				860037ED1FBAD35400E28F62 /* EndPointMapAnnotation.m in Sources */,
-				8600381C1FBAD35400E28F62 /* MapSearch.m in Sources */,
-				860038041FBAD35400E28F62 /* MapManager+Tools.m in Sources */,
-				860038021FBAD35400E28F62 /* MapFenceAMapViewModel.m in Sources */,
-				860038181FBAD35400E28F62 /* MapSearchInputTips.m in Sources */,
-				860038271FBADB4600E28F62 /* CacheMapLocationManager.m in Sources */,
-				860038071FBAD35400E28F62 /* CarMapLocation.m in Sources */,
-				8600381B1FBAD35400E28F62 /* MapSearch+Search.m in Sources */,
-				860038121FBAD35400E28F62 /* MapPlanningRoute.m in Sources */,
-				860038091FBAD35400E28F62 /* MapLocationModel+RegeoSearch.m in Sources */,
-				8600380F1FBAD35400E28F62 /* WalkNaviView.m in Sources */,
-				8600380E1FBAD35400E28F62 /* DriveNaviViewController.m in Sources */,
-				860037F31FBAD35400E28F62 /* MapAnnotation.m in Sources */,
-				860037FD1FBAD35400E28F62 /* MapDrawPoint.m in Sources */,
-				860037F61FBAD35400E28F62 /* MovingAnnotationView.m in Sources */,
-				860037F41FBAD35400E28F62 /* MapAnnotationView.m in Sources */,
-				8600381A1FBAD35400E28F62 /* MapSearchKeywords_MapView.m in Sources */,
-				860037FC1FBAD35400E28F62 /* MapDrawLine.m in Sources */,
-				8600381E1FBAD35400E28F62 /* MapSearchInputTipModel.m in Sources */,
+				86973DBC1FBD329F00E55838 /* MapManager+Search.m in Sources */,
+				86973DBD1FBD329F00E55838 /* MapManager+Tools.m in Sources */,
+				86973DA51FBD329F00E55838 /* SpeedUpMapAnnotation.m in Sources */,
 				8630CC0B1F25EE7500243A93 /* MapInputTipsViewController.m in Sources */,
-				8600380A1FBAD35400E28F62 /* MapLocationModel.m in Sources */,
-				8600380C1FBAD35400E28F62 /* SearchMapLocation.m in Sources */,
-				860037FB1FBAD35400E28F62 /* MapDrawDriveRecord.m in Sources */,
+				86973DD51FBD329F00E55838 /* MapSearch+Search.m in Sources */,
+				86973DC01FBD329F00E55838 /* CacheMapLocationManager.m in Sources */,
+				86973DC31FBD329F00E55838 /* UserLocationManager.m in Sources */,
+				86973DD31FBD329F00E55838 /* MapSearchKeywords.m in Sources */,
 				8630CB391F25EDDD00243A93 /* main.m in Sources */,
-				860038061FBAD35400E28F62 /* CarLocationManager.m in Sources */,
-				860038131FBAD35400E28F62 /* MapWalkPlanningRoute.m in Sources */,
+				86973DCF1FBD329F00E55838 /* MapPolyLineObject.m in Sources */,
 				8630CC461F25EE7500243A93 /* TableViewCellModel.m in Sources */,
+				86973DB41FBD329F00E55838 /* MapDrawRoute.m in Sources */,
+				86973DAB1FBD329F00E55838 /* CACoordLayer.m in Sources */,
+				86973DA71FBD329F00E55838 /* TextMapAnnotation.m in Sources */,
+				86973DAF1FBD329F00E55838 /* CarMapAnnotationView.m in Sources */,
+				86973DC11FBD329F00E55838 /* CarLocationManager.m in Sources */,
 				8630CC081F25EE7500243A93 /* DrawRouteViewController.m in Sources */,
-				860038241FBAD39400E28F62 /* MapManager+Location.m in Sources */,
+				86973DC91FBD329F00E55838 /* WalkNaviView.m in Sources */,
+				86973DC51FBD329F00E55838 /* MapLocationModel.m in Sources */,
+				86973DD71FBD329F00E55838 /* MapSearchObject.m in Sources */,
 				8630CC0D1F25EE7500243A93 /* SimulateRouteViewController.m in Sources */,
-				860037EE1FBAD35400E28F62 /* SearchMapAnnotation.m in Sources */,
-				860038101FBAD35400E28F62 /* WalkNaviViewController.m in Sources */,
-				860038161FBAD35400E28F62 /* MapPolylineView.m in Sources */,
-				860037EB1FBAD35400E28F62 /* BrakeMapAnnotation.m in Sources */,
+				86973DCD1FBD329F00E55838 /* MapWalkPlanningRoute.m in Sources */,
+				86973DB61FBD329F00E55838 /* MapRouteObject.m in Sources */,
+				86973DB21FBD329F00E55838 /* MapDrawLine.m in Sources */,
+				86973DA41FBD329F00E55838 /* SearchMapAnnotation.m in Sources */,
+				86973DCB1FBD329F00E55838 /* MapDrivePlanningRoute.m in Sources */,
+				86973DD01FBD329F00E55838 /* MapPolylineView.m in Sources */,
+				86973DC21FBD329F00E55838 /* MapLocationManager.m in Sources */,
 				8630CC261F25EE7500243A93 /* FourAngleLabel.m in Sources */,
-				860037F21FBAD35400E28F62 /* TurnMapAnnotation.m in Sources */,
+				86973DCC1FBD329F00E55838 /* MapPlanningRoute.m in Sources */,
+				86973D191FBD328C00E55838 /* MapManager+MapLocation.m in Sources */,
+				86973DA61FBD329F00E55838 /* StartPointMapAnnotation.m in Sources */,
+				86973DD61FBD329F00E55838 /* MapSearch.m in Sources */,
+				86973DA11FBD329F00E55838 /* BrakeMapAnnotation.m in Sources */,
 				8630CC071F25EE7500243A93 /* DrawLineViewController.m in Sources */,
-				860037F11FBAD35400E28F62 /* TextMapAnnotation.m in Sources */,
-				860037EC1FBAD35400E28F62 /* CarMapAnnotation.m in Sources */,
+				86973DB81FBD329F00E55838 /* MapFenceAMapViewModel.m in Sources */,
+				86973DAA1FBD329F00E55838 /* MapAnnotationView.m in Sources */,
+				86973DBA1FBD329F00E55838 /* MapManager+Location.m in Sources */,
+				86973DCE1FBD329F00E55838 /* MapDeselectPolylineView.m in Sources */,
+				86973DCA1FBD329F00E55838 /* WalkNaviViewController.m in Sources */,
+				86973DD81FBD329F00E55838 /* MapSearchInputTipModel.m in Sources */,
+				86973DAD1FBD329F00E55838 /* TracingPoint.m in Sources */,
+				86973DA91FBD329F00E55838 /* MapAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

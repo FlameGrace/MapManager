@@ -14,6 +14,7 @@
 #import <AMapSearchKit/AMapSearchKit.h>
 #import <AMapNaviKit/AMapNaviKit.h>
 #import "MapLocationModel.h"
+#import "NSObject+MultiDelegate.h"
 
 #define MAPVIEW_TAG (NSInteger)(201609021132)
 #define MAPVIEW_DEFAULT_ZOOMLEVEL (16.5)
@@ -59,10 +60,5 @@
 - (void)refreshMapView;
 //不用时释放不需要用的资源
 - (void)releaseMapResourse;
-
-//添加一个代理
-- (void)addMultiDelegate:(id)delegate;
-//移除一个代理
-- (void)removeMultiDelegate:(id)delegate;
 
 @end

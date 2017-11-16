@@ -8,7 +8,7 @@
 
 
 #import "MapManager.h"
-#import "NSObject+MultiDelegateOC.h"
+
 
 @interface MapManager()
 
@@ -108,16 +108,6 @@ static MapManager *sharedManager = nil;
     
 }
 
-//添加一个代理
-- (void)addMultiDelegate:(id)delegate
-{
-    [self.multiDelegate addDelegate:delegate];
-}
-//移除一个代理
-- (void)removeMultiDelegate:(id)delegate
-{
-    [self.multiDelegate removeDelegate:delegate];
-}
 
 - (MAMapView *)mapView
 {
@@ -125,7 +115,7 @@ static MapManager *sharedManager = nil;
     {
         _mapView = [[MAMapView alloc] initWithFrame:[UIScreen mainScreen].bounds];
         _mapView.tag = MAPVIEW_TAG;
-        _mapView.delegate = (id)self.multiDelegate;
+        _mapView.delegate = self;
         
         _mapView.showsScale = NO;
         _mapView.showsCompass = NO;
@@ -137,6 +127,7 @@ static MapManager *sharedManager = nil;
         
         _mapView.pausesLocationUpdatesAutomatically = NO;
         _mapView.allowsBackgroundLocationUpdates = NO;
+        [self mapViewWillStartLoadingMap:_mapView];
     }
     return _mapView;
 }
@@ -146,7 +137,7 @@ static MapManager *sharedManager = nil;
     if(!_mapSearch)
     {
         _mapSearch = [[AMapSearchAPI alloc]init];
-        _mapSearch.delegate = (id)self.multiDelegate;
+        _mapSearch.delegate = self;
         _mapSearch.timeout = 5;
     }
     return _mapSearch;
@@ -176,7 +167,7 @@ static MapManager *sharedManager = nil;
     {
         //启动定位服务
         _mapLocationManager = [[AMapLocationManager alloc] init];
-        _mapLocationManager.delegate = (id)self.multiDelegate;
+        _mapLocationManager.delegate = self;
         
         [_mapLocationManager setPausesLocationUpdatesAutomatically:YES];
         [_mapLocationManager setAllowsBackgroundLocationUpdates:NO];
