@@ -73,8 +73,9 @@ static CarSimulator *simulator = nil;
     if(!self.simulateRoutes)
     {
         Map_WeakObj(self)
-        [self.search searchDrivingRouteBetweenOrigin:CLLocationCoordinate2DMake(30.2315350000, 120.4756170000) andDestination:CLLocationCoordinate2DMake(30.2090310000, 120.2241600000) strategy:10 requireExtension:NO callback:^(MapSearchObject *search, BOOL isNewest) {
+        [self.search searchDrivingRouteBetweenOrigin:CLLocationCoordinate2DMake(30.2089750000,120.2228930000) andDestination:CLLocationCoordinate2DMake(30.2511750000,120.1773960000) strategy:10 requireExtension:NO callback:^(MapSearchObject *search, BOOL isNewest) {
             Map_StrongObj(self)
+            
             if(!search.error)
             {
                 [self onRouteSearchDoneResponse:(AMapRouteSearchResponse *)search.response];

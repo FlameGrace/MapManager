@@ -9,14 +9,13 @@
 #import "ViewController.h"
 #import "TableViewCellModel.h"
 #import "MapPointViewController.h"
-#import "SimulateRouteViewController.h"
 #import "KeyWordsViewController.h"
 #import "MapInputTipsViewController.h"
 #import "DrawLineViewController.h"
 #import "DrawRouteViewController.h"
 #import "DrawDriveRecordViewController.h"
 #import "MapFenceViewController.h"
-#import <NetworkExtension/NEHotspotConfigurationManager.h>
+#import "CarSimulator.h"
 
 @interface ViewController () <UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -67,13 +66,6 @@
     inputTips.title = @"关键字提示";
     inputTips.controllerClass = [MapInputTipsViewController class];
     [self.vcs addObject:inputTips];
-    
-    
-    TableViewCellModel *route = [TableViewCellModel model];
-    route.title = @"车辆移动";
-    route.controllerClass = [SimulateRouteViewController class];
-    [self.vcs addObject:route];
-
     
     TableViewCellModel *drawFence = [TableViewCellModel model];
     drawFence.title = @"画电子围栏";

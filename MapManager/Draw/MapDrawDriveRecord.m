@@ -132,9 +132,7 @@
 - (void)clear
 {
     [super clear];
-    [self.drawPoint removeMapAnnotations:self.brakes];
-    [self.drawPoint removeMapAnnotations:self.turns];
-    [self.drawPoint removeMapAnnotations:self.speedUps];
+    [self.drawPoint clear];
     self.brakes = [[NSMutableArray alloc]init];
     self.turns = [[NSMutableArray alloc]init];
     self.speedUps = [[NSMutableArray alloc]init];

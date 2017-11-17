@@ -23,7 +23,6 @@
 		8630CC0A1F25EE7500243A93 /* MapFenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB741F25EE7500243A93 /* MapFenceViewController.m */; };
 		8630CC0B1F25EE7500243A93 /* MapInputTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB761F25EE7500243A93 /* MapInputTipsViewController.m */; };
 		8630CC0C1F25EE7500243A93 /* MapPointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB781F25EE7500243A93 /* MapPointViewController.m */; };
-		8630CC0D1F25EE7500243A93 /* SimulateRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CB7A1F25EE7500243A93 /* SimulateRouteViewController.m */; };
 		8630CC1E1F25EE7500243A93 /* CarSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CBA11F25EE7500243A93 /* CarSimulator.m */; };
 		8630CC261F25EE7500243A93 /* FourAngleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CBB31F25EE7500243A93 /* FourAngleLabel.m */; };
 		8630CC461F25EE7500243A93 /* TableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8630CC031F25EE7500243A93 /* TableViewCellModel.m */; };
@@ -136,8 +135,6 @@
 		8630CB761F25EE7500243A93 /* MapInputTipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapInputTipsViewController.m; sourceTree = "<group>"; };
 		8630CB771F25EE7500243A93 /* MapPointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPointViewController.h; sourceTree = "<group>"; };
 		8630CB781F25EE7500243A93 /* MapPointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPointViewController.m; sourceTree = "<group>"; };
-		8630CB791F25EE7500243A93 /* SimulateRouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulateRouteViewController.h; sourceTree = "<group>"; };
-		8630CB7A1F25EE7500243A93 /* SimulateRouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulateRouteViewController.m; sourceTree = "<group>"; };
 		8630CBA01F25EE7500243A93 /* CarSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarSimulator.h; sourceTree = "<group>"; };
 		8630CBA11F25EE7500243A93 /* CarSimulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarSimulator.m; sourceTree = "<group>"; };
 		8630CBB21F25EE7500243A93 /* FourAngleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourAngleLabel.h; sourceTree = "<group>"; };
@@ -392,8 +389,6 @@
 				8630CB761F25EE7500243A93 /* MapInputTipsViewController.m */,
 				8630CB771F25EE7500243A93 /* MapPointViewController.h */,
 				8630CB781F25EE7500243A93 /* MapPointViewController.m */,
-				8630CB791F25EE7500243A93 /* SimulateRouteViewController.h */,
-				8630CB7A1F25EE7500243A93 /* SimulateRouteViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -925,7 +920,6 @@
 				86973DC91FBD329F00E55838 /* WalkNaviView.m in Sources */,
 				86973DC51FBD329F00E55838 /* MapLocationModel.m in Sources */,
 				86973DD71FBD329F00E55838 /* MapSearchObject.m in Sources */,
-				8630CC0D1F25EE7500243A93 /* SimulateRouteViewController.m in Sources */,
 				86973DCD1FBD329F00E55838 /* MapWalkPlanningRoute.m in Sources */,
 				86973DB61FBD329F00E55838 /* MapRouteObject.m in Sources */,
 				86973DB21FBD329F00E55838 /* MapDrawLine.m in Sources */,

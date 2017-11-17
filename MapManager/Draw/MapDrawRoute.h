@@ -29,6 +29,8 @@
 //当前选择的某条线路
 @property (assign, nonatomic) NSInteger selectedIndex;
 
+@property (assign, nonatomic) BOOL isAutoShowInMapCenter;
+
 - (void)drawRoute:(MapRouteObject *)route;
 
 - (void)drawRoutes:(NSArray <MapRouteObject *>*)routes;

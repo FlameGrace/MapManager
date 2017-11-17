@@ -27,6 +27,7 @@
     {
         self.showStartPoint = YES;
         self.showEndPoint = YES;
+        self.isAutoShowInMapCenter = YES;
         self.drawLine = [[MapDrawLine alloc]init];
         self.drawPoint = [[MapDrawPoint alloc]init];
         self.endpoints = [[NSMutableArray alloc]init];
@@ -166,6 +167,11 @@
             line.viewClass = self.lineView;
         }
         [self.drawLine addLine:line];
+    }
+    
+    if(self.isAutoShowInMapCenter)
+    {
+        [self showInMapCenter];
     }
 }
 
