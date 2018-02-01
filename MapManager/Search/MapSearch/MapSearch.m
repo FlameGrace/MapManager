@@ -46,7 +46,7 @@
     if([[MapManager sharedManager].mapSearch respondsToSelector:searchObject.searchSelector])
     {
         [self.searchs setObject:searchObject forKey:[NSString stringWithFormat:@"%p",searchObject.request]];
-        [[MapManager sharedManager].mapSearch performSelector:searchObject.searchSelector withObject:searchObject.request afterDelay:0.0];
+        [[MapManager sharedManager].mapSearch performSelector:searchObject.searchSelector withObject:searchObject.request];
     }
     return;
 }
