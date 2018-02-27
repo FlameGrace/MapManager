@@ -58,12 +58,14 @@
             [self.locationCache addObject:point];
             if(self.locationCache.count >= 2)
             {
-                [self addTrackingAnimationForPoints:[NSArray arrayWithArray:self.locationCache] duration:0.8];
+                NSArray *points = [NSArray arrayWithArray:self.locationCache];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self addTrackingAnimationForPoints:points duration:0.8];
+                });
                 [self.locationCache removeAllObjects];
                 [self.locationCache addObject:point];
                 return;
             }
-            
         }
     }
 }
@@ -103,6 +105,8 @@
         return;
     }
     NSMutableArray *trackPoint = [self trackPointWithPoints:points];
+
+    
     CACoordLayer * mylayer = ((CACoordLayer *)self.layer);
     //preparing
     NSUInteger num = 2*[trackPoint count] + 1;

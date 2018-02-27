@@ -17,9 +17,6 @@ typedef void(^MapVoidBlock)(void);
 
 #import "MapManager.h"
 #import "MapManager+Tools.h"
-#import "MapManager+MapView.h"
-#import "MapManager+Search.h"
-#import "MapManager+Location.h"
 #import "UserLocationManager.h"
 #import "CarLocationManager.h"
 #endif /* MapapManagerHeader_h */

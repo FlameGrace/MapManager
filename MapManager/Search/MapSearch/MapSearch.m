@@ -36,19 +36,21 @@
 
 - (void)searchForSearchObject:(MapSearchObject *)searchObject
 {
-    if(searchObject.searchSelector == NULL || searchObject.callback == NULL || searchObject.request == NULL)
-    {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        if(searchObject.searchSelector == NULL || searchObject.callback == NULL || searchObject.request == NULL)
+        {
+            return;
+        }
+        self.newestSearch = searchObject;
+        searchObject.response = nil;
+        searchObject.error = nil;
+        if([[MapManager sharedManager].mapSearch respondsToSelector:searchObject.searchSelector])
+        {
+            [self.searchs setObject:searchObject forKey:[NSString stringWithFormat:@"%p",searchObject.request]];
+            [[MapManager sharedManager].mapSearch performSelector:searchObject.searchSelector withObject:searchObject.request];
+        }
         return;
-    }
-    self.newestSearch = searchObject;
-    searchObject.response = nil;
-    searchObject.error = nil;
-    if([[MapManager sharedManager].mapSearch respondsToSelector:searchObject.searchSelector])
-    {
-        [self.searchs setObject:searchObject forKey:[NSString stringWithFormat:@"%p",searchObject.request]];
-        [[MapManager sharedManager].mapSearch performSelector:searchObject.searchSelector withObject:searchObject.request];
-    }
-    return;
+    });
 }
 
 - (void)successAfterSearchByRequest:(AMapSearchObject *)request response:(AMapSearchObject *)response

@@ -21,7 +21,7 @@
 /**
  高德地图POI Id, 唯一标志id
  */
-@property (strong, nonatomic) NSString *poiUid;
+@property (copy, nonatomic) NSString *poiUid;
 
 /*!
  @brief 位置名称
@@ -29,34 +29,38 @@
 @property (strong,nonatomic)  NSString *name;
 
 /**
+ *  地址信息
+ */
+@property (copy, nonatomic) NSString *address;
+/**
  *  位置详细地址信息
  */
-@property (strong, nonatomic) NSString *address;
+@property (copy, nonatomic) NSString *fullAddress;
 
 /**
  *  省
  */
-@property (strong, nonatomic) NSString *province;
+@property (copy, nonatomic) NSString *province;
 /**
  *  城市
  */
-@property (strong, nonatomic) NSString *city;
+@property (copy, nonatomic) NSString *city;
 /**
  *  区
  */
-@property (strong, nonatomic) NSString *district;
+@property (copy, nonatomic) NSString *district;
 /**
  *  镇
  */
-@property (strong, nonatomic) NSString *town;
+@property (copy, nonatomic) NSString *town;
 /**
  *  街道
  */
-@property (strong, nonatomic) NSString *street;
+@property (copy, nonatomic) NSString *street;
 /**
  *  地点类型
  */
-@property (strong, nonatomic) NSString *mapType;
+@property (copy, nonatomic) NSString *mapType;
 /**
  *  联系方式
  */
@@ -65,7 +69,7 @@
 /**
  *  分享短串
  */
-@property (strong, nonatomic) NSString *shareUrl;
+@property (copy, nonatomic) NSString *shareUrl;
 
 /*!
  @brief 位置标注

@@ -20,14 +20,13 @@ static MapSearch *regeoSearch = nil;
     dispatch_once(&onceToken, ^{
         regeoSearch = [[MapSearch alloc]init];
     });
-    
-    [regeoSearch searchRegeocodeForLocation:self.coordinate2D radius:100 requireExtension:NO callback:^(MapSearchObject *search, BOOL isNewest) {
+    [regeoSearch searchRegeocodeForLocation:self.coordinate2D radius:200 requireExtension:NO callback:^(MapSearchObject *search, BOOL isNewest) {
         if(!search.error)
         {
             AMapReGeocodeSearchResponse *response = (AMapReGeocodeSearchResponse *)search.response;
             [MapManager updateMapLocation:self byReGeocode:response.regeocode];
             callback(nil);
-            return ;
+            return;
         }
         callback(search.error);
     }];

@@ -160,7 +160,8 @@
     AMapReGeocodeSearchRequest *request = [[AMapReGeocodeSearchRequest alloc] init];
     request.location = [MapManager transformCLLocationCoordinate2D:coordinate];
     request.radius = radius;
-    request.requireExtension = requireExtension;
+    request.requireExtension = YES;
+    request.poitype = @"autonavi";
     //发起逆地理编码
     MapSearchObject *obejct = [[MapSearchObject alloc]initWithRequest:request callback:callback searchSelector:@selector(AMapReGoecodeSearch:)];
     [self searchForSearchObject:obejct];

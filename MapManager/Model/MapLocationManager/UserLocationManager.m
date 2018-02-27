@@ -106,7 +106,7 @@ static UserLocationManager *shareManager = nil;
     self.mapManager.mapView.userLocation.coordinate = location.coordinate;
     [self updateLocationByCoordinate:location.coordinate];
     //定位结果
-    //    LMLog(UnKnow,@"location:{lat:%f; lon:%f; accuracy:%f}", location.coordinate.latitude, location.coordinate.longitude, location.horizontalAccuracy);
+        NSLog(@"location:{lat:%f; lon:%f; accuracy:%f}", location.coordinate.latitude, location.coordinate.longitude, location.horizontalAccuracy);
     
 }
 
@@ -129,7 +129,7 @@ static UserLocationManager *shareManager = nil;
     NSString *city = self.location.city;
     if(!city||[city isEqualToString:@"CURRENT_CITY"])
     {
-        city = @"杭州";
+        city = @"杭州市";
     }
     return city;
 }

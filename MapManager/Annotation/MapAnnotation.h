@@ -12,7 +12,7 @@
 @class MapAnnotation;
 @class MapAnnotationView;
 
-typedef void(^MapBlock)();
+typedef void(^MapBlock)(void);
 typedef void(^MapByUserBlock)(BOOL byUser);
 
 

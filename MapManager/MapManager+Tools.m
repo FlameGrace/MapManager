@@ -13,11 +13,14 @@
 
 + (void)updateMapLocation:(MapLocationModel *)mapLocation byReGeocode:(AMapReGeocode *)reGeocode
 {
+    AMapPOI *poi = reGeocode.pois.firstObject;
+    mapLocation.poiUid = poi.uid;
     mapLocation.province = reGeocode.addressComponent.province;
     mapLocation.city = reGeocode.addressComponent.city;
     mapLocation.district = reGeocode.addressComponent.district;
     mapLocation.town = reGeocode.addressComponent.township;
     mapLocation.street = reGeocode.addressComponent.streetNumber.street;
+    mapLocation.fullAddress = [reGeocode.formattedAddress mutableCopy];
     NSString *name = [reGeocode.formattedAddress mutableCopy];
     name = [name stringByReplacingOccurrencesOfString:mapLocation.province withString:@""];
     name = [name stringByReplacingOccurrencesOfString:mapLocation.city withString:@""];
@@ -42,7 +45,6 @@
     {
         name = mapLocation.street;
     }
-    
     mapLocation.name = name;
 }
 
@@ -58,6 +60,7 @@
     for (NSString *line in array) {
         mapLocation.address = [mapLocation.address stringByAppendingString:line];
     }
+    mapLocation.fullAddress = mapLocation.address;
     mapLocation.name = [addressDic objectForKey:@"Name"];
     NSString *subLocality=[addressDic objectForKey:@"SubLocality"];
     mapLocation.district = subLocality;
@@ -73,6 +76,7 @@
     }
     mapLocation.name = poi.name;
     mapLocation.address = poi.address;
+    mapLocation.fullAddress = poi.address;
     mapLocation.province = poi.province;
     mapLocation.city = poi.city;
     mapLocation.district = poi.district;

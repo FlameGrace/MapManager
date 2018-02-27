@@ -14,7 +14,6 @@
 #import <AMapSearchKit/AMapSearchKit.h>
 #import <AMapNaviKit/AMapNaviKit.h>
 #import "MapLocationModel.h"
-#import "NSObject+MultiDelegate.h"
 
 #define MAPVIEW_TAG (NSInteger)(201609021132)
 #define MAPVIEW_DEFAULT_ZOOMLEVEL (16.5)
@@ -30,7 +29,7 @@
 //高德地图搜索API
 @property (strong,nonatomic) AMapSearchAPI *mapSearch;
 //高德地图驾车导航Manager
-@property (strong,nonatomic) AMapNaviDriveManager *mapNaviDrive;
+@property (weak,nonatomic) AMapNaviDriveManager *mapNaviDrive;
 //高德地图步行导航Manager
 @property (strong,nonatomic) AMapNaviWalkManager *mapNaviWalk;
 //高德地图定位权限状态
@@ -44,14 +43,14 @@
 
 /*!
  @brief 添加地图到指定的视图上，并指定地图的大小.
- @param view:父视图.
+ @param view :父视图.
  @return 是否添加成功
  */
 - (BOOL)addMapViewToView:(UIView *)view;
 /*!
  @brief 添加地图到指定的视图上，并指定地图的大小.
- @param view:父视图.
- @param frame:地图视图的大小.
+ @param view :父视图.
+ @param frame :地图视图的大小.
  @return 是否添加成功
  */
 - (BOOL)addMapViewToView:(UIView *)view withFrame:(CGRect)frame;
@@ -60,5 +59,14 @@
 - (void)refreshMapView;
 //不用时释放不需要用的资源
 - (void)releaseMapResourse;
+
+- (void)startUpdatingLocation;
+
+- (void)stopUpdatingLocation;
+
+- (void)addMultiDelegate:(id)delegate;
+
+- (void)removeMultiDelegate:(id)delegate;
+
 
 @end

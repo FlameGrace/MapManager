@@ -8,7 +8,7 @@
 
 
 #import "MapManager.h"
-
+#import "NSObject+MultiDelegateOC.h"
 
 @interface MapManager()
 
@@ -51,8 +51,31 @@ static MapManager *sharedManager = nil;
     if(self)
     {
         [AMapServices sharedServices].apiKey = [self getTheMapAPIKey];
+        [self.multiDelegate addDelegate:self];
     }
     return self;
+}
+
+//定位框架获取到定位权限变动时回调
+- (void)amapLocationManager:(AMapLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
+{
+    self.locationAuthorizationStatus = status;
+}
+
+- (void)amapLocationManager:(AMapLocationManager *)manager didFailWithError:(NSError *)error
+{
+    if(error.code == 1)
+    {
+        self.locationAuthorizationStatus = kCLAuthorizationStatusDenied;
+    }
+}
+
+- (void)mapViewWillStartLoadingMap
+{
+    if([self.mapView.delegate respondsToSelector:@selector(mapViewWillStartLoadingMap:)])
+    {
+        [self.mapView.delegate mapViewWillStartLoadingMap:_mapView];
+    }
 }
 
 - (BOOL)addMapViewToView:(UIView *)view
@@ -104,10 +127,25 @@ static MapManager *sharedManager = nil;
     _mapNaviWalk.delegate = nil;
     _mapNaviWalk = nil;
     _mapNaviDrive.delegate = nil;
-    _mapNaviDrive = nil;
+    [AMapNaviDriveManager destroyInstance];
     
 }
 
+- (void)startUpdatingLocation
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [self.mapLocationManager startUpdatingLocation];
+    });
+    
+}
+
+- (void)stopUpdatingLocation
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [self.mapLocationManager stopUpdatingLocation];
+    });
+    _mapLocationManager = nil;
+}
 
 - (MAMapView *)mapView
 {
@@ -115,8 +153,8 @@ static MapManager *sharedManager = nil;
     {
         _mapView = [[MAMapView alloc] initWithFrame:[UIScreen mainScreen].bounds];
         _mapView.tag = MAPVIEW_TAG;
-        _mapView.delegate = self;
-        
+        _mapView.delegate = (id<MAMapViewDelegate>)self.multiDelegate;
+        _mapView.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
         _mapView.showsScale = NO;
         _mapView.showsCompass = NO;
         //不支持旋转
@@ -127,7 +165,7 @@ static MapManager *sharedManager = nil;
         
         _mapView.pausesLocationUpdatesAutomatically = NO;
         _mapView.allowsBackgroundLocationUpdates = NO;
-        [self mapViewWillStartLoadingMap:_mapView];
+        [self mapViewWillStartLoadingMap];
     }
     return _mapView;
 }
@@ -137,7 +175,7 @@ static MapManager *sharedManager = nil;
     if(!_mapSearch)
     {
         _mapSearch = [[AMapSearchAPI alloc]init];
-        _mapSearch.delegate = self;
+        _mapSearch.delegate = (id<AMapSearchDelegate>)self.multiDelegate;
         _mapSearch.timeout = 5;
     }
     return _mapSearch;
@@ -147,7 +185,7 @@ static MapManager *sharedManager = nil;
 {
     if(!_mapNaviDrive)
     {
-        _mapNaviDrive = [[AMapNaviDriveManager alloc]init];
+        _mapNaviDrive = [AMapNaviDriveManager sharedInstance];
     }
     return _mapNaviDrive;
 }
@@ -167,8 +205,8 @@ static MapManager *sharedManager = nil;
     {
         //启动定位服务
         _mapLocationManager = [[AMapLocationManager alloc] init];
-        _mapLocationManager.delegate = self;
-        
+        _mapLocationManager.delegate = (id<AMapLocationManagerDelegate>)self.multiDelegate;
+        _mapLocationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
         [_mapLocationManager setPausesLocationUpdatesAutomatically:YES];
         [_mapLocationManager setAllowsBackgroundLocationUpdates:NO];
     }

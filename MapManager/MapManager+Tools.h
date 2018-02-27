@@ -105,24 +105,13 @@
  */
 + (CLLocationDistance)getDistanceBetweenOrigin:(CLLocationCoordinate2D)origin andDestination:(CLLocationCoordinate2D)destination;
 
-
-
 /**
- 
- * @method 根据两点经纬度，计算与正北方夹角
- 
- *
- 
- * @param longitude1
- 
- * @param latitude1
- 
- * @param longitude2
- 
- * @param latitude2 // 目标点
- 
- */
+ 根据两点经纬度，计算与正北方夹角
 
+ @param coordinate1 点1
+ @param coordinate2 点2
+ @return 与正北方夹角
+ */
 + (double)getAngleOnBasisOfNorthBetweenLocation:(CLLocationCoordinate2D)coordinate1 andLocation:(CLLocationCoordinate2D)coordinate2;
 
 + (CLLocationDirection)calculateCourseFroMAMapPoint:(MAMapPoint)point1 to:(MAMapPoint)point2;

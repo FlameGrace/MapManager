@@ -41,7 +41,7 @@
         self.canShowCallout = NO;
         self.image = [UIImage imageNamed:@"map_ic_carLocation80"];
         self.selectedImage = [UIImage imageNamed:@"map_ic_carLocation80_sel"];
-        self.size = CGSizeMake(30, 60);
+        self.size = CGSizeMake(20, 40);
         self.viewClass = [CarMapAnnotationView class];
         self.supportRolation = YES;
         self.centerOffset = CGPointMake(0, 0);
