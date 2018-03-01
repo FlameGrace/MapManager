@@ -27,9 +27,7 @@ typedef void(^MapByUserBlock)(BOOL byUser);
 @property (nonatomic, copy) NSString *subtitle;
 //是否可以显示CMapoutView
 @property (nonatomic) BOOL canShowCallout;
-
-
-//当前对应的大头针视图的选择情况
+//当前对应的大头针视图的选择情况，也可以直接指定大头针显示何种视图
 @property (assign, nonatomic) BOOL viewSelected;
 //此属性用来设置大头针视图的选择情况，设置后更新大头针视图
 @property (assign, nonatomic) BOOL setSelect;

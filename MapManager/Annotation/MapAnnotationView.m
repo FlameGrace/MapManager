@@ -25,6 +25,7 @@
     [super setSelected:selected];
     [self updateUIByIsSelected];
 }
+
 - (void)updateUIByIsSelected
 {
     if(self.isSelected)
@@ -36,6 +37,18 @@
         [self normalStyle];
     }
     self.annotation.viewSelected = self.isSelected;
+}
+
+- (void)updateUIByViewSelected
+{
+    if(self.annotation.viewSelected)
+    {
+        [self selectedStyle];
+    }
+    else
+    {
+        [self normalStyle];
+    }
 }
 
 - (void)normalStyle

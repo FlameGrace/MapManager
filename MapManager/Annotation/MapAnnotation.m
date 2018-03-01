@@ -61,6 +61,12 @@
     [self updateAnnotationViewSelected];
 }
 
+- (void)setViewSelected:(BOOL)viewSelected
+{
+    _viewSelected = viewSelected;
+    [self.annotationView updateUIByViewSelected];
+}
+
 
 - (MapAnnotationView *)annotationView
 {
@@ -77,7 +83,15 @@
     }
     
     annotationView.canShowCallout = self.canShowCallout;
-    [annotationView updateUIByIsSelected];
+    //如果直接设置self.viewSelected来决定视图如何显示，则根据self.viewSelected来显示
+    if((self.viewSelected&&!annotationView.isSelected)||(!self.viewSelected&&annotationView.isSelected))
+    {
+        [annotationView updateUIByViewSelected];
+    }
+    else
+    {
+        [annotationView updateUIByIsSelected];
+    }
 //    //主要为了防止由于地图复用导致的大头针被移除后重新添加,因此在被添加后再更新一下视图，一般情况下被选择的大头针好像不会出现被复用的情况
 //    __weak typeof(self) weakSelf = self;
 //    dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, 0.01*NSEC_PER_SEC);
