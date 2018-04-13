@@ -42,7 +42,7 @@ static MapManager *sharedManager = nil;
 
 - (NSString *)getTheMapAPIKey
 {
-    return @"042a57a173c812f8e8a7e0bf9d4b1589";
+    return @"";
 }
 
 - (instancetype)init
@@ -118,15 +118,10 @@ static MapManager *sharedManager = nil;
 
 - (void)releaseMapResourse
 {
-    _mapView.delegate = nil;
     _mapView = nil;
-    _mapSearch.delegate = nil;
     _mapSearch = nil;
-    _mapLocationManager.delegate = nil;
     _mapLocationManager = nil;
-    _mapNaviWalk.delegate = nil;
     _mapNaviWalk = nil;
-    _mapNaviDrive.delegate = nil;
     [AMapNaviDriveManager destroyInstance];
     
 }
