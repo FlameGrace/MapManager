@@ -25,6 +25,8 @@
 {
     if(self = [super init])
     {
+        self.startAnnotaionClass = [StartPointMapAnnotation class];
+        self.endAnnotaionClass = [EndPointMapAnnotation class];
         self.showStartPoint = YES;
         self.showEndPoint = YES;
         self.isAutoShowInMapCenter = YES;
@@ -137,7 +139,7 @@
     }
     //先画起点
     NSValue *start = [firstRoute.points firstObject];
-    MapAnnotation *startAnno = [MapAnnotation annotationByPoint:start annotationClass:[StartPointMapAnnotation class]];
+    MapAnnotation *startAnno = [MapAnnotation annotationByPoint:start annotationClass:[self.startAnnotaionClass class]];
     [self.endpoints addObject:startAnno];
     if(self.showStartPoint)
     {
@@ -145,52 +147,44 @@
     }
     //再画终点
     NSValue *end = [firstRoute.points lastObject];
-    MapAnnotation *endAnno = [MapAnnotation annotationByPoint:end annotationClass:[EndPointMapAnnotation class]];
+    MapAnnotation *endAnno = [MapAnnotation annotationByPoint:end annotationClass:[self.endAnnotaionClass class]];
     [self.endpoints addObject:endAnno];
     if(self.showEndPoint)
     {
         [self.drawPoint addMapAnnotation:endAnno];
     }
-    
-    
     //再画线路
-    for (int i = 0; i< self.routes.count; i++)
-    {
-        MapRouteObject *route = self.routes[i];
-        MapPolyLineObject *line = [[MapPolyLineObject alloc]initWithPoints:route.points identifier:@"polyline"];
-        if (i == self.selectedIndex)
-        {
-            line.viewClass = self.selectedLineView;
-        }
-        else
-        {
-            line.viewClass = self.lineView;
-        }
-        [self.drawLine addLine:line];
-    }
-    
-    if(self.isAutoShowInMapCenter)
-    {
-        [self showInMapCenter];
-    }
+    [self updateLineView];
 }
 
 
 
 - (void)updateLineView
 {
-    for (int i = 0; i< self.drawLine.lines.count; i++)
+    [self.drawLine clear];
+    NSMutableArray *routes = [NSMutableArray arrayWithArray:self.routes];
+    MapPolyLineObject *selectLine = nil;
+    if(self.selectedIndex < routes.count)
     {
-        MapPolyLineObject *line = self.drawLine.lines[i];
-        if (i == self.selectedIndex)
-        {
-            line.viewClass = self.selectedLineView;
-        }
-        else
-        {
-            line.viewClass = self.lineView;
-        }
-        [self.drawLine updateLine:line];
+        MapRouteObject *route = routes[self.selectedIndex];
+        selectLine = [[MapPolyLineObject alloc]initWithPoints:route.points identifier:@"polyline"];
+        selectLine.viewClass = self.selectedLineView;
+        [routes removeObject:route];
+    }
+    for (int i = 0; i< routes.count; i++)
+    {
+        MapRouteObject *route = routes[i];
+        MapPolyLineObject *line = [[MapPolyLineObject alloc]initWithPoints:route.points identifier:@"polyline"];
+        line.viewClass = self.lineView;
+        [self.drawLine addLine:line];
+    }
+    if(selectLine)
+    {
+        [self.drawLine addLine:selectLine];
+    }
+    if(self.isAutoShowInMapCenter)
+    {
+        [self showInMapCenter];
     }
 }
 

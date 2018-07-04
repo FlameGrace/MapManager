@@ -16,7 +16,10 @@
 @property (strong, nonatomic) MapDrawLine *drawLine;
 //画点的工具
 @property (strong, nonatomic) MapDrawPoint *drawPoint;
-//更改线的外观，只需继承MapPolylineView类，在初始化方法赋相应的值即可，默认为MapPolylineView
+//起点Class
+@property (strong, nonatomic) Class startAnnotaionClass;
+//终点Class
+@property (strong, nonatomic) Class endAnnotaionClass;
 @property (strong, nonatomic) Class lineView;
 //被选择的线路外观,默认与lineView相同
 @property (strong, nonatomic) Class selectedLineView;
